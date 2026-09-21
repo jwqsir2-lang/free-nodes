@@ -93,7 +93,7 @@ jobs:
           DELAY_TIMEOUT_MS: ${{ github.event.inputs.delay_timeout_ms || '4000' }}
           CONCURRENCY: '160'
           VERIFIED_FROM: 'GitHub Actions runner（海外机器）'
-        run: python verify.py
+        run: python verify.py --no-push
 
       - name: 校验产物
         run: |
