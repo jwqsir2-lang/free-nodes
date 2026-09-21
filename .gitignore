@@ -7,3 +7,4 @@ tools/mihomo.zip
 tools/cache.db
 tools/*.log
 tools/*.yaml
+.cand.yaml

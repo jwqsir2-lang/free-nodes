@@ -47,6 +47,10 @@ else:
     _dl = urllib.request.build_opener()
 NO_PROXY_OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))   # 访问本机 API 用
 
+# mihomo 子进程必须直连拨号，否则会绕进系统代理，测出来的就不算数了
+CLEAN_ENV = {k: v for k, v in os.environ.items()
+             if k.lower() not in ("http_proxy", "https_proxy", "all_proxy")}
+
 
 def log(*a):
     print(*a, flush=True)
@@ -264,7 +268,7 @@ class Mihomo:
         path = os.path.join(self.dir, "probe.yaml")
         self._write_cfg(proxies, path)
         r = subprocess.run([MIHOMO, "-f", path, "-d", self.dir, "-t"],
-                           capture_output=True, text=True, timeout=600)
+                           capture_output=True, text=True, timeout=600, env=CLEAN_ENV)
         out = (r.stdout or "") + (r.stderr or "")
         m = re.search(r'msg="proxy (\d+): ([^"]*)"', out)
         return r.returncode == 0, (int(m.group(1)) if m else None), (m.group(2) if m else out.strip()[-160:])
@@ -309,7 +313,7 @@ class Mihomo:
         self.proc = subprocess.Popen(
             [MIHOMO, "-f", path, "-d", self.dir],
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-            cwd=self.dir,
+            cwd=self.dir, env=CLEAN_ENV,
         )
         for _ in range(60):
             try:
