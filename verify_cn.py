@@ -493,7 +493,7 @@ def build_outputs(proxies, results):
                 f"# 字段与 cn/clash.yaml 里的条目完全一致\n"
                 + yaml.safe_dump(http_clash, allow_unicode=True, sort_keys=False, width=1000))
 
-    # sing-box / Karing：与客户端导出条目一一对应的 outbounds 数组
+    # sing-box 用：裸 outbounds 数组（贴进已有配置用）
     outbounds = []
     for p in http_ok:
         ob = {
@@ -513,6 +513,25 @@ def build_outputs(proxies, results):
         outbounds.append(ob)
     with open(os.path.join(OUT_DIR, "http-outbounds.json"), "w", encoding="utf-8") as f:
         json.dump(outbounds, f, ensure_ascii=False, indent=2)
+
+    # sing-box 用：完整配置。sing-box 内核没有订阅机制，只认整份 config，
+    # 裸数组它读不了，所以这里给一份能直接 check / 导入的完整配置。
+    ob_tags = [o["tag"] for o in outbounds]
+    singbox = {
+        "log": {"level": "warn", "timestamp": True},
+        "inbounds": [
+            {"type": "mixed", "tag": "mixed-in", "listen": "127.0.0.1", "listen_port": 2080},
+        ],
+        "outbounds": outbounds + [
+            {"type": "selector", "tag": "🚀 自动选择", "outbounds": ob_tags[:200] or ["direct"]},
+            {"type": "selector", "tag": "🔒 带 TLS 的 HTTP",
+             "outbounds": [o["tag"] for o in outbounds if o.get("tls")][:200] or ["direct"]},
+            {"type": "direct", "tag": "direct"},
+        ],
+        "route": {"final": "🚀 自动选择"},
+    }
+    with open(os.path.join(OUT_DIR, "singbox.json"), "w", encoding="utf-8") as f:
+        json.dump(singbox, f, ensure_ascii=False, indent=2)
 
     with open(os.path.join(OUT_DIR, "http.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(
