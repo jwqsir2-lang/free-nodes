@@ -1,0 +1,99 @@
+name: 更新免费节点订阅
+
+on:
+  schedule:
+    # 每 6 小时一次（UTC 时间，对应北京时间 02/08/14/20 点）
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      max_total:
+        description: '最多检测多少个节点'
+        required: false
+        default: '9000'
+      skip_discover:
+        description: '跳过“自动搜寻新源”步骤'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-nodes
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: 取出仓库
+        uses: actions/checkout@v5
+
+      - name: 安装 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 自动搜寻新的节点源
+        if: ${{ github.event.inputs.skip_discover != 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python discover_sources.py
+
+      - name: 搜集 / 检测 / 生成订阅
+        env:
+          MAX_TOTAL_TEST: ${{ github.event.inputs.max_total || '9000' }}
+        run: python fetch_nodes.py
+
+      - name: 检查产物
+        run: |
+          set -e
+          for f in dist/clash.yaml dist/index.html dist/stats.json; do
+            test -s "$f" || { echo "::error::$f 为空"; exit 1; }
+          done
+          python - <<'PY'
+          import yaml, json
+          d = yaml.safe_load(open("dist/clash.yaml", encoding="utf-8"))
+          n = len(d.get("proxies") or [])
+          st = json.load(open("dist/stats.json", encoding="utf-8"))
+          print(f"clash.yaml 可用节点 {n} 个，http 实测可用 {st['http_verified']} 个")
+          if n == 0:
+              raise SystemExit("::error::没有任何可用节点，本次不更新订阅")
+          names = {p["name"] for p in d["proxies"]} | {"DIRECT", "REJECT"}
+          for g in d.get("proxy-groups") or []:
+              missing = [m for m in g["proxies"] if m not in names]
+              if missing:
+                  raise SystemExit(f"::error::分组 {g['name']} 引用了不存在的节点 {missing[:3]}")
+          print("订阅结构校验通过")
+          PY
+
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist discovered_sources.json
+          if git diff --cached --quiet; then
+            echo "本次没有变化"
+          else
+            git commit -m "chore: 自动更新节点订阅 $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: 打包网页
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+      - name: 部署到 GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "free-vpn-subscriptions/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "Au1rxx/free-vpn-subscriptions",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "Free-Proxy-List/http.txt",
+    "url": "https://raw.githubusercontent.com/Moleway/Free-Proxy-List/main/http.txt",
+    "fmt": "auto",
+    "from": "Moleway/Free-Proxy-List",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free-proxy-list/http.txt",
+    "url": "https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/http.txt",
+    "fmt": "auto",
+    "from": "databay-labs/free-proxy-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "proxy-list/all.txt",
+    "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt",
+    "fmt": "auto",
+    "from": "proxio-io/proxy-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "proxy-list/http.txt",
+    "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/http.txt",
+    "fmt": "auto",
+    "from": "proxio-io/proxy-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free-proxy-list/all.txt",
+    "url": "https://raw.githubusercontent.com/relayglass/free-proxy-list/main/all.txt",
+    "fmt": "auto",
+    "from": "relayglass/free-proxy-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free-v2ray-nodes/nodes.txt",
+    "url": "https://raw.githubusercontent.com/vincent20240707/free-v2ray-nodes/main/nodes.txt",
+    "fmt": "auto",
+    "from": "vincent20240707/free-v2ray-nodes",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "VMHeaven.io-Free-Proxy-List/http.txt",
+    "url": "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/http.txt",
+    "fmt": "auto",
+    "from": "vmheaven/VMHeaven.io-Free-Proxy-List",
+    "found_at": "2026-09-21"
+  }
+]

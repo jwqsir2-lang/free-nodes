@@ -1,0 +1,111 @@
+{
+  "updated_utc8": "2026-09-21 13:07 (UTC+8)",
+  "alive": 703,
+  "counts": {
+    "http": 282,
+    "hysteria2": 5,
+    "trojan": 17,
+    "vless": 357,
+    "ss": 1,
+    "vmess": 41
+  },
+  "http_verified": 282,
+  "sources": [
+    {
+      "name": "anaer/Sub",
+      "status": "ok",
+      "count": 1500
+    },
+    {
+      "name": "ermaozi/get_subscribe",
+      "status": "ok",
+      "count": 186
+    },
+    {
+      "name": "peasoft/NoMoreWalls",
+      "status": "ok",
+      "count": 114
+    },
+    {
+      "name": "mahdibland/Eternity",
+      "status": "ok",
+      "count": 200
+    },
+    {
+      "name": "freefq/free",
+      "status": "ok",
+      "count": 14
+    },
+    {
+      "name": "Pawdroid/Free-servers",
+      "status": "ok",
+      "count": 20
+    },
+    {
+      "name": "ripaojiedian/freenode",
+      "status": "ok",
+      "count": 14
+    },
+    {
+      "name": "Barabama/FreeNodes",
+      "status": "ok",
+      "count": 23
+    },
+    {
+      "name": "proxifly/http",
+      "status": "ok",
+      "count": 1500
+    },
+    {
+      "name": "TheSpeedX/http",
+      "status": "ok",
+      "count": 1500
+    },
+    {
+      "name": "monosans/http",
+      "status": "ok",
+      "count": 552
+    },
+    {
+      "name": "free-vpn-subscriptions/outpu",
+      "status": "ok",
+      "count": 1500
+    },
+    {
+      "name": "Free-Proxy-List/http.txt",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "free-proxy-list/http.txt",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "proxy-list/all.txt",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "proxy-list/http.txt",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "free-proxy-list/all.txt",
+      "status": "ok",
+      "count": 0
+    },
+    {
+      "name": "free-v2ray-nodes/nodes.txt",
+      "status": "ok",
+      "count": 50
+    },
+    {
+      "name": "VMHeaven.io-Free-Proxy-List/",
+      "status": "ok",
+      "count": 0
+    }
+  ],
+  "seconds": 110.4
+}
