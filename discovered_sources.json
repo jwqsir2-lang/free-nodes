@@ -49,6 +49,13 @@
     "found_at": "2026-09-21"
   },
   {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/g1xy/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "g1xy/freesub",
+    "found_at": "2026-09-21"
+  },
+  {
     "name": "cn-news/clash.yaml",
     "url": "https://raw.githubusercontent.com/hello-world-1989/cn-news/main/clash.yaml",
     "fmt": "auto",
@@ -60,6 +67,13 @@
     "url": "https://raw.githubusercontent.com/jewell998998/free/main/output/clash.yaml",
     "fmt": "auto",
     "from": "jewell998998/free",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free-clash-verge/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/kevin-sanas/free-clash-verge/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "kevin-sanas/free-clash-verge",
     "found_at": "2026-09-21"
   },
   {
@@ -95,6 +109,27 @@
     "url": "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/http.txt",
     "fmt": "auto",
     "from": "vmheaven/VMHeaven.io-Free-Proxy-List",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free-proxy-health-list/all.txt",
+    "url": "https://raw.githubusercontent.com/xyzs996/free-proxy-health-list/main/all.txt",
+    "fmt": "auto",
+    "from": "xyzs996/free-proxy-health-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free-proxy-health-list/http.txt",
+    "url": "https://raw.githubusercontent.com/xyzs996/free-proxy-health-list/main/http.txt",
+    "fmt": "auto",
+    "from": "xyzs996/free-proxy-health-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "kejigongxiangjiakuan/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/yoyohotel2026/kejigongxiangjiakuan/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "yoyohotel2026/kejigongxiangjiakuan",
     "found_at": "2026-09-21"
   }
 ]

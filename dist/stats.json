@@ -1,14 +1,14 @@
 {
-  "updated_utc8": "2026-09-21 14:11 (UTC+8)",
-  "candidates": 15000,
+  "updated_utc8": "2026-09-21 14:19 (UTC+8)",
+  "candidates": 30585,
   "counts": {
-    "trojan": 72,
-    "vless": 1222,
-    "vmess": 755,
-    "hysteria2": 127,
-    "ss": 229,
+    "trojan": 120,
+    "vless": 3281,
+    "vmess": 813,
+    "hysteria2": 175,
+    "ss": 343,
     "socks5": 3,
-    "http": 12592
+    "http": 25850
   },
   "sources": [
     {
@@ -69,7 +69,7 @@
     {
       "name": "zloi-user/https",
       "status": "ok",
-      "count": 969
+      "count": 945
     },
     {
       "name": "proxifly/https",
@@ -104,12 +104,12 @@
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 693
+      "count": 784
     },
     {
       "name": "free-proxy-list/list.txt",
       "status": "ok",
-      "count": 693
+      "count": 784
     },
     {
       "name": "free-vpn-subscriptions/outpu",
@@ -124,7 +124,7 @@
     {
       "name": "Free-Proxy-List/http.txt",
       "status": "ok",
-      "count": 1430
+      "count": 1160
     },
     {
       "name": "freeip/output/clash.yaml",
@@ -134,7 +134,12 @@
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 4358
+      "count": 4338
+    },
+    {
+      "name": "freesub/output/clash.yaml",
+      "status": "ok",
+      "count": 937
     },
     {
       "name": "cn-news/clash.yaml",
@@ -145,6 +150,11 @@
       "name": "free/output/clash.yaml",
       "status": "ok",
       "count": 100
+    },
+    {
+      "name": "free-clash-verge/output/clas",
+      "status": "ok",
+      "count": 500
     },
     {
       "name": "proxy-list/all.txt",
@@ -159,7 +169,7 @@
     {
       "name": "free-proxy-list/all.txt",
       "status": "ok",
-      "count": 629
+      "count": 659
     },
     {
       "name": "free-v2ray-nodes/nodes.txt",
@@ -170,7 +180,22 @@
       "name": "VMHeaven.io-Free-Proxy-List/",
       "status": "ok",
       "count": 6000
+    },
+    {
+      "name": "free-proxy-health-list/all.t",
+      "status": "ok",
+      "count": 6000
+    },
+    {
+      "name": "free-proxy-health-list/http.",
+      "status": "ok",
+      "count": 2254
+    },
+    {
+      "name": "kejigongxiangjiakuan/output/",
+      "status": "ok",
+      "count": 1733
     }
   ],
-  "seconds": 8.4
+  "seconds": 18.9
 }
