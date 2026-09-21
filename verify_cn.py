@@ -413,6 +413,48 @@ def test_all(m, proxies):
 
 
 # ---------------------------------------------------------------- 输出
+def singbox_outbound(p, with_gui_id=True):
+    ob = {
+        "tag": p["name"],
+        "type": "http",
+        "server": p["server"],
+        "server_port": p["port"],
+    }
+    if p.get("username"):
+        ob["username"] = p["username"]
+        ob["password"] = p.get("password", "")
+    if p.get("tls"):
+        ob["tls"] = {"enabled": True,
+                     "server_name": p.get("servername") or p.get("sni") or p["server"],
+                     "insecure": True}
+    if with_gui_id:
+        # Karing 导出的条目里有这个字段，保留以便直接粘进它的界面
+        ob = {"__id_in_gui": "ID_" + hashlib.md5(f"{p['server']}:{p['port']}".encode()).hexdigest()[:9], **ob}
+    return ob
+
+
+def write_singbox_config(http_ok, out_dir):
+    """给 sing-box 内核的完整配置。内核没有订阅机制，只认整份 config，
+    而且它不认 __id_in_gui 这类私有字段，所以这份必须干净。"""
+    plain = [singbox_outbound(p, with_gui_id=False) for p in http_ok]
+    tags = [o["tag"] for o in plain]
+    cfg = {
+        "log": {"level": "warn", "timestamp": True},
+        "inbounds": [
+            {"type": "mixed", "tag": "mixed-in", "listen": "127.0.0.1", "listen_port": 2080},
+        ],
+        "outbounds": plain + [
+            {"type": "selector", "tag": "🚀 自动选择", "outbounds": tags[:200] or ["direct"]},
+            {"type": "selector", "tag": "🔒 带 TLS 的 HTTP",
+             "outbounds": [o["tag"] for o in plain if o.get("tls")][:200] or ["direct"]},
+            {"type": "direct", "tag": "direct"},
+        ],
+        "route": {"final": "🚀 自动选择"},
+    }
+    with open(os.path.join(out_dir, "singbox.json"), "w", encoding="utf-8") as f:
+        json.dump(cfg, f, ensure_ascii=False, indent=2)
+
+
 def build_outputs(proxies, results):
     os.makedirs(OUT_DIR, exist_ok=True)
     ok = []
@@ -494,44 +536,12 @@ def build_outputs(proxies, results):
                 + yaml.safe_dump(http_clash, allow_unicode=True, sort_keys=False, width=1000))
 
     # sing-box 用：裸 outbounds 数组（贴进已有配置用）
-    outbounds = []
-    for p in http_ok:
-        ob = {
-            "__id_in_gui": "ID_" + hashlib.md5(f"{p['server']}:{p['port']}".encode()).hexdigest()[:9],
-            "tag": p["name"],
-            "type": "http",
-            "server": p["server"],
-            "server_port": p["port"],
-        }
-        if p.get("username"):
-            ob["username"] = p["username"]
-            ob["password"] = p.get("password", "")
-        if p.get("tls"):
-            ob["tls"] = {"enabled": True,
-                         "server_name": p.get("servername") or p.get("sni") or p["server"],
-                         "insecure": True}
-        outbounds.append(ob)
+    # 注意 __id_in_gui 是 Karing 的私有字段，sing-box 内核不认（check 会 FATAL），
+    # 所以给内核的那份要干净，给 Karing 的那份保留。
+    outbounds = [singbox_outbound(p, with_gui_id=True) for p in http_ok]
     with open(os.path.join(OUT_DIR, "http-outbounds.json"), "w", encoding="utf-8") as f:
         json.dump(outbounds, f, ensure_ascii=False, indent=2)
-
-    # sing-box 用：完整配置。sing-box 内核没有订阅机制，只认整份 config，
-    # 裸数组它读不了，所以这里给一份能直接 check / 导入的完整配置。
-    ob_tags = [o["tag"] for o in outbounds]
-    singbox = {
-        "log": {"level": "warn", "timestamp": True},
-        "inbounds": [
-            {"type": "mixed", "tag": "mixed-in", "listen": "127.0.0.1", "listen_port": 2080},
-        ],
-        "outbounds": outbounds + [
-            {"type": "selector", "tag": "🚀 自动选择", "outbounds": ob_tags[:200] or ["direct"]},
-            {"type": "selector", "tag": "🔒 带 TLS 的 HTTP",
-             "outbounds": [o["tag"] for o in outbounds if o.get("tls")][:200] or ["direct"]},
-            {"type": "direct", "tag": "direct"},
-        ],
-        "route": {"final": "🚀 自动选择"},
-    }
-    with open(os.path.join(OUT_DIR, "singbox.json"), "w", encoding="utf-8") as f:
-        json.dump(singbox, f, ensure_ascii=False, indent=2)
+    write_singbox_config(http_ok, OUT_DIR)
 
     with open(os.path.join(OUT_DIR, "http.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(
@@ -573,7 +583,22 @@ def main():
     ap.add_argument("--http-limit", type=int, default=int(os.environ.get("HTTP_LIMIT", "3000")),
                     help="HTTP 代理最多测多少个（实测通过率极低，全测浪费预算）")
     ap.add_argument("--no-push", action="store_true")
+    ap.add_argument("--rebuild-json", action="store_true",
+                    help="只根据已有的 dist/cn/http.yaml 重新生成 JSON 产物，不重新测节点")
     args = ap.parse_args()
+
+    if args.rebuild_json:
+        src = os.path.join(OUT_DIR, "http.yaml")
+        if not os.path.exists(src):
+            raise SystemExit(f"找不到 {src}，先跑一次完整校验")
+        http_ok = yaml.safe_load(open(src, encoding="utf-8")).get("proxies") or []
+        os.makedirs(OUT_DIR, exist_ok=True)
+        with open(os.path.join(OUT_DIR, "http-outbounds.json"), "w", encoding="utf-8") as f:
+            json.dump([singbox_outbound(p, with_gui_id=True) for p in http_ok],
+                      f, ensure_ascii=False, indent=2)
+        write_singbox_config(http_ok, OUT_DIR)
+        log(f"已用 {len(http_ok)} 个 http 节点重建 singbox.json / http-outbounds.json")
+        return
 
     if not os.path.exists(MIHOMO):
         raise SystemExit(f"找不到 mihomo：{MIHOMO}")
