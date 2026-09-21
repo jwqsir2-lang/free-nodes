@@ -1,7 +1,5 @@
-# 已在本机（国内）通过真实协议端到端校验
-# 校验时间：2026-09-21 14:16:57 (本地时间)
-# 校验目标：http://www.gstatic.com/generate_204 / http://www.google.com/generate_204（被墙域名，能通才收录）
-# 可用节点：363（HTTP 代理中带 TLS 的 332 个）
+# 仅 HTTP/HTTPS 代理，共 345 个（其中带 TLS 的 332 个）
+# 字段与 cn/clash.yaml 里的条目完全一致
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -2730,398 +2728,12 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 38.28.185.187
-- name: hysteria2|msjp1.mangshe.xyz:20561|267ms|ermaozi/get_
-  type: hysteria2
-  server: msjp1.mangshe.xyz
-  port: 20561
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  udp: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: hysteria2|95.133.242.213:30443|520ms|free-vpn-sub
-  password: 1e6fed5b-5edc-4ddb-a268-79d7fae4365c
-  port: 30443
-  server: 95.133.242.213
-  skip-cert-verify: false
-  sni: filesconvert.org
-  type: hysteria2
-  udp: false
-- name: hysteria2|152.70.237.123:2053|781ms|peasoft/NoMo
-  type: hysteria2
-  server: 152.70.237.123
-  port: 2053
-  password: maintell
-  udp: true
-  sni: bing.com
-  skip-cert-verify: true
-- name: hysteria2|gta.internet-card.sb:443|1262ms|ermaozi/get_
-  type: hysteria2
-  server: gta.internet-card.sbs
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  udp: true
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
-- name: hysteria2|152.67.115.203:443|1422ms|peasoft/NoMo
-  type: hysteria2
-  server: 152.67.115.203
-  port: 443
-  password: 633bc3be486b646190661ac2387c150a
-  udp: true
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: hysteria2|msk.frkn.org:443|1603ms|ermaozi/get_
-  type: hysteria2
-  server: msk.frkn.org
-  port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  udp: true
-- name: hysteria2|31.76.71.252:443|2016ms|ermaozi/get_
-  type: hysteria2
-  server: 31.76.71.252
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  udp: true
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
-- name: hysteria2|50.7.120.221:30443|2863ms|free-vpn-sub
-  password: 1e6fed5b-5edc-4ddb-a268-79d7fae4365c
-  port: 30443
-  server: 50.7.120.221
-  skip-cert-verify: true
-  sni: filesconvert.org
-  type: hysteria2
-  udp: false
-- name: trojan|de2.x8lab.org:9433|939ms|peasoft/NoMo
-  type: trojan
-  server: de2.x8lab.org
-  port: 9433
-  password: TAJhE0BC0_S1JDm9EmQxyLS64uC8ekbr
-  udp: true
-  skip-cert-verify: true
-  sni: de2.x8lab.org
-  network: ws
-  ws-opts:
-    path: /chatbot
-- name: vless|kama2.api3-max.ru:443|647ms|peasoft/NoMo
-  type: vless
-  server: kama2.api3-max.ru
-  port: 443
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kama2.api3-max.ru
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision-udp443
-- name: vless|roskaa6.api3-max.ru:443|668ms|peasoft/NoMo
-  type: vless
-  server: roskaa6.api3-max.ru
-  port: 443
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: roskaa6.api3-max.ru
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision-udp443
-- name: vless|us.cache-4d8a.com:443|818ms|ermaozi/get_
-  type: vless
-  server: us.cache-4d8a.com
-  port: 443
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: us.cache-4d8a.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
-    short-id: 8319913f2e5f5711
-  flow: xtls-rprx-vision
-- name: vless|2.26.125.38:2096|1983ms|anaer/Sub
-  type: vless
-  network: ws
-  server: 2.26.125.38
-  port: 2096
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  servername: st3f6d.rumedia-cdn.com
-  skip-cert-verify: false
-  tls: true
-  udp: true
-  tfo: false
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: st3f6d.rumedia-cdn.com
-    path: /cdn/v3/live
-- name: vless|jp.sofast.live:52683|2664ms|ermaozi/get_
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: ss|130.61.119.116:59924|562ms|free-vpn-sub
-  password: 8ilYOpgiXMq8BCHWqfd1G6/MWatxTQ0jVfSgvE18hqA=
-  port: 59924
-  server: 130.61.119.116
-  type: ss
-  udp: true
-- name: vmess|112.132.215.108:50002|83ms|anaer/Sub
-  type: vmess
-  network: tcp
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  servername: 112.132.215.108
-  skip-cert-verify: true
-  alterId: 64
-  cipher: auto
-  udp: false
-- alterId: 0
-  cipher: auto
-  name: vmess|dee2309db4se3g5sds35:443|464ms|free-vpn-sub
-  network: ws
-  port: 443
-  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-- alterId: 0
-  cipher: auto
-  name: vmess|dee2309db4se3grs6e8h:443|735ms|free-vpn-sub
-  network: ws
-  port: 443
-  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
 proxy-groups:
 - name: 🚀 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies:
-  - https|China:1080|156ms|zloi-user/ht
-  - https|China:4443|165ms|zloi-user/ht
-  - https|Hong Kong:3128|231ms|zloi-user/ht
-  - https|Hong Kong:10088|232ms|zloi-user/ht
-  - http|101.42.41.164:8080|235ms|r00tee/Https
-  - https|Japan:1443|247ms|zloi-user/ht
-  - https|China:8888|276ms|zloi-user/ht
-  - https|Hong Kong:31343|277ms|zloi-user/ht
-  - https|South Korea:443|284ms|zloi-user/ht
-  - https|Hong Kong:8080|347ms|zloi-user/ht
-  - https|Hong Kong:443|355ms|zloi-user/ht
-  - https|Taiwan:42536|356ms|zloi-user/ht
-  - https|Taiwan:42532|371ms|zloi-user/ht
-  - https|Taiwan:443|422ms|zloi-user/ht
-  - https|Japan:343|447ms|zloi-user/ht
-  - https|Japan:40583|449ms|zloi-user/ht
-  - https|South Korea:443|466ms|zloi-user/ht
-  - https|Japan:443|493ms|zloi-user/ht
-  - https|Singapore:443|500ms|zloi-user/ht
-  - https|Japan:443|566ms|zloi-user/ht
-  - https|United States:443|613ms|zloi-user/ht
-  - http|146.190.60.147:8001|625ms|r00tee/Https
-  - https|South Africa:8443|653ms|zloi-user/ht
-  - https|South Korea:443|672ms|zloi-user/ht
-  - http|203.175.103.97:8080|683ms|r00tee/Https
-  - https|Bangladesh:443|696ms|zloi-user/ht
-  - https|Japan:443|697ms|zloi-user/ht
-  - https|Luxembourg:443|708ms|zloi-user/ht
-  - https|The Netherlands:443|714ms|zloi-user/ht
-  - https|185.221.132.242:9443|714ms|proxifly/htt
-  - https|United States:443|720ms|zloi-user/ht
-  - https|United States:9002|724ms|zloi-user/ht
-  - https|United States:9002|730ms|zloi-user/ht
-  - https|United States:9002|731ms|zloi-user/ht
-  - https|Ireland:443|731ms|zloi-user/ht
-  - https|United States:9002|732ms|zloi-user/ht
-  - https|United States:443|732ms|zloi-user/ht
-  - https|United States:9002|736ms|zloi-user/ht
-  - https|Latvia:443|738ms|zloi-user/ht
-  - https|103.62.50.130:9443|739ms|proxifly/htt
-  - https|Ireland:443|742ms|zloi-user/ht
-  - https|United States:9002|743ms|zloi-user/ht
-  - https|United States:443|745ms|zloi-user/ht
-  - https|United States:9002|747ms|zloi-user/ht
-  - https|United States:443|748ms|zloi-user/ht
-  - https|United States:8443|756ms|zloi-user/ht
-  - https|United States:8443|756ms|zloi-user/ht#46
-  - https|Sweden:443|759ms|zloi-user/ht
-  - https|France:443|761ms|zloi-user/ht
-  - https|France:443|765ms|zloi-user/ht
-  - https|Vietnam:8443|766ms|zloi-user/ht
-  - https|The Netherlands:21384|770ms|zloi-user/ht
-  - https|Germany:443|780ms|zloi-user/ht
-  - https|Germany:443|781ms|zloi-user/ht
-  - https|United States:8443|783ms|zloi-user/ht
-  - https|Switzerland:9443|784ms|zloi-user/ht
-  - https|Germany:443|789ms|zloi-user/ht
-  - https|Vietnam:8443|794ms|zloi-user/ht
-  - https|Germany:8443|795ms|zloi-user/ht
-  - https|United States:443|797ms|zloi-user/ht
-  - https|France:443|804ms|zloi-user/ht
-  - https|Germany:443|810ms|zloi-user/ht
-  - https|The Netherlands:443|816ms|zloi-user/ht
-  - https|Norway:9443|821ms|zloi-user/ht
-  - https|Germany:443|824ms|zloi-user/ht
-  - https|Russia:1446|828ms|zloi-user/ht
-  - https|United States:9002|837ms|zloi-user/ht
-  - https|United States:9002|838ms|zloi-user/ht
-  - https|United States:9002|838ms|zloi-user/ht#68
-  - https|Romania:443|846ms|zloi-user/ht
-  - https|United States:9002|847ms|zloi-user/ht
-  - https|United States:9002|850ms|zloi-user/ht
-  - https|United States:443|850ms|zloi-user/ht
-  - https|United States:9002|851ms|zloi-user/ht
-  - https|United States:9002|852ms|zloi-user/ht
-  - https|United States:9002|852ms|zloi-user/ht#75
-  - https|Romania:443|853ms|zloi-user/ht
-  - https|Luxembourg:9443|854ms|zloi-user/ht
-  - https|United States:9002|855ms|zloi-user/ht
-  - https|United States:9002|857ms|zloi-user/ht
-  - https|United States:9002|858ms|zloi-user/ht
-  - https|United States:9002|859ms|zloi-user/ht
-  - https|United States:9002|864ms|zloi-user/ht
-  - https|United States:9002|868ms|zloi-user/ht
-  - https|United States:9002|869ms|zloi-user/ht
-  - https|United States:9002|871ms|zloi-user/ht
-  - https|United States:9002|872ms|zloi-user/ht
-  - https|United States:8443|874ms|zloi-user/ht
-  - https|United States:9002|875ms|zloi-user/ht
-  - http|94.158.49.82:3128|878ms|r00tee/Https
-  - https|United Kingdom:9443|880ms|zloi-user/ht
-  - https|United Kingdom:8443|884ms|zloi-user/ht
-  - https|Switzerland:443|886ms|zloi-user/ht
-  - https|The Netherlands:443|889ms|zloi-user/ht
-  - https|Germany:8880|896ms|zloi-user/ht
-  - https|Germany:443|899ms|zloi-user/ht
-  - https|Japan:8443|900ms|zloi-user/ht
-  - https|185.221.132.242:443|904ms|proxifly/htt
-  - https|Indonesia:443|908ms|zloi-user/ht
-  - https|The Netherlands:8443|909ms|zloi-user/ht
-  - https|United States:443|913ms|zloi-user/ht
-  - https|North Macedonia:9443|917ms|zloi-user/ht
-  - https|Ireland:443|917ms|zloi-user/ht
-  - https|Romania:9002|918ms|zloi-user/ht
-  - https|84.233.178.33:9443|922ms|proxifly/htt
-  - https|Romania:9002|923ms|zloi-user/ht
-  - https|Ireland:443|923ms|zloi-user/ht
-  - https|Romania:9002|925ms|zloi-user/ht
-  - https|Italy:443|925ms|zloi-user/ht
-  - https|United States:8443|931ms|zloi-user/ht
-  - https|United States:9443|931ms|zloi-user/ht
-  - https|Romania:9002|934ms|zloi-user/ht
-  - https|Germany:443|936ms|zloi-user/ht
-  - https|Romania:9002|938ms|zloi-user/ht
-  - https|Indonesia:443|938ms|zloi-user/ht
-  - https|Romania:9002|944ms|zloi-user/ht
-  - https|Romania:9002|948ms|zloi-user/ht
-  - https|United States:443|959ms|zloi-user/ht
-  - https|Germany:443|966ms|zloi-user/ht
-  - https|156.146.56.110:9443|973ms|proxifly/htt
-  - https|United States:9443|975ms|zloi-user/ht
-  - https|Latvia:9443|977ms|zloi-user/ht
-  - https|Latvia:443|977ms|zloi-user/ht
-  - https|Latvia:443|980ms|zloi-user/ht
-  - https|The Netherlands:23856|987ms|zloi-user/ht
-  - https|Finland:8080|989ms|zloi-user/ht
-  - https|United States:9443|994ms|zloi-user/ht
-  - https|Finland:443|996ms|zloi-user/ht
-  - https|United States:443|997ms|zloi-user/ht
-  - http|201.71.2.27:999|1012ms|r00tee/Https
-  - https|United States:443|1014ms|zloi-user/ht
-  - https|United States:443|1015ms|zloi-user/ht
-  - https|France:443|1020ms|zloi-user/ht
-  - https|The Netherlands:8443|1025ms|zloi-user/ht
-  - https|The Netherlands:443|1043ms|zloi-user/ht
-  - https|The Netherlands:9002|1045ms|zloi-user/ht
-  - https|Finland:8443|1046ms|zloi-user/ht
-  - https|Finland:8443|1046ms|zloi-user/ht#137
-  - https|Germany:443|1049ms|zloi-user/ht
-  - https|The Netherlands:9002|1055ms|zloi-user/ht
-  - https|United States:443|1056ms|zloi-user/ht
-  - https|The Netherlands:443|1057ms|zloi-user/ht
-  - https|Romania:9002|1062ms|zloi-user/ht
-  - https|Germany:9002|1062ms|zloi-user/ht
-  - https|Germany:443|1063ms|zloi-user/ht
-  - https|Romania:443|1065ms|zloi-user/ht
-  - https|Canada:443|1067ms|zloi-user/ht
-  - https|Canada:443|1069ms|zloi-user/ht
-  - https|Romania:9002|1070ms|zloi-user/ht
-  - https|Romania:9002|1080ms|zloi-user/ht
-  - https|Latvia:443|1080ms|zloi-user/ht
-  - https|United States:443|1083ms|zloi-user/ht
-  - https|23.189.168.146:443|1083ms|proxifly/htt
-  - https|Romania:9002|1084ms|zloi-user/ht
-  - https|Germany:9002|1084ms|zloi-user/ht
-  - https|United States:443|1084ms|zloi-user/ht
-  - https|United States:8443|1085ms|zloi-user/ht
-  - https|135.136.5.34:9443|1085ms|proxifly/htt
-  - https|Romania:9002|1086ms|zloi-user/ht
-  - https|United States:8080|1087ms|zloi-user/ht
-  - https|Romania:9002|1088ms|zloi-user/ht
-  - https|Romania:9002|1092ms|zloi-user/ht
-  - https|Romania:9002|1092ms|zloi-user/ht#162
-  - https|North Macedonia:443|1097ms|zloi-user/ht
-  - https|169.150.197.234:9443|1097ms|proxifly/htt
-  - https|Romania:9002|1099ms|zloi-user/ht
-  - https|The Netherlands:443|1099ms|zloi-user/ht
-  - https|United States:443|1100ms|zloi-user/ht
-  - https|Albania:443|1101ms|zloi-user/ht
-  - https|The Netherlands:443|1102ms|zloi-user/ht
-  - https|United States:9443|1102ms|zloi-user/ht
-  - https|Romania:9002|1105ms|zloi-user/ht
-  - https|Romania:9002|1107ms|zloi-user/ht
-  - https|France:443|1109ms|zloi-user/ht
-  - https|Romania:9002|1121ms|zloi-user/ht
-  - https|France:8090|1121ms|zloi-user/ht
-  - https|United States:9443|1122ms|zloi-user/ht
-  - https|Italy:443|1125ms|zloi-user/ht
-  - https|Czechia:9443|1127ms|zloi-user/ht
-  - https|United States:443|1136ms|zloi-user/ht
-  - https|Vietnam:8443|1138ms|zloi-user/ht
-  - https|Romania:9002|1141ms|zloi-user/ht
-  - https|Romania:9002|1149ms|zloi-user/ht
-  - https|Italy:443|1151ms|zloi-user/ht
-  - https|United States:9443|1152ms|zloi-user/ht
-  - https|Bulgaria:443|1154ms|zloi-user/ht
-  - https|United States:443|1155ms|zloi-user/ht
-  - https|United States:443|1162ms|zloi-user/ht
-  - https|Ireland:443|1163ms|zloi-user/ht
-  - https|Bulgaria:9443|1164ms|zloi-user/ht
-  - https|South Korea:8443|1168ms|zloi-user/ht
-  - https|United States:8090|1170ms|zloi-user/ht
-  - http|190.97.236.128:999|1170ms|r00tee/Https
-  - https|United States:443|1171ms|zloi-user/ht
-  - https|United States:443|1178ms|zloi-user/ht
-  - https|United States:443|1179ms|zloi-user/ht
-  - https|135.136.1.2:9443|1183ms|proxifly/htt
-  - https|Czechia:8443|1195ms|zloi-user/ht
-  - https|United States:443|1198ms|zloi-user/ht
-  - https|Bosnia and Herzegovi:9443|1202ms|zloi-user/ht
-- name: 🌐 HTTP/HTTPS 专用
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 300
   proxies:
   - https|China:1080|156ms|zloi-user/ht
   - https|China:4443|165ms|zloi-user/ht
@@ -3528,10 +3140,8 @@ proxy-groups:
   - https|The Netherlands:9002|1211ms|zloi-user/ht
   - https|The Netherlands:9002|1216ms|zloi-user/ht
   - https|The Netherlands:9002|1217ms|zloi-user/ht
-- name: ♻️ 故障转移
-  type: fallback
-  url: http://www.gstatic.com/generate_204
-  interval: 300
+- name: 🌐 全部 HTTP
+  type: select
   proxies:
   - https|China:1080|156ms|zloi-user/ht
   - https|China:4443|165ms|zloi-user/ht
@@ -3633,6 +3243,206 @@ proxy-groups:
   - https|185.221.132.242:443|904ms|proxifly/htt
   - https|Indonesia:443|908ms|zloi-user/ht
   - https|The Netherlands:8443|909ms|zloi-user/ht
+  - https|United States:443|913ms|zloi-user/ht
+  - https|North Macedonia:9443|917ms|zloi-user/ht
+  - https|Ireland:443|917ms|zloi-user/ht
+  - https|Romania:9002|918ms|zloi-user/ht
+  - https|84.233.178.33:9443|922ms|proxifly/htt
+  - https|Romania:9002|923ms|zloi-user/ht
+  - https|Ireland:443|923ms|zloi-user/ht
+  - https|Romania:9002|925ms|zloi-user/ht
+  - https|Italy:443|925ms|zloi-user/ht
+  - https|United States:8443|931ms|zloi-user/ht
+  - https|United States:9443|931ms|zloi-user/ht
+  - https|Romania:9002|934ms|zloi-user/ht
+  - https|Germany:443|936ms|zloi-user/ht
+  - https|Romania:9002|938ms|zloi-user/ht
+  - https|Indonesia:443|938ms|zloi-user/ht
+  - https|Romania:9002|944ms|zloi-user/ht
+  - https|Romania:9002|948ms|zloi-user/ht
+  - https|United States:443|959ms|zloi-user/ht
+  - https|Germany:443|966ms|zloi-user/ht
+  - https|156.146.56.110:9443|973ms|proxifly/htt
+  - https|United States:9443|975ms|zloi-user/ht
+  - https|Latvia:9443|977ms|zloi-user/ht
+  - https|Latvia:443|977ms|zloi-user/ht
+  - https|Latvia:443|980ms|zloi-user/ht
+  - https|The Netherlands:23856|987ms|zloi-user/ht
+  - https|Finland:8080|989ms|zloi-user/ht
+  - https|United States:9443|994ms|zloi-user/ht
+  - https|Finland:443|996ms|zloi-user/ht
+  - https|United States:443|997ms|zloi-user/ht
+  - http|201.71.2.27:999|1012ms|r00tee/Https
+  - https|United States:443|1014ms|zloi-user/ht
+  - https|United States:443|1015ms|zloi-user/ht
+  - https|France:443|1020ms|zloi-user/ht
+  - https|The Netherlands:8443|1025ms|zloi-user/ht
+  - https|The Netherlands:443|1043ms|zloi-user/ht
+  - https|The Netherlands:9002|1045ms|zloi-user/ht
+  - https|Finland:8443|1046ms|zloi-user/ht
+  - https|Finland:8443|1046ms|zloi-user/ht#137
+  - https|Germany:443|1049ms|zloi-user/ht
+  - https|The Netherlands:9002|1055ms|zloi-user/ht
+  - https|United States:443|1056ms|zloi-user/ht
+  - https|The Netherlands:443|1057ms|zloi-user/ht
+  - https|Romania:9002|1062ms|zloi-user/ht
+  - https|Germany:9002|1062ms|zloi-user/ht
+  - https|Germany:443|1063ms|zloi-user/ht
+  - https|Romania:443|1065ms|zloi-user/ht
+  - https|Canada:443|1067ms|zloi-user/ht
+  - https|Canada:443|1069ms|zloi-user/ht
+  - https|Romania:9002|1070ms|zloi-user/ht
+  - https|Romania:9002|1080ms|zloi-user/ht
+  - https|Latvia:443|1080ms|zloi-user/ht
+  - https|United States:443|1083ms|zloi-user/ht
+  - https|23.189.168.146:443|1083ms|proxifly/htt
+  - https|Romania:9002|1084ms|zloi-user/ht
+  - https|Germany:9002|1084ms|zloi-user/ht
+  - https|United States:443|1084ms|zloi-user/ht
+  - https|United States:8443|1085ms|zloi-user/ht
+  - https|135.136.5.34:9443|1085ms|proxifly/htt
+  - https|Romania:9002|1086ms|zloi-user/ht
+  - https|United States:8080|1087ms|zloi-user/ht
+  - https|Romania:9002|1088ms|zloi-user/ht
+  - https|Romania:9002|1092ms|zloi-user/ht
+  - https|Romania:9002|1092ms|zloi-user/ht#162
+  - https|North Macedonia:443|1097ms|zloi-user/ht
+  - https|169.150.197.234:9443|1097ms|proxifly/htt
+  - https|Romania:9002|1099ms|zloi-user/ht
+  - https|The Netherlands:443|1099ms|zloi-user/ht
+  - https|United States:443|1100ms|zloi-user/ht
+  - https|Albania:443|1101ms|zloi-user/ht
+  - https|The Netherlands:443|1102ms|zloi-user/ht
+  - https|United States:9443|1102ms|zloi-user/ht
+  - https|Romania:9002|1105ms|zloi-user/ht
+  - https|Romania:9002|1107ms|zloi-user/ht
+  - https|France:443|1109ms|zloi-user/ht
+  - https|Romania:9002|1121ms|zloi-user/ht
+  - https|France:8090|1121ms|zloi-user/ht
+  - https|United States:9443|1122ms|zloi-user/ht
+  - https|Italy:443|1125ms|zloi-user/ht
+  - https|Czechia:9443|1127ms|zloi-user/ht
+  - https|United States:443|1136ms|zloi-user/ht
+  - https|Vietnam:8443|1138ms|zloi-user/ht
+  - https|Romania:9002|1141ms|zloi-user/ht
+  - https|Romania:9002|1149ms|zloi-user/ht
+  - https|Italy:443|1151ms|zloi-user/ht
+  - https|United States:9443|1152ms|zloi-user/ht
+  - https|Bulgaria:443|1154ms|zloi-user/ht
+  - https|United States:443|1155ms|zloi-user/ht
+  - https|United States:443|1162ms|zloi-user/ht
+  - https|Ireland:443|1163ms|zloi-user/ht
+  - https|Bulgaria:9443|1164ms|zloi-user/ht
+  - https|South Korea:8443|1168ms|zloi-user/ht
+  - https|United States:8090|1170ms|zloi-user/ht
+  - http|190.97.236.128:999|1170ms|r00tee/Https
+  - https|United States:443|1171ms|zloi-user/ht
+  - https|United States:443|1178ms|zloi-user/ht
+  - https|United States:443|1179ms|zloi-user/ht
+  - https|135.136.1.2:9443|1183ms|proxifly/htt
+  - https|Czechia:8443|1195ms|zloi-user/ht
+  - https|United States:443|1198ms|zloi-user/ht
+  - https|Bosnia and Herzegovi:9443|1202ms|zloi-user/ht
+  - https|Germany:443|1203ms|zloi-user/ht
+  - https|United States:443|1209ms|zloi-user/ht
+  - https|United States:9443|1210ms|zloi-user/ht
+  - https|The Netherlands:9002|1211ms|zloi-user/ht
+  - https|The Netherlands:9002|1216ms|zloi-user/ht
+  - https|The Netherlands:9002|1217ms|zloi-user/ht
+  - https|Germany:443|1217ms|zloi-user/ht
+  - https|The Netherlands:9002|1218ms|zloi-user/ht
+  - https|The Netherlands:9002|1219ms|zloi-user/ht
+  - https|Germany:9002|1220ms|zloi-user/ht
+  - https|Germany:9443|1220ms|zloi-user/ht
+  - https|The Netherlands:9002|1226ms|zloi-user/ht
+  - https|Germany:9002|1228ms|zloi-user/ht
+  - https|France:443|1233ms|zloi-user/ht
+  - https|The Netherlands:9002|1236ms|zloi-user/ht
+  - https|Indonesia:443|1237ms|zloi-user/ht
+  - https|Germany:9002|1238ms|zloi-user/ht
+  - https|United States:443|1240ms|zloi-user/ht
+  - https|United States:443|1254ms|zloi-user/ht
+  - https|Poland:443|1259ms|zloi-user/ht
+  - https|Japan:1443|1261ms|zloi-user/ht
+  - https|Russia:443|1282ms|zloi-user/ht
+  - https|France:8090|1283ms|zloi-user/ht
+  - https|United States:443|1283ms|zloi-user/ht
+  - https|Latvia:443|1291ms|zloi-user/ht
+  - https|United States:443|1312ms|zloi-user/ht
+  - https|United States:8443|1313ms|zloi-user/ht
+  - https|United States:443|1319ms|zloi-user/ht
+  - https|United States:443|1321ms|zloi-user/ht
+  - https|The Netherlands:14287|1325ms|zloi-user/ht
+  - https|The Netherlands:14287|1327ms|zloi-user/ht
+  - https|The Netherlands:14287|1335ms|zloi-user/ht
+  - https|United States:8443|1339ms|zloi-user/ht
+  - https|The Netherlands:19362|1341ms|zloi-user/ht
+  - https|Japan:7000|1341ms|zloi-user/ht
+  - https|Russia:443|1343ms|zloi-user/ht
+  - https|United Kingdom:8443|1352ms|zloi-user/ht
+  - https|United States:443|1355ms|zloi-user/ht
+  - https|178.175.142.7:9443|1366ms|proxifly/htt
+  - https|178.175.142.7:443|1380ms|proxifly/htt
+  - https|United States:443|1382ms|zloi-user/ht
+  - http|103.172.42.189:1111|1383ms|r00tee/Https
+  - https|United States:8443|1384ms|zloi-user/ht
+  - https|United States:8443|1395ms|zloi-user/ht
+  - https|United States:8443|1398ms|zloi-user/ht
+  - https|United States:8443|1407ms|zloi-user/ht
+  - https|Israel:443|1419ms|zloi-user/ht
+  - https|Australia:443|1420ms|zloi-user/ht
+  - https|Bosnia and Herzegovi:443|1424ms|zloi-user/ht
+  - https|Italy:443|1442ms|zloi-user/ht
+  - https|Seychelles:8443|1452ms|zloi-user/ht
+  - https|Australia:443|1453ms|zloi-user/ht
+  - https|The Netherlands:443|1463ms|zloi-user/ht
+  - https|United States:443|1465ms|zloi-user/ht
+  - https|United States:8090|1475ms|zloi-user/ht
+  - https|United States:8090|1484ms|zloi-user/ht
+  - http|165.99.194.32:8085|1486ms|r00tee/Https
+  - https|Singapore:8443|1504ms|zloi-user/ht
+  - https|United States:8090|1542ms|zloi-user/ht
+  - https|United States:443|1543ms|zloi-user/ht
+  - https|Brazil:443|1555ms|zloi-user/ht
+  - https|India:52200|1581ms|zloi-user/ht
+  - https|United States:8090|1602ms|zloi-user/ht
+  - https|United States:8090|1649ms|zloi-user/ht
+  - https|Germany:443|1653ms|zloi-user/ht
+  - https|Russia:443|1662ms|zloi-user/ht
+  - https|Vietnam:8443|1672ms|zloi-user/ht
+  - https|Russia:8443|1686ms|zloi-user/ht
+  - https|Brazil:3128|1688ms|zloi-user/ht
+  - https|United States:443|1736ms|zloi-user/ht
+  - https|Singapore:443|1738ms|zloi-user/ht
+  - https|103.62.50.130:443|1740ms|proxifly/htt
+  - http|202.58.77.194:8031|1741ms|r00tee/Https
+  - https|Germany:443|1750ms|zloi-user/ht
+  - https|The Netherlands:443|1761ms|zloi-user/ht
+  - https|United States:443|1775ms|zloi-user/ht
+  - https|United States:443|1776ms|zloi-user/ht
+  - https|United States:9443|1799ms|zloi-user/ht
+  - https|The Netherlands:9443|1819ms|zloi-user/ht
+  - https|United States:443|1824ms|zloi-user/ht
+  - http|31.135.214.17:8026|1850ms|r00tee/Https
+  - https|France:4443|1854ms|zloi-user/ht
+  - https|France:443|1866ms|zloi-user/ht
+  - https|United States:9002|1868ms|zloi-user/ht
+  - http|160.191.192.45:8090|1884ms|r00tee/Https
+  - https|Germany:8443|1890ms|zloi-user/ht
+  - https|France:8090|1909ms|zloi-user/ht
+  - https|France:443|1914ms|zloi-user/ht
+  - https|The Netherlands:443|1970ms|zloi-user/ht
+  - https|United States:443|1976ms|zloi-user/ht
+  - https|United States:443|1988ms|zloi-user/ht
+  - https|Italy:8090|1989ms|zloi-user/ht
+  - https|Switzerland:443|1991ms|zloi-user/ht
+  - https|Germany:443|1993ms|zloi-user/ht
+  - https|Singapore:6443|1998ms|zloi-user/ht
+  - https|Latvia:443|2007ms|zloi-user/ht
+  - https|Singapore:443|2027ms|zloi-user/ht
+  - https|Latvia:443|2036ms|zloi-user/ht
+  - https|Lithuania:443|2040ms|zloi-user/ht
+  - http|190.97.236.129:999|2042ms|r00tee/Https
 rules:
 - GEOIP,CN,DIRECT
 - MATCH,🚀 自动选择
