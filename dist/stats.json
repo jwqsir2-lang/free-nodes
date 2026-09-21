@@ -1,15 +1,16 @@
 {
-  "updated_utc8": "2026-09-21 13:07 (UTC+8)",
-  "alive": 703,
+  "updated_utc8": "2026-09-21 13:10 (UTC+8)",
+  "alive": 3085,
   "counts": {
-    "http": 282,
-    "hysteria2": 5,
-    "trojan": 17,
-    "vless": 357,
-    "ss": 1,
-    "vmess": 41
+    "http": 310,
+    "socks5": 2,
+    "hysteria2": 31,
+    "trojan": 92,
+    "vless": 1984,
+    "ss": 223,
+    "vmess": 443
   },
-  "http_verified": 282,
+  "http_verified": 310,
   "sources": [
     {
       "name": "anaer/Sub",
@@ -67,34 +68,59 @@
       "count": 552
     },
     {
+      "name": "free-proxy-list/http.txt",
+      "status": "ok",
+      "count": 1500
+    },
+    {
+      "name": "free-proxy-list/list.txt",
+      "status": "ok",
+      "count": 1500
+    },
+    {
       "name": "free-vpn-subscriptions/outpu",
       "status": "ok",
       "count": 1500
     },
     {
+      "name": "lanmao-sub/nodes.txt",
+      "status": "ok",
+      "count": 13
+    },
+    {
       "name": "Free-Proxy-List/http.txt",
       "status": "ok",
-      "count": 0
+      "count": 1500
+    },
+    {
+      "name": "freeip/output/clash.yaml",
+      "status": "ok",
+      "count": 1407
     },
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 0
+      "count": 1500
+    },
+    {
+      "name": "free-nodes/dist/clash.yaml",
+      "status": "ok",
+      "count": 703
     },
     {
       "name": "proxy-list/all.txt",
       "status": "ok",
-      "count": 0
+      "count": 1500
     },
     {
       "name": "proxy-list/http.txt",
       "status": "ok",
-      "count": 0
+      "count": 1500
     },
     {
       "name": "free-proxy-list/all.txt",
       "status": "ok",
-      "count": 0
+      "count": 755
     },
     {
       "name": "free-v2ray-nodes/nodes.txt",
@@ -104,8 +130,8 @@
     {
       "name": "VMHeaven.io-Free-Proxy-List/",
       "status": "ok",
-      "count": 0
+      "count": 1500
     }
   ],
-  "seconds": 110.4
+  "seconds": 66.1
 }

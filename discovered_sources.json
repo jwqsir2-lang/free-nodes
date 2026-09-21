@@ -1,9 +1,30 @@
 [
   {
+    "name": "free-proxy-list/http.txt",
+    "url": "https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http.txt",
+    "fmt": "auto",
+    "from": "6yyn/free-proxy-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free-proxy-list/list.txt",
+    "url": "https://raw.githubusercontent.com/6yyn/free-proxy-list/main/list.txt",
+    "fmt": "auto",
+    "from": "6yyn/free-proxy-list",
+    "found_at": "2026-09-21"
+  },
+  {
     "name": "free-vpn-subscriptions/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml",
     "fmt": "auto",
     "from": "Au1rxx/free-vpn-subscriptions",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "lanmao-sub/nodes.txt",
+    "url": "https://raw.githubusercontent.com/Luckdog-cook/lanmao-sub/main/nodes.txt",
+    "fmt": "auto",
+    "from": "Luckdog-cook/lanmao-sub",
     "found_at": "2026-09-21"
   },
   {
@@ -14,10 +35,24 @@
     "found_at": "2026-09-21"
   },
   {
+    "name": "freeip/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/appalwnfin/freeip/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "appalwnfin/freeip",
+    "found_at": "2026-09-21"
+  },
+  {
     "name": "free-proxy-list/http.txt",
     "url": "https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/http.txt",
     "fmt": "auto",
     "from": "databay-labs/free-proxy-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free-nodes/dist/clash.yaml",
+    "url": "https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/clash.yaml",
+    "fmt": "auto",
+    "from": "jwqsir2-lang/free-nodes",
     "found_at": "2026-09-21"
   },
   {
