@@ -454,12 +454,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", help="本地候选 YAML")
     ap.add_argument("--limit", type=int, default=int(os.environ.get("LIMIT", "20000")))
+    ap.add_argument("--http-limit", type=int, default=int(os.environ.get("HTTP_LIMIT", "2000")),
+                    help="HTTP 代理最多测多少个（实测通过率极低，全测浪费预算）")
     ap.add_argument("--no-push", action="store_true")
     args = ap.parse_args()
 
     if not os.path.exists(MIHOMO):
         raise SystemExit(f"找不到 mihomo：{MIHOMO}")
     proxies = normalize(load_candidates(args.input))[:args.limit]
+    if args.http_limit:
+        http = [p for p in proxies if p.get("type") == "http"]
+        if len(http) > args.http_limit:
+            keep = {id(p) for p in http[:args.http_limit]}
+            proxies = [p for p in proxies if p.get("type") != "http" or id(p) in keep]
+            log(f"HTTP 代理只取前 {args.http_limit} 个（共 {len(http)} 个），其余跳过")
     m = Mihomo(proxies)
     try:
         m.start()
