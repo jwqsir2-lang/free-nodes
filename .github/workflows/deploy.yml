@@ -1,0 +1,50 @@
+name: 部署订阅页
+
+# 为什么单独一个工作流：
+#   GitHub Pages 部署的是「工作流上传的产物」，不是仓库里的文件。
+#   本机校验器（verify_cn.py）跑完会把 dist/cn/* push 回仓库，
+#   但那次 push 不会自动更新 Pages —— 于是订阅页还停在旧快照上。
+#   这个工作流监听 dist/ 的变化，重新打包部署，把两者对齐。
+#
+#   注意：collect.yml 里的机器人提交用的是默认 GITHUB_TOKEN，
+#   它触发的 push 不会引发新的工作流运行，所以那边保留自己的 Pages 部署步骤。
+
+on:
+  push:
+    paths:
+      - 'dist/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: 取出仓库
+        uses: actions/checkout@v5
+
+      - name: 确认产物存在
+        run: |
+          set -e
+          test -s dist/index.html || { echo "::error::dist/index.html 不存在"; exit 1; }
+          ls -la dist dist/cn 2>/dev/null || true
+
+      - name: 打包网页
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+      - name: 部署到 GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5
