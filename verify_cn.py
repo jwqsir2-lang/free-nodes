@@ -15,6 +15,7 @@
 import argparse
 import base64
 import concurrent.futures as cf
+import hashlib
 import json
 import os
 import re
@@ -98,6 +99,8 @@ def normalize(proxies):
             dropped += 1
             continue
         p["_src"] = str(raw.get("name", "")).split("|")[0][:16] or "?"
+        p["_country"] = str(raw.get("x_country") or "")[:24]
+        p["_tls_hint"] = bool(raw.get("x_tls"))
         tag = f"n{i:05d}|{p['type']}|{str(p['server'])[:24]}"
         if tag in seen:
             continue
@@ -229,6 +232,38 @@ def sanitize(p):
     if q.get("udp") not in (True, False):
         q["udp"] = False
     return q
+
+
+# ---------------------------------------------------------------- 变体展开
+TLS_LIKELY_PORTS = (443, 8443, 2087, 2096, 8843, 4443)
+
+
+def expand_variants(proxies):
+    """HTTP 代理有两种形态：明文 HTTP，或被 TLS 包起来的 HTTPS 代理。
+    节点列表里不会标，所以同一个 host:port 生成两个变体都真测一遍，
+    按端口和来源决定先试哪个（443 端口和 https 来源先试 TLS）。"""
+    out = []
+    n_http = 0
+    for p in proxies:
+        if p.get("type") != "http":
+            p["_variant"] = ""
+            out.append(p)
+            continue
+        n_http += 1
+        base = {k: v for k, v in p.items()
+                if k not in ("tls", "servername", "sni", "skip-cert-verify")}
+        plain = dict(base, _variant="plain")
+        tls = dict(base, _variant="tls", tls=True)
+        tls["skip-cert-verify"] = True
+        tls["servername"] = str(p.get("servername") or p.get("sni") or p["server"])
+        plain["name"] = p["name"] + "|P"
+        tls["name"] = p["name"] + "|T"
+        if p.get("_tls_hint") or p["port"] in TLS_LIKELY_PORTS:
+            out += [tls, plain]
+        else:
+            out += [plain, tls]
+    log(f"HTTP 代理展开为明文/TLS 两个变体：{n_http} → {n_http * 2} 个待测")
+    return out
 
 
 # ---------------------------------------------------------------- mihomo
@@ -385,9 +420,22 @@ def build_outputs(proxies, results):
         r = results.get(p["name"])
         if not r:
             continue
-        q = dict(p)
+        q = {k: v for k, v in p.items() if not k.startswith("_")}
         q["_delay"] = r[0]
+        q["_variant"] = p.get("_variant", "")
+        q["_src"] = p.get("_src", "?")
+        q["_country"] = p.get("_country", "")
         ok.append(q)
+
+    # 同一个 host:port 只保留一个变体：TLS 优先（能走 TLS 就不必走明文）
+    best = {}
+    for p in ok:
+        key = (p["server"], p["port"], p["type"])
+        cur = best.get(key)
+        if cur is None or (p["_variant"] == "tls" and cur["_variant"] != "tls"):
+            best[key] = p
+    ok = list(best.values())
+    n_tls = sum(1 for p in ok if p.get("type") == "http" and p.get("tls"))
     prio = {"http": 0, "socks5": 1, "hysteria2": 2, "trojan": 3, "vless": 4, "ss": 5, "vmess": 6, "hysteria": 7, "tuic": 8}
     ok.sort(key=lambda x: (prio.get(x.get("type"), 9), x["_delay"]))
     log(f"排序后可用节点 {len(ok)} 个：" + "，".join(
@@ -397,11 +445,12 @@ def build_outputs(proxies, results):
 
     names = []
     for i, p in enumerate(ok):
-        src = p.get("_src", "?")
-        base = f"{p.get('type','?')}-{i:04d}|{src[:14]}|{p['_delay']}ms"
-        p["name"] = base
+        local = p.get("_country") or p["server"]
+        kind = "https" if (p.get("type") == "http" and p.get("tls")) else p.get("type", "?")
+        base = f"{kind}|{local[:20]}:{p['port']}|{p['_delay']}ms|{p['_src'][:12]}"
         if base in names:
-            p["name"] = base + f"#{i}"
+            base += f"#{i}"
+        p["name"] = base
         names.append(p["name"])
     clash = {
         "port": 7890, "socks-port": 7891, "allow-lan": False, "mode": "rule",
@@ -410,8 +459,10 @@ def build_outputs(proxies, results):
         "proxy-groups": [
             {"name": "🚀 自动选择", "type": "url-test", "url": TEST_URLS[0], "interval": 300,
              "tolerance": 50, "proxies": names[:200] or ["DIRECT"]},
-            {"name": "🌐 HTTP 专用", "type": "url-test", "url": TEST_URLS[0], "interval": 300,
+            {"name": "🌐 HTTP/HTTPS 专用", "type": "url-test", "url": TEST_URLS[0], "interval": 300,
              "proxies": [p["name"] for p in ok if p.get("type") == "http"][:200] or ["DIRECT"]},
+            {"name": "🔒 带 TLS 的 HTTP", "type": "url-test", "url": TEST_URLS[0], "interval": 300,
+             "proxies": [p["name"] for p in ok if p.get("type") == "http" and p.get("tls")][:200] or ["DIRECT"]},
             {"name": "♻️ 故障转移", "type": "fallback", "url": TEST_URLS[0], "interval": 300,
              "proxies": names[:100] or ["DIRECT"]},
         ],
@@ -420,11 +471,49 @@ def build_outputs(proxies, results):
     header = ("# 已在本机（国内）通过真实协议端到端校验\n"
               f"# 校验时间：{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())} (本地时间)\n"
               f"# 校验目标：{' / '.join(TEST_URLS)}（被墙域名，能通才收录）\n"
-              f"# 可用节点：{len(ok)}\n")
+              f"# 可用节点：{len(ok)}（HTTP 代理中带 TLS 的 {n_tls} 个）\n")
     with open(os.path.join(OUT_DIR, "clash.yaml"), "w", encoding="utf-8") as f:
         f.write(header + yaml.safe_dump(clash, allow_unicode=True, sort_keys=False, width=1000))
 
+    # 只要 HTTP 代理，形态与 clash.yaml 完全一致（完整参数条目，不是裸 ip:port）
     http_ok = [p for p in ok if p.get("type") == "http"]
+    http_tls_n = sum(1 for p in http_ok if p.get("tls"))
+    hnames = [p["name"] for p in http_ok]
+    http_clash = dict(clash)
+    http_clash["proxies"] = [{k: v for k, v in p.items() if not k.startswith("_")} for p in http_ok]
+    http_clash["proxy-groups"] = [
+        {"name": "🚀 自动选择", "type": "url-test", "url": TEST_URLS[0], "interval": 300,
+         "tolerance": 50, "proxies": hnames[:200] or ["DIRECT"]},
+        {"name": "🔒 带 TLS 的 HTTP", "type": "url-test", "url": TEST_URLS[0], "interval": 300,
+         "proxies": [p["name"] for p in http_ok if p.get("tls")][:200] or ["DIRECT"]},
+        {"name": "🌐 全部 HTTP", "type": "select", "proxies": hnames[:300] or ["DIRECT"]},
+    ]
+    with open(os.path.join(OUT_DIR, "http.yaml"), "w", encoding="utf-8") as f:
+        f.write(f"# 仅 HTTP/HTTPS 代理，共 {len(http_ok)} 个（其中带 TLS 的 {http_tls_n} 个）\n"
+                f"# 字段与 cn/clash.yaml 里的条目完全一致\n"
+                + yaml.safe_dump(http_clash, allow_unicode=True, sort_keys=False, width=1000))
+
+    # sing-box / Karing：与客户端导出条目一一对应的 outbounds 数组
+    outbounds = []
+    for p in http_ok:
+        ob = {
+            "__id_in_gui": "ID_" + hashlib.md5(f"{p['server']}:{p['port']}".encode()).hexdigest()[:9],
+            "tag": p["name"],
+            "type": "http",
+            "server": p["server"],
+            "server_port": p["port"],
+        }
+        if p.get("username"):
+            ob["username"] = p["username"]
+            ob["password"] = p.get("password", "")
+        if p.get("tls"):
+            ob["tls"] = {"enabled": True,
+                         "server_name": p.get("servername") or p.get("sni") or p["server"],
+                         "insecure": True}
+        outbounds.append(ob)
+    with open(os.path.join(OUT_DIR, "http-outbounds.json"), "w", encoding="utf-8") as f:
+        json.dump(outbounds, f, ensure_ascii=False, indent=2)
+
     with open(os.path.join(OUT_DIR, "http.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(
             (f"{p.get('username')}:{p.get('password')}@" if p.get("username") else "")
@@ -447,11 +536,14 @@ def build_outputs(proxies, results):
         "candidates": len(proxies),
         "alive": len(ok),
         "counts": dict(counts),
-        "fastest": [{"name": p["name"], "delay": p["_delay"], "type": p.get("type")} for p in ok[:20]],
+        "http_total": len(http_ok),
+        "http_tls": http_tls_n,
+        "fastest": [{"name": p["name"], "delay": p["_delay"], "type": p.get("type"),
+                     "tls": bool(p.get("tls"))} for p in ok[:20]],
     }
     with open(os.path.join(OUT_DIR, "stats.json"), "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
-    log(f"已写入 {OUT_DIR}/")
+    log(f"已写入 {OUT_DIR}/：clash.yaml、http.yaml、http-outbounds.json、http.txt、v2ray.txt")
     return stats
 
 
@@ -459,7 +551,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", help="本地候选 YAML")
     ap.add_argument("--limit", type=int, default=int(os.environ.get("LIMIT", "20000")))
-    ap.add_argument("--http-limit", type=int, default=int(os.environ.get("HTTP_LIMIT", "2000")),
+    ap.add_argument("--http-limit", type=int, default=int(os.environ.get("HTTP_LIMIT", "3000")),
                     help="HTTP 代理最多测多少个（实测通过率极低，全测浪费预算）")
     ap.add_argument("--no-push", action="store_true")
     args = ap.parse_args()
@@ -470,9 +562,12 @@ def main():
     if args.http_limit:
         http = [p for p in proxies if p.get("type") == "http"]
         if len(http) > args.http_limit:
+            # 优先留 https 来源和 443/8443 端口的，它们才可能是 TLS 代理
+            http.sort(key=lambda p: (not p.get("_tls_hint"), p["port"] not in TLS_LIKELY_PORTS))
             keep = {id(p) for p in http[:args.http_limit]}
             proxies = [p for p in proxies if p.get("type") != "http" or id(p) in keep]
-            log(f"HTTP 代理只取前 {args.http_limit} 个（共 {len(http)} 个），其余跳过")
+            log(f"HTTP 代理只取前 {args.http_limit} 个（共 {len(http)} 个，优先 TLS 可能性高的）")
+    proxies = expand_variants(proxies)
     m = Mihomo(proxies)
     try:
         m.start()

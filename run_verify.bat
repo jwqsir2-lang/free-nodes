@@ -15,7 +15,7 @@ set "HTTP_PROXY=http://127.0.0.1:3067"
 REM ---- 校验参数 ----
 set "DELAY_TIMEOUT_MS=3500"
 set "CONCURRENCY=160"
-set "HTTP_LIMIT=2000"
+set "HTTP_LIMIT=3000"
 
 echo [%DATE% %TIME%] start, python=%PY% >> verify.log
 "%PY%" verify_cn.py >> verify.log 2>&1

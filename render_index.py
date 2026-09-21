@@ -27,8 +27,10 @@ def main():
         sub = f"""
   <h2>订阅地址（点一下复制）</h2>
   <p class="ok">下面这些节点已在本机按真实协议、对着被墙目标端到端验证过，能通才收录。</p>
-  {card("Clash / mihomo / Karing 订阅", "cn/clash.yaml", f"{cn['alive']} 个已验证可用节点")}
-  {card("仅 HTTP 代理（ip:port）", "cn/http.txt", "HTTP 代理单独一条，多数时候很少")}
+  {card("Clash / mihomo / Karing 订阅（全部）", "cn/clash.yaml", f"{cn['alive']} 个已验证可用节点")}
+  {card("只要 HTTP / HTTPS 代理（Clash）", "cn/http.yaml", f"{cn.get('http_total', 0)} 个，其中带 TLS 的 {cn.get('http_tls', 0)} 个；字段与 clash.yaml 完全一致")}
+  {card("HTTP 代理 outbounds（sing-box / Karing JSON）", "cn/http-outbounds.json", f"{cn.get('http_total', 0)} 条 outbound，与客户端导出的条目同构")}
+  {card("HTTP 代理 ip:port 纯文本", "cn/http.txt", "只给主机端口，不含 TLS 等参数")}
   {card("base64 订阅（v2rayN 等）", "cn/v2ray.txt", "vmess / vless / trojan / ss / hysteria2")}
   <div class="meta">校验时间 {cn['verified_at']}　|　校验目标 {' / '.join(cn['test_targets'])}<br>
   候选 {cn['candidates']} 个 → 可用 {cn['alive']} 个（{cn['alive'] * 100 // max(cn['candidates'], 1)}%）　|　{proto(cn['counts'])}</div>"""

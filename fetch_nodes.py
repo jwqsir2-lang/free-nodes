@@ -41,9 +41,17 @@ SOURCES = [
     {"name": "proxifly/http",        "url": "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/http/data.txt","fmt": "iplist"},
     {"name": "TheSpeedX/http",       "url": "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt",                         "fmt": "iplist"},
     {"name": "monosans/http",        "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",                    "fmt": "iplist"},
+    # HTTPS 代理列表（其中大量是 443 端口的 TLS 代理）
+    {"name": "zloi-user/https",      "url": "https://raw.githubusercontent.com/zloi-user/hideip.me/main/https.txt",                           "fmt": "iplist", "tls_hint": True},
+    {"name": "proxifly/https",       "url": "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/https/data.txt","fmt": "iplist", "tls_hint": True},
+    {"name": "r00tee/Https",         "url": "https://raw.githubusercontent.com/r00tee/Proxy-List/main/Https.txt",                             "fmt": "iplist", "tls_hint": True},
+    {"name": "jetkai/https",         "url": "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-https.txt",  "fmt": "iplist", "tls_hint": True},
+    {"name": "clarketm/raw",         "url": "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",                "fmt": "iplist", "tls_hint": True},
+    {"name": "roosterkid/HTTPS",     "url": "https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt",                  "fmt": "iplist", "tls_hint": True},
+    {"name": "ShiftyTR/https",       "url": "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/https.txt",                          "fmt": "iplist", "tls_hint": True},
 ]
 
-MAX_PER_SOURCE = int(os.environ.get("MAX_PER_SOURCE", "1500"))
+MAX_PER_SOURCE = int(os.environ.get("MAX_PER_SOURCE", "6000"))
 MAX_TOTAL_TEST = int(os.environ.get("MAX_TOTAL_TEST", "9000"))
 TCP_TIMEOUT = float(os.environ.get("TCP_TIMEOUT", "3"))
 HTTP_FUNC_LIMIT = int(os.environ.get("HTTP_FUNC_LIMIT", "400"))   # 只对最快的 N 个 http 代理做功能测试
@@ -362,22 +370,44 @@ def parse_clash_yaml(text, src):
     return out
 
 
-def parse_iplist(text, src):
+def parse_iplist(text, src, tls_hint=False):
+    """解析 ip:port 列表。兼容这些写法：
+       1.2.3.4:8080
+       http://1.2.3.4:8080 / https://1.2.3.4:8080 / socks5://1.2.3.4:1080
+       user:pass@1.2.3.4:8080
+       1.2.3.4:9002:The Netherlands        （第三列是国家，zloi-user 那种）
+    """
     out = []
     for line in text.splitlines():
         s = line.strip()
         if not s or s.startswith("#"):
             continue
-        m = re.match(r"^(?:https?://)?(?:([^:@/\s]+):([^@/\s]+)@)?((?:\d{1,3}\.){3}\d{1,3}|\[[0-9a-fA-F:]+\]|[A-Za-z0-9.-]+):(\d{1,5})$", s)
+        scheme = ""
+        m0 = re.match(r"^(https?|socks5?)://", s, re.I)
+        if m0:
+            scheme = m0.group(1).lower()
+            s = s[m0.end():]
+        userinfo = None
+        if "@" in s:
+            head, _, s = s.rpartition("@")
+            userinfo = head
+        m = re.match(r"^((?:\d{1,3}\.){3}\d{1,3}|\[[0-9a-fA-F:]+\]|[A-Za-z0-9][A-Za-z0-9.\-]*):(\d{1,5})(?::(.*))?$", s)
         if not m:
             continue
-        user, pw, host, port = m.group(1), m.group(2), m.group(3), as_int(m.group(4))
+        host, port, extra = m.group(1), as_int(m.group(2)), (m.group(3) or "").strip()
         if not (1 <= port <= 65535):
             continue
-        n = {"name": f"{src}-{host}", "type": "http", "server": host.strip("[]"), "port": port, "udp": False, "_src": src}
-        if user:
-            n["username"] = user
-            n["password"] = pw
+        typ = "socks5" if scheme.startswith("socks") else "http"
+        n = {"name": f"{src}-{host}", "type": typ, "server": host.strip("[]"), "port": port,
+             "udp": False, "_src": src}
+        if userinfo and ":" in userinfo:
+            u, _, pw = userinfo.partition(":")
+            if u:
+                n["username"], n["password"] = u, pw
+        if extra:
+            n["_country"] = extra[:24]
+        if tls_hint or scheme == "https":
+            n["_tls_hint"] = True
         out.append(n)
     return out
 
@@ -433,9 +463,9 @@ def collect():
             if fmt == "clash":
                 nodes = parse_clash_yaml(text, s["name"])
             elif fmt == "iplist":
-                nodes = parse_iplist(text, s["name"])
+                nodes = parse_iplist(text, s["name"], s.get("tls_hint", False))
             elif fmt == "iplist-b64":
-                nodes = parse_iplist(b64decode_any(text.strip()), s["name"])
+                nodes = parse_iplist(b64decode_any(text.strip()), s["name"], s.get("tls_hint", False))
             elif fmt == "links-b64":
                 nodes = parse_links(b64decode_any(text.strip()), s["name"])
             else:
@@ -718,6 +748,9 @@ def main():
     for n in nodes:
         p = {k: v for k, v in n.items() if not k.startswith("_")}
         p["name"] = f"{str(n.get('_src','?'))[:16]}|{n['type']}|{n['server']}"
+        # 这两项要跟着候选一起传下去（verify_cn 用它们决定先测 TLS 还是明文）
+        p["x_country"] = n.get("_country", "")
+        p["x_tls"] = bool(n.get("_tls_hint"))
         cand.append(p)
     with open(f"{OUT_DIR}/candidates.yaml", "w", encoding="utf-8") as f:
         f.write("# 全量候选节点（未做可用性判定）\n"
