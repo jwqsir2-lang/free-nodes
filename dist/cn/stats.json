@@ -1,65 +1,120 @@
 {
-  "verified_at": "2026-09-21 13:31:58",
+  "verified_at": "2026-09-21 13:39:29",
   "test_targets": [
     "http://www.gstatic.com/generate_204",
     "http://www.google.com/generate_204"
   ],
-  "candidates": 493,
-  "alive": 10,
+  "candidates": 5780,
+  "alive": 157,
   "counts": {
-    "vless": 9,
-    "vmess": 1
+    "http": 90,
+    "socks5": 2,
+    "hysteria2": 6,
+    "trojan": 9,
+    "vless": 43,
+    "ss": 1,
+    "vmess": 6
   },
   "fastest": [
     {
-      "name": "vless-0000|?|535ms",
-      "delay": 535,
-      "type": "vless"
+      "name": "http-0000|?|132ms",
+      "delay": 132,
+      "type": "http"
     },
     {
-      "name": "vless-0001|?|691ms",
-      "delay": 691,
-      "type": "vless"
+      "name": "http-0001|?|175ms",
+      "delay": 175,
+      "type": "http"
     },
     {
-      "name": "vless-0002|?|923ms",
-      "delay": 923,
-      "type": "vless"
+      "name": "http-0002|?|178ms",
+      "delay": 178,
+      "type": "http"
     },
     {
-      "name": "vless-0003|?|928ms",
-      "delay": 928,
-      "type": "vless"
+      "name": "http-0003|?|185ms",
+      "delay": 185,
+      "type": "http"
     },
     {
-      "name": "vless-0004|?|1163ms",
-      "delay": 1163,
-      "type": "vless"
+      "name": "http-0004|?|194ms",
+      "delay": 194,
+      "type": "http"
     },
     {
-      "name": "vless-0005|?|1265ms",
-      "delay": 1265,
-      "type": "vless"
+      "name": "http-0005|?|277ms",
+      "delay": 277,
+      "type": "http"
     },
     {
-      "name": "vless-0006|?|1387ms",
-      "delay": 1387,
-      "type": "vless"
+      "name": "http-0006|?|318ms",
+      "delay": 318,
+      "type": "http"
     },
     {
-      "name": "vless-0007|?|1528ms",
-      "delay": 1528,
-      "type": "vless"
+      "name": "http-0007|?|338ms",
+      "delay": 338,
+      "type": "http"
     },
     {
-      "name": "vless-0008|?|2567ms",
-      "delay": 2567,
-      "type": "vless"
+      "name": "http-0008|?|367ms",
+      "delay": 367,
+      "type": "http"
     },
     {
-      "name": "vmess-0009|?|3526ms",
-      "delay": 3526,
-      "type": "vmess"
+      "name": "http-0009|?|521ms",
+      "delay": 521,
+      "type": "http"
+    },
+    {
+      "name": "http-0010|?|564ms",
+      "delay": 564,
+      "type": "http"
+    },
+    {
+      "name": "http-0011|?|569ms",
+      "delay": 569,
+      "type": "http"
+    },
+    {
+      "name": "http-0012|?|597ms",
+      "delay": 597,
+      "type": "http"
+    },
+    {
+      "name": "http-0013|?|598ms",
+      "delay": 598,
+      "type": "http"
+    },
+    {
+      "name": "http-0014|?|634ms",
+      "delay": 634,
+      "type": "http"
+    },
+    {
+      "name": "http-0015|?|637ms",
+      "delay": 637,
+      "type": "http"
+    },
+    {
+      "name": "http-0016|?|637ms",
+      "delay": 637,
+      "type": "http"
+    },
+    {
+      "name": "http-0017|?|673ms",
+      "delay": 673,
+      "type": "http"
+    },
+    {
+      "name": "http-0018|?|675ms",
+      "delay": 675,
+      "type": "http"
+    },
+    {
+      "name": "http-0019|?|728ms",
+      "delay": 728,
+      "type": "http"
     }
   ]
 }
