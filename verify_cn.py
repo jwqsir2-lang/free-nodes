@@ -582,7 +582,8 @@ def main():
     if not results:
         raise SystemExit("没有任何节点通过真实校验，保持上一版订阅不动")
     stats = build_outputs(proxies, results)
-    subprocess.run([sys.executable, os.path.join(HERE, "render_index.py")], cwd=HERE)
+    # 不在这里写 dist/index.html：CI 的部署工作流会现算订阅页，
+    # 两边同时提交同一个文件必然冲突（历史上每次推送失败都因为这一处）。
     if not args.no_push:
         push(stats)
 
@@ -601,13 +602,28 @@ def push(stats):
         return
     run(["git", "commit", "-m",
          f"chore: 本机真实协议校验 {stats['alive']} 个可用节点 {time.strftime('%Y-%m-%d %H:%M')}"])
-    # 定时任务跑的时候 CI 可能刚提交过，先 rebase 再推
-    run(["git", "pull", "--rebase", "--autostash"])
-    r = run(["git", "push"])
-    if r.returncode != 0:
+
+    # 定时任务跑的时候 CI 可能刚好提交过，要 rebase；冲突一律采用本机版本。
+    for attempt in range(1, 4):
         run(["git", "pull", "--rebase", "--autostash"])
-        r = run(["git", "push"])
-    log("  已推送" if r.returncode == 0 else "  推送失败，请检查凭据")
+        for _ in range(6):                       # 逐个解决 rebase 冲突
+            conf = run(["git", "diff", "--name-only", "--diff-filter=U"]).stdout.split()
+            if not conf:
+                break
+            log(f"  rebase 冲突 {len(conf)} 个，采用本机版本：{conf[:3]}")
+            run(["git", "checkout", "--theirs", "--"] + conf)
+            run(["git", "add", "--"] + conf)
+            run(["git", "rebase", "--continue"])
+        if run(["git", "rebase", "--abort"]).returncode == 0:
+            log("  rebase 没能完成，已放弃（保持本机提交不动）")
+        # rebase 中断可能把仓库留在 detached HEAD，确保提交落在 main 上
+        run(["git", "checkout", "-q", "-B", "main", "HEAD"])
+        r = run(["git", "push", "origin", "main"])
+        if r.returncode == 0:
+            log("  已推送")
+            return
+        log(f"  第 {attempt} 次推送失败，重试…")
+    log("  推送失败，请检查凭据")
 
 
 if __name__ == "__main__":

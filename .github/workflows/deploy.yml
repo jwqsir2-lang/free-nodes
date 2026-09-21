@@ -34,6 +34,21 @@ jobs:
       - name: 取出仓库
         uses: actions/checkout@v5
 
+      - name: 安装 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      # 订阅页在这里现算：仓库里同时有 CI 的候选统计(dist/stats.json)
+      # 和本机校验的统计(dist/cn/stats.json)，谁新就显示谁。
+      # 让本机脚本不再写 dist/index.html，是从根上消掉两边同时提交同一文件的冲突。
+      - name: 重新生成订阅页
+        run: python render_index.py
+
       - name: 确认产物存在
         run: |
           set -e
