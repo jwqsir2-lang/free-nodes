@@ -2,9 +2,10 @@ __pycache__/
 *.pyc
 .verify_work/
 .probe/
-tools/mihomo.exe
-tools/mihomo.zip
+.cand.yaml
+tools/*.exe
+tools/*.zip
 tools/cache.db
 tools/*.log
 tools/*.yaml
-.cand.yaml
+verify.log
