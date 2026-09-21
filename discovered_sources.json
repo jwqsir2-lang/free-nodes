@@ -49,6 +49,13 @@
     "found_at": "2026-09-21"
   },
   {
+    "name": "qq2026.9.9-/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/chenhaha9464/qq2026.9.9-/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "chenhaha9464/qq2026.9.9-",
+    "found_at": "2026-09-21"
+  },
+  {
     "name": "free-proxy-list/http.txt",
     "url": "https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/http.txt",
     "fmt": "auto",
@@ -105,6 +112,13 @@
     "found_at": "2026-09-21"
   },
   {
+    "name": "huoFREESUB/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/jonny0830/huoFREESUB/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "jonny0830/huoFREESUB",
+    "found_at": "2026-09-21"
+  },
+  {
     "name": "free-clash-verge/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/kevin-sanas/free-clash-verge/main/output/clash.yaml",
     "fmt": "auto",
@@ -140,38 +154,24 @@
     "found_at": "2026-09-21"
   },
   {
+    "name": "SubSyncForge/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/nociex/SubSyncForge/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "nociex/SubSyncForge",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "yu/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/paomian312/yu/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "paomian312/yu",
+    "found_at": "2026-09-21"
+  },
+  {
     "name": "proxy-list/all.txt",
     "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt",
     "fmt": "auto",
     "from": "proxio-io/proxy-list",
-    "found_at": "2026-09-21"
-  },
-  {
-    "name": "proxy-list/http.txt",
-    "url": "https://raw.githubusercontent.com/proxio-io/proxy-list/main/http.txt",
-    "fmt": "auto",
-    "from": "proxio-io/proxy-list",
-    "found_at": "2026-09-21"
-  },
-  {
-    "name": "free-proxy-list/all.txt",
-    "url": "https://raw.githubusercontent.com/relayglass/free-proxy-list/main/all.txt",
-    "fmt": "auto",
-    "from": "relayglass/free-proxy-list",
-    "found_at": "2026-09-21"
-  },
-  {
-    "name": "free-v2ray-nodes/nodes.txt",
-    "url": "https://raw.githubusercontent.com/vincent20240707/free-v2ray-nodes/main/nodes.txt",
-    "fmt": "auto",
-    "from": "vincent20240707/free-v2ray-nodes",
-    "found_at": "2026-09-21"
-  },
-  {
-    "name": "VMHeaven.io-Free-Proxy-List/http.txt",
-    "url": "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/http.txt",
-    "fmt": "auto",
-    "from": "vmheaven/VMHeaven.io-Free-Proxy-List",
     "found_at": "2026-09-21"
   }
 ]
