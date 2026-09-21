@@ -3,50 +3,81 @@
 <title>免费节点订阅 · 本机实测可用</title>
 <style>
 :root{color-scheme:dark light}
-body{font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;max-width:880px;
-margin:0 auto;padding:28px 18px 60px;line-height:1.65}
+body{font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;max-width:900px;
+margin:0 auto;padding:26px 18px 60px;line-height:1.65}
 h1{font-size:23px;margin:0 0 4px}
 h2{font-size:16px;margin:26px 0 8px}
 .sub{opacity:.65;font-size:14px}
 .ok{font-size:13.5px;opacity:.8;margin:6px 0 14px}
-.pill{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:1px 11px;
-margin:3px 6px 3px 0;font-size:12.5px;opacity:.85}
-.card{border:1px solid #8884;border-radius:12px;padding:13px 15px;margin:10px 0}
+.card{border:1px solid #8884;border-radius:12px;padding:13px 15px;margin:11px 0}
 .fn{font-weight:600}
 .desc{font-size:13px;opacity:.65;margin:2px 0 8px}
 .url{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;background:#8882;border-radius:8px;
 padding:9px 11px;word-break:break-all;cursor:pointer}
 .url:hover{background:#8883}
+.url.sm{font-size:11.5px;opacity:.8;margin-top:5px}
+details{margin-top:7px} summary{font-size:12.5px;opacity:.7;cursor:pointer}
 .meta{font-size:12.5px;opacity:.7;margin:10px 0}
 table{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:6px}
 td,th{border-bottom:1px solid #8883;padding:6px;text-align:left}
-th{opacity:.6;font-weight:500}
-.r{text-align:right}
+th{opacity:.6;font-weight:500} .r{text-align:right}
 .warn{border-left:3px solid #e0a020;padding:10px 14px;background:#e0a0201a;border-radius:8px;font-size:13.5px}
 code{background:#8882;padding:1px 5px;border-radius:5px;font-size:12.5px}
 </style></head><body>
 <h1>免费节点订阅</h1>
 <div class="sub">候选由 GitHub Actions 定时搜集，可用性由<b>本机按真实协议端到端实测</b>决定。</div>
 
-  <h2>订阅地址（点一下复制）</h2>
-  <p class="ok">下面这些节点已在本机按真实协议、对着被墙目标端到端验证过，能通才收录。</p>
-  <div class='card'><div class='fn'>Clash / mihomo / Karing 订阅（全部）</div><div class='desc'>394 个已验证可用节点</div><div class='url' onclick="cp(this)">cn/clash.yaml</div></div>
-  <div class='card'><div class='fn'>只要 HTTP / HTTPS 代理（Clash）</div><div class='desc'>323 个，其中带 TLS 的 309 个；字段与 clash.yaml 完全一致</div><div class='url' onclick="cp(this)">cn/http.yaml</div></div>
-  <div class='card'><div class='fn'>HTTP 代理 outbounds（sing-box / Karing JSON）</div><div class='desc'>323 条 outbound，与客户端导出的条目同构</div><div class='url' onclick="cp(this)">cn/http-outbounds.json</div></div>
-  <div class='card'><div class='fn'>HTTP 代理 ip:port 纯文本</div><div class='desc'>只给主机端口，不含 TLS 等参数</div><div class='url' onclick="cp(this)">cn/http.txt</div></div>
-  <div class='card'><div class='fn'>base64 订阅（v2rayN 等）</div><div class='desc'>vmess / vless / trojan / ss / hysteria2</div><div class='url' onclick="cp(this)">cn/v2ray.txt</div></div>
-  <div class="meta">校验时间 2026-09-21 14:27:15　|　校验目标 http://www.gstatic.com/generate_204 / http://www.google.com/generate_204<br>
-  候选 10674 个 → 可用 394 个（3%）　|　<span class='pill'>http <b>323</b></span><span class='pill'>vless <b>48</b></span><span class='pill'>hysteria2 <b>8</b></span><span class='pill'>trojan <b>8</b></span><span class='pill'>vmess <b>4</b></span><span class='pill'>ss <b>2</b></span><span class='pill'>socks5 <b>1</b></span></div>
+  <h2>订阅地址（点一下复制完整链接）</h2>
+  <p class="ok">候选由 GitHub Actions 定时搜集，可用性由 <b>GitHub Actions runner（海外机器）</b> 用 mihomo 内核按真实协议
+  逐个握手、对着被墙目标发真实请求验证，通了才收录。全程在 GitHub 上自动完成，不需要你的电脑参与。</p>
+  <div class='card'>
+  <div class='fn'>Clash / mihomo / Karing 订阅（全部）</div><div class='desc'>全部已验证节点，客户端设自动更新即可</div>
+  <div class='url' onclick="cp(this)">https://jwqsir2-lang.github.io/free-nodes/cn/clash.yaml</div>
+  <details><summary>国内打不开 github.io 时用镜像</summary><div class='url sm' onclick="cp(this)">https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/cn/clash.yaml</div><div class='url sm' onclick="cp(this)">https://cdn.jsdelivr.net/gh/jwqsir2-lang/free-nodes@main/dist/cn/clash.yaml</div></details>
+</div><div class='card'>
+  <div class='fn'>只要 HTTP / HTTPS 代理（Clash）</div><div class='desc'>http 类型节点，字段与 clash.yaml 一致</div>
+  <div class='url' onclick="cp(this)">https://jwqsir2-lang.github.io/free-nodes/cn/http.yaml</div>
+  <details><summary>国内打不开 github.io 时用镜像</summary><div class='url sm' onclick="cp(this)">https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/cn/http.yaml</div><div class='url sm' onclick="cp(this)">https://cdn.jsdelivr.net/gh/jwqsir2-lang/free-nodes@main/dist/cn/http.yaml</div></details>
+</div><div class='card'>
+  <div class='fn'>sing-box 完整配置（JSON）</div><div class='desc'>sing-box 内核只认整份配置，没有订阅机制；下载后用 -c 指定</div>
+  <div class='url' onclick="cp(this)">https://jwqsir2-lang.github.io/free-nodes/cn/singbox.json</div>
+  <details><summary>国内打不开 github.io 时用镜像</summary><div class='url sm' onclick="cp(this)">https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/cn/singbox.json</div><div class='url sm' onclick="cp(this)">https://cdn.jsdelivr.net/gh/jwqsir2-lang/free-nodes@main/dist/cn/singbox.json</div></details>
+</div><div class='card'>
+  <div class='fn'>HTTP 代理 outbounds 数组（JSON）</div><div class='desc'>贴进你已有的 sing-box 配置里</div>
+  <div class='url' onclick="cp(this)">https://jwqsir2-lang.github.io/free-nodes/cn/http-outbounds.json</div>
+  <details><summary>国内打不开 github.io 时用镜像</summary><div class='url sm' onclick="cp(this)">https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/cn/http-outbounds.json</div><div class='url sm' onclick="cp(this)">https://cdn.jsdelivr.net/gh/jwqsir2-lang/free-nodes@main/dist/cn/http-outbounds.json</div></details>
+</div><div class='card'>
+  <div class='fn'>HTTP 代理 ip:port 纯文本</div><div class='desc'>只有主机端口，不含 TLS 参数</div>
+  <div class='url' onclick="cp(this)">https://jwqsir2-lang.github.io/free-nodes/cn/http.txt</div>
+  <details><summary>国内打不开 github.io 时用镜像</summary><div class='url sm' onclick="cp(this)">https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/cn/http.txt</div><div class='url sm' onclick="cp(this)">https://cdn.jsdelivr.net/gh/jwqsir2-lang/free-nodes@main/dist/cn/http.txt</div></details>
+</div><div class='card'>
+  <div class='fn'>base64 订阅（v2rayN / Shadowrocket）</div><div class='desc'>vmess / vless / trojan / ss / hysteria2</div>
+  <div class='url' onclick="cp(this)">https://jwqsir2-lang.github.io/free-nodes/cn/v2ray.txt</div>
+  <details><summary>国内打不开 github.io 时用镜像</summary><div class='url sm' onclick="cp(this)">https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/cn/v2ray.txt</div><div class='url sm' onclick="cp(this)">https://cdn.jsdelivr.net/gh/jwqsir2-lang/free-nodes@main/dist/cn/v2ray.txt</div></details>
+</div>
+  <div class="meta">校验时间 2026-09-21 07:51:17　|　判定地点 GitHub Actions runner（海外机器）　|　目标 http://www.gstatic.com/generate_204 / http://www.google.com/generate_204<br>
+  候选 16674 → 可用 2263　|　HTTP 代理 546 个（其中带 TLS 482 个）
+  　|　UDP 出站可用（hysteria2/tuic 可测）</div>
 
   <h2>候选来源</h2>
-  <div class="meta">最近搜集 2026-09-21 14:19 (UTC+8)　|　候选 30585 个　|　<span class='pill'>http <b>25850</b></span><span class='pill'>vless <b>3281</b></span><span class='pill'>vmess <b>813</b></span><span class='pill'>ss <b>343</b></span><span class='pill'>hysteria2 <b>175</b></span><span class='pill'>trojan <b>120</b></span><span class='pill'>socks5 <b>3</b></span></div>
-  <table><tr><th>源</th><th>状态</th><th class="r">抓取</th></tr><tr><td>anaer/Sub</td><td>ok</td><td class='r'>1583</td></tr><tr><td>ermaozi/get_subscribe</td><td>ok</td><td class='r'>186</td></tr><tr><td>peasoft/NoMoreWalls</td><td>ok</td><td class='r'>114</td></tr><tr><td>mahdibland/Eternity</td><td>ok</td><td class='r'>197</td></tr><tr><td>freefq/free</td><td>ok</td><td class='r'>14</td></tr><tr><td>Pawdroid/Free-servers</td><td>ok</td><td class='r'>20</td></tr><tr><td>ripaojiedian/freenode</td><td>ok</td><td class='r'>14</td></tr><tr><td>Barabama/FreeNodes</td><td>ok</td><td class='r'>23</td></tr><tr><td>proxifly/http</td><td>ok</td><td class='r'>5622</td></tr><tr><td>TheSpeedX/http</td><td>ok</td><td class='r'>3106</td></tr><tr><td>monosans/http</td><td>ok</td><td class='r'>465</td></tr><tr><td>zloi-user/https</td><td>ok</td><td class='r'>945</td></tr><tr><td>proxifly/https</td><td>ok</td><td class='r'>959</td></tr><tr><td>r00tee/Https</td><td>ok</td><td class='r'>5019</td></tr><tr><td>jetkai/https</td><td>ok</td><td class='r'>2161</td></tr><tr><td>clarketm/raw</td><td>ok</td><td class='r'>400</td></tr><tr><td>roosterkid/HTTPS</td><td>ok</td><td class='r'>87</td></tr><tr><td>ShiftyTR/https</td><td>ok</td><td class='r'>13</td></tr><tr><td>free-proxy-list/http.txt</td><td>ok</td><td class='r'>784</td></tr><tr><td>free-proxy-list/list.txt</td><td>ok</td><td class='r'>784</td></tr><tr><td>free-vpn-subscriptions/outpu</td><td>ok</td><td class='r'>1727</td></tr><tr><td>lanmao-sub/nodes.txt</td><td>ok</td><td class='r'>13</td></tr><tr><td>Free-Proxy-List/http.txt</td><td>ok</td><td class='r'>1160</td></tr><tr><td>freeip/output/clash.yaml</td><td>ok</td><td class='r'>1407</td></tr><tr><td>free-proxy-list/http.txt</td><td>ok</td><td class='r'>4338</td></tr><tr><td>freesub/output/clash.yaml</td><td>ok</td><td class='r'>937</td></tr><tr><td>cn-news/clash.yaml</td><td>ok</td><td class='r'>2</td></tr><tr><td>free/output/clash.yaml</td><td>ok</td><td class='r'>100</td></tr><tr><td>free-clash-verge/output/clas</td><td>ok</td><td class='r'>500</td></tr><tr><td>proxy-list/all.txt</td><td>ok</td><td class='r'>6000</td></tr><tr><td>proxy-list/http.txt</td><td>ok</td><td class='r'>6000</td></tr><tr><td>free-proxy-list/all.txt</td><td>ok</td><td class='r'>659</td></tr><tr><td>free-v2ray-nodes/nodes.txt</td><td>ok</td><td class='r'>50</td></tr><tr><td>VMHeaven.io-Free-Proxy-List/</td><td>ok</td><td class='r'>6000</td></tr><tr><td>free-proxy-health-list/all.t</td><td>ok</td><td class='r'>6000</td></tr><tr><td>free-proxy-health-list/http.</td><td>ok</td><td class='r'>2254</td></tr><tr><td>kejigongxiangjiakuan/output/</td><td>ok</td><td class='r'>1733</td></tr></table>
-<h2>为什么要本机测</h2>
+  <div class="meta">最近搜集 2026-09-21 19:59 (UTC+8)　|　候选 15000 个</div>
+  <table><tr><th>源</th><th>状态</th><th class="r">抓取</th></tr><tr><td>anaer/Sub</td><td>ok</td><td class='r'>1583</td></tr><tr><td>ermaozi/get_subscribe</td><td>ok</td><td class='r'>186</td></tr><tr><td>peasoft/NoMoreWalls</td><td>ok</td><td class='r'>114</td></tr><tr><td>mahdibland/Eternity</td><td>ok</td><td class='r'>197</td></tr><tr><td>freefq/free</td><td>ok</td><td class='r'>14</td></tr><tr><td>Pawdroid/Free-servers</td><td>ok</td><td class='r'>20</td></tr><tr><td>ripaojiedian/freenode</td><td>ok</td><td class='r'>14</td></tr><tr><td>Barabama/FreeNodes</td><td>ok</td><td class='r'>23</td></tr><tr><td>proxifly/http</td><td>ok</td><td class='r'>5622</td></tr><tr><td>TheSpeedX/http</td><td>ok</td><td class='r'>2699</td></tr><tr><td>monosans/http</td><td>ok</td><td class='r'>175</td></tr><tr><td>zloi-user/https</td><td>ok</td><td class='r'>923</td></tr><tr><td>proxifly/https</td><td>ok</td><td class='r'>959</td></tr><tr><td>r00tee/Https</td><td>ok</td><td class='r'>5019</td></tr><tr><td>jetkai/https</td><td>ok</td><td class='r'>2161</td></tr><tr><td>clarketm/raw</td><td>ok</td><td class='r'>400</td></tr><tr><td>roosterkid/HTTPS</td><td>ok</td><td class='r'>65</td></tr><tr><td>ShiftyTR/https</td><td>ok</td><td class='r'>13</td></tr><tr><td>free-proxy-list/http.txt</td><td>ok</td><td class='r'>487</td></tr><tr><td>free-proxy-list/list.txt</td><td>ok</td><td class='r'>487</td></tr><tr><td>free-vpn-subscriptions/outpu</td><td>ok</td><td class='r'>1650</td></tr><tr><td>Free-Proxy-List/http.txt</td><td>ok</td><td class='r'>616</td></tr><tr><td>proxy-list/all.txt</td><td>ok</td><td class='r'>271</td></tr><tr><td>xiaohejiakuan/output/clash.y</td><td>ok</td><td class='r'>1320</td></tr><tr><td>freeip/output/clash.yaml</td><td>ok</td><td class='r'>1407</td></tr><tr><td>free-proxy-list/http.txt</td><td>ok</td><td class='r'>3048</td></tr><tr><td>v2yn/output/clash.yaml</td><td>ok</td><td class='r'>527</td></tr><tr><td>freesub/output/clash.yaml</td><td>ok</td><td class='r'>937</td></tr><tr><td>proxies-for-automation/http.</td><td>ok</td><td class='r'>500</td></tr><tr><td>freesub/output/clash.yaml</td><td>ok</td><td class='r'>1313</td></tr><tr><td>cn-news/clash.yaml</td><td>ok</td><td class='r'>2</td></tr><tr><td>zycfreesub/output/clash.yaml</td><td>ok</td><td class='r'>1316</td></tr><tr><td>free/output/clash.yaml</td><td>ok</td><td class='r'>100</td></tr><tr><td>free-clash-verge/output/clas</td><td>ok</td><td class='r'>500</td></tr><tr><td>jiakuansub/output/clash.yaml</td><td>ok</td><td class='r'>545</td></tr><tr><td>freesub/output/clash.yaml</td><td>ok</td><td class='r'>1313</td></tr><tr><td>yjg0908/output/clash.yaml</td><td>ok</td><td class='r'>1309</td></tr><tr><td>06-9-13/output/clash.yaml</td><td>ok</td><td class='r'>547</td></tr><tr><td>proxy-list/all.txt</td><td>ok</td><td class='r'>6000</td></tr><tr><td>proxy-list/http.txt</td><td>ok</td><td class='r'>6000</td></tr><tr><td>free-proxy-list/all.txt</td><td>ok</td><td class='r'>470</td></tr><tr><td>free-v2ray-nodes/nodes.txt</td><td>ok</td><td class='r'>50</td></tr><tr><td>VMHeaven.io-Free-Proxy-List/</td><td>ok</td><td class='r'>5513</td></tr></table>
+<h2>关于 sing-box</h2>
 <div class="warn">
-之前一版在 GitHub 的海外机器上测存活，结果大量从美国能通、从国内根本走不通的节点（多为
-Cloudflare 边缘 IP，国内连会返回 409 / error 1001）也被写进订阅。所以现在改成：CI 只负责搜集候选，
-真正的判定放在本地，用 mihomo 内核按真实协议打被墙目标，通了才收录。
-实测通过率通常在 2% 左右，这是正常水平。
+sing-box <b>内核本身没有订阅/自动更新机制</b>，它只接受一份完整的 config 文件，所以不能像 Clash 那样填个
+URL 就自动更新。上面给的 <code>cn/singbox.json</code> 是可直接 <code>sing-box check -c</code> 通过、
+导入即用的完整配置；要自动更新就用支持订阅的客户端（Karing 等）订阅 <code>cn/clash.yaml</code>。
+</div>
+<h2>判定局限（重要，务必看）</h2>
+<div class="warn">
+校验在 <b>GitHub 的海外机器</b>上完成，所以它判定的是「海外能否连通」，<b>不完全等于「你那边能否连通」</b>。
+已知的局限：<br>
+① 部分节点只对特定地区开放，海外机器测不通但国内能用 —— 这类会被误删；<br>
+② 反过来，海外能通的节点在国内可能走不通（典型是被 Cloudflare 边缘接管的地址，国内连会返回 409/error 1001）；<br>
+③ <b>SOCKS4 无法验证</b>：mihomo 与 sing-box 都没有 SOCKS4 出站类型（实测报 <code>unsupport proxy type: socks4</code>），
+此类节点只能丢弃，不做收录；<br>
+④ hysteria2 / tuic 走 UDP(QUIC)，能否验证取决于 Runner 的 UDP 出站，页面顶部会标注；<br>
+⑤ 延迟只是海外机器视角的数值，不代表你在国内的实际速度。
 </div>
 <h2>注意</h2>
 <div class="warn">

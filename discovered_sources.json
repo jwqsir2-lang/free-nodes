@@ -21,17 +21,24 @@
     "found_at": "2026-09-21"
   },
   {
-    "name": "lanmao-sub/nodes.txt",
-    "url": "https://raw.githubusercontent.com/Luckdog-cook/lanmao-sub/main/nodes.txt",
-    "fmt": "auto",
-    "from": "Luckdog-cook/lanmao-sub",
-    "found_at": "2026-09-21"
-  },
-  {
     "name": "Free-Proxy-List/http.txt",
     "url": "https://raw.githubusercontent.com/Moleway/Free-Proxy-List/main/http.txt",
     "fmt": "auto",
     "from": "Moleway/Free-Proxy-List",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "proxy-list/all.txt",
+    "url": "https://raw.githubusercontent.com/MrMarble/proxy-list/main/all.txt",
+    "fmt": "auto",
+    "from": "MrMarble/proxy-list",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "xiaohejiakuan/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/apeng3627/xiaohejiakuan/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "apeng3627/xiaohejiakuan",
     "found_at": "2026-09-21"
   },
   {
@@ -49,6 +56,13 @@
     "found_at": "2026-09-21"
   },
   {
+    "name": "v2yn/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/ef-ef-ef/v2yn/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "ef-ef-ef/v2yn",
+    "found_at": "2026-09-21"
+  },
+  {
     "name": "freesub/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/g1xy/freesub/main/output/clash.yaml",
     "fmt": "auto",
@@ -56,10 +70,31 @@
     "found_at": "2026-09-21"
   },
   {
+    "name": "proxies-for-automation/http.txt",
+    "url": "https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-for-automation/main/http.txt",
+    "fmt": "auto",
+    "from": "gnxD3RfTT2WE/proxies-for-automation",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/halazimeishi/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "halazimeishi/freesub",
+    "found_at": "2026-09-21"
+  },
+  {
     "name": "cn-news/clash.yaml",
     "url": "https://raw.githubusercontent.com/hello-world-1989/cn-news/main/clash.yaml",
     "fmt": "auto",
     "from": "hello-world-1989/cn-news",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "zycfreesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/hwzyc6912/zycfreesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "hwzyc6912/zycfreesub",
     "found_at": "2026-09-21"
   },
   {
@@ -74,6 +109,34 @@
     "url": "https://raw.githubusercontent.com/kevin-sanas/free-clash-verge/main/output/clash.yaml",
     "fmt": "auto",
     "from": "kevin-sanas/free-clash-verge",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "jiakuansub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/ljhlovehui/jiakuansub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "ljhlovehui/jiakuansub",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/lmq587/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "lmq587/freesub",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "yjg0908/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/mrbean2050/yjg0908/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "mrbean2050/yjg0908",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "06-9-13/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/my7960/06-9-13/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "my7960/06-9-13",
     "found_at": "2026-09-21"
   },
   {
@@ -109,27 +172,6 @@
     "url": "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/http.txt",
     "fmt": "auto",
     "from": "vmheaven/VMHeaven.io-Free-Proxy-List",
-    "found_at": "2026-09-21"
-  },
-  {
-    "name": "free-proxy-health-list/all.txt",
-    "url": "https://raw.githubusercontent.com/xyzs996/free-proxy-health-list/main/all.txt",
-    "fmt": "auto",
-    "from": "xyzs996/free-proxy-health-list",
-    "found_at": "2026-09-21"
-  },
-  {
-    "name": "free-proxy-health-list/http.txt",
-    "url": "https://raw.githubusercontent.com/xyzs996/free-proxy-health-list/main/http.txt",
-    "fmt": "auto",
-    "from": "xyzs996/free-proxy-health-list",
-    "found_at": "2026-09-21"
-  },
-  {
-    "name": "kejigongxiangjiakuan/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/yoyohotel2026/kejigongxiangjiakuan/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "yoyohotel2026/kejigongxiangjiakuan",
     "found_at": "2026-09-21"
   }
 ]
