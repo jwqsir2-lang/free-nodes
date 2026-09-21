@@ -19,7 +19,7 @@ on:
       http_limit:
         description: 'HTTP 代理最多测多少个（会展开成明文/TLS 两个变体，等于×2）'
         required: false
-        default: '3000'
+        default: '6000'
       delay_timeout_ms:
         description: '单个节点超时（毫秒）'
         required: false
@@ -89,7 +89,7 @@ jobs:
 
       - name: 真实协议校验并生成订阅
         env:
-          HTTP_LIMIT: ${{ github.event.inputs.http_limit || '3000' }}
+          HTTP_LIMIT: ${{ github.event.inputs.http_limit || '6000' }}
           DELAY_TIMEOUT_MS: ${{ github.event.inputs.delay_timeout_ms || '4000' }}
           CONCURRENCY: '160'
           VERIFIED_FROM: 'GitHub Actions runner（海外机器）'
