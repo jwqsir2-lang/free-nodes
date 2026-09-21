@@ -14,7 +14,7 @@ on:
       max_total:
         description: '候选上限'
         required: false
-        default: '15000'
+        default: '40000'
       skip_discover:
         description: '跳过“自动搜寻新源”'
         type: boolean

@@ -550,7 +550,7 @@ def build_outputs(proxies, results):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", help="本地候选 YAML")
-    ap.add_argument("--limit", type=int, default=int(os.environ.get("LIMIT", "20000")))
+    ap.add_argument("--limit", type=int, default=int(os.environ.get("LIMIT", "40000")))
     ap.add_argument("--http-limit", type=int, default=int(os.environ.get("HTTP_LIMIT", "3000")),
                     help="HTTP 代理最多测多少个（实测通过率极低，全测浪费预算）")
     ap.add_argument("--no-push", action="store_true")
@@ -558,15 +558,20 @@ def main():
 
     if not os.path.exists(MIHOMO):
         raise SystemExit(f"找不到 mihomo：{MIHOMO}")
-    proxies = normalize(load_candidates(args.input))[:args.limit]
-    if args.http_limit:
-        http = [p for p in proxies if p.get("type") == "http"]
-        if len(http) > args.http_limit:
-            # 优先留 https 来源和 443/8443 端口的，它们才可能是 TLS 代理
-            http.sort(key=lambda p: (not p.get("_tls_hint"), p["port"] not in TLS_LIKELY_PORTS))
-            keep = {id(p) for p in http[:args.http_limit]}
-            proxies = [p for p in proxies if p.get("type") != "http" or id(p) in keep]
-            log(f"HTTP 代理只取前 {args.http_limit} 个（共 {len(http)} 个，优先 TLS 可能性高的）")
+    all_cands = normalize(load_candidates(args.input))
+    # 上限只作用于 http：http 候选动辄上万，会把 vless/vmess 这些挤掉
+    non_http = [p for p in all_cands if p.get("type") != "http"]
+    http = [p for p in all_cands if p.get("type") == "http"]
+    log(f"非 http 候选 {len(non_http)} 个（全部测），http 候选 {len(http)} 个")
+    if args.http_limit and len(http) > args.http_limit:
+        # 优先留 https 来源和 443/8443 端口的，它们才可能是 TLS 代理
+        http.sort(key=lambda p: (not p.get("_tls_hint"), p["port"] not in TLS_LIKELY_PORTS))
+        log(f"http 只取前 {args.http_limit} 个（优先 TLS 可能性高的）")
+        http = http[:args.http_limit]
+    proxies = non_http + http
+    if args.limit and len(proxies) > args.limit:
+        log(f"总数超上限 {args.limit}，截断")
+        proxies = proxies[:args.limit]
     proxies = expand_variants(proxies)
     m = Mihomo(proxies)
     try:
@@ -596,7 +601,12 @@ def push(stats):
         return
     run(["git", "commit", "-m",
          f"chore: 本机真实协议校验 {stats['alive']} 个可用节点 {time.strftime('%Y-%m-%d %H:%M')}"])
+    # 定时任务跑的时候 CI 可能刚提交过，先 rebase 再推
+    run(["git", "pull", "--rebase", "--autostash"])
     r = run(["git", "push"])
+    if r.returncode != 0:
+        run(["git", "pull", "--rebase", "--autostash"])
+        r = run(["git", "push"])
     log("  已推送" if r.returncode == 0 else "  推送失败，请检查凭据")
 
 
