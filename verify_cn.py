@@ -97,6 +97,7 @@ def normalize(proxies):
         if not p:
             dropped += 1
             continue
+        p["_src"] = str(raw.get("name", "")).split("|")[0][:16] or "?"
         tag = f"n{i:05d}|{p['type']}|{str(p['server'])[:24]}"
         if tag in seen:
             continue
