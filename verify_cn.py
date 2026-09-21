@@ -304,7 +304,8 @@ class Mihomo:
         path = os.path.join(self.dir, "probe.yaml")
         self._write_cfg(proxies, path)
         r = subprocess.run([MIHOMO, "-f", path, "-d", self.dir, "-t"],
-                           capture_output=True, text=True, timeout=600, env=CLEAN_ENV)
+                           capture_output=True, text=True, timeout=600, env=CLEAN_ENV,
+                           encoding="utf-8", errors="replace")
         out = (r.stdout or "") + (r.stderr or "")
         m = re.search(r'msg="proxy (\d+): ([^"]*)"', out)
         return r.returncode == 0, (int(m.group(1)) if m else None), (m.group(2) if m else out.strip()[-160:])
@@ -634,13 +635,14 @@ def main():
 
 def push(stats):
     log("\n推送结果回仓库…")
-    def run(cmd):
-        r = subprocess.run(cmd, cwd=HERE, capture_output=True, text=True)
-        if r.returncode != 0:
-            log(f"  [warn] {' '.join(cmd)} -> {r.stderr.strip()[:200]}")
+    def run(cmd, quiet=False):
+        r = subprocess.run(cmd, cwd=HERE, capture_output=True, text=True,
+                           encoding="utf-8", errors="replace")
+        if r.returncode != 0 and not quiet:
+            log(f"  [warn] {' '.join(cmd)} -> {(r.stderr or r.stdout or '').strip()[:200]}")
         return r
     run(["git", "add", "dist"])
-    d = run(["git", "diff", "--cached", "--quiet"])
+    d = run(["git", "diff", "--cached", "--quiet"], quiet=True)
     if d.returncode == 0:
         log("  没有变化，跳过提交")
         return
@@ -658,7 +660,7 @@ def push(stats):
             run(["git", "checkout", "--theirs", "--"] + conf)
             run(["git", "add", "--"] + conf)
             run(["git", "rebase", "--continue"])
-        if run(["git", "rebase", "--abort"]).returncode == 0:
+        if run(["git", "rebase", "--abort"], quiet=True).returncode == 0:
             log("  rebase 没能完成，已放弃（保持本机提交不动）")
         # rebase 中断可能把仓库留在 detached HEAD，确保提交落在 main 上
         run(["git", "checkout", "-q", "-B", "main", "HEAD"])

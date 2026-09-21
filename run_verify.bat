@@ -12,6 +12,10 @@ REM ---- 抓候选名单和 git push 需要走代理；mihomo 拨号由脚本内
 set "HTTPS_PROXY=http://127.0.0.1:3067"
 set "HTTP_PROXY=http://127.0.0.1:3067"
 
+REM ---- 统一 UTF-8，否则 Windows 下 git 输出里的中文会解码失败 ----
+set "PYTHONUTF8=1"
+set "PYTHONIOENCODING=utf-8"
+
 REM ---- 校验参数 ----
 set "DELAY_TIMEOUT_MS=3500"
 set "CONCURRENCY=160"

@@ -3,6 +3,7 @@ __pycache__/
 .verify_work/
 .probe/
 .cand.yaml
+.venv/
 tools/*.exe
 tools/*.zip
 tools/cache.db
