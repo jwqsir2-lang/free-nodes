@@ -49,10 +49,17 @@
     "found_at": "2026-09-21"
   },
   {
-    "name": "free-nodes/dist/clash.yaml",
-    "url": "https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/clash.yaml",
+    "name": "cn-news/clash.yaml",
+    "url": "https://raw.githubusercontent.com/hello-world-1989/cn-news/main/clash.yaml",
     "fmt": "auto",
-    "from": "jwqsir2-lang/free-nodes",
+    "from": "hello-world-1989/cn-news",
+    "found_at": "2026-09-21"
+  },
+  {
+    "name": "free/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/jewell998998/free/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "jewell998998/free",
     "found_at": "2026-09-21"
   },
   {

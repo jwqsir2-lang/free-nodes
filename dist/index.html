@@ -1,0 +1,57 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>免费节点订阅 · 本机实测可用</title>
+<style>
+:root{color-scheme:dark light}
+body{font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;max-width:880px;
+margin:0 auto;padding:28px 18px 60px;line-height:1.65}
+h1{font-size:23px;margin:0 0 4px}
+h2{font-size:16px;margin:26px 0 8px}
+.sub{opacity:.65;font-size:14px}
+.ok{font-size:13.5px;opacity:.8;margin:6px 0 14px}
+.pill{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:1px 11px;
+margin:3px 6px 3px 0;font-size:12.5px;opacity:.85}
+.card{border:1px solid #8884;border-radius:12px;padding:13px 15px;margin:10px 0}
+.fn{font-weight:600}
+.desc{font-size:13px;opacity:.65;margin:2px 0 8px}
+.url{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;background:#8882;border-radius:8px;
+padding:9px 11px;word-break:break-all;cursor:pointer}
+.url:hover{background:#8883}
+.meta{font-size:12.5px;opacity:.7;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:6px}
+td,th{border-bottom:1px solid #8883;padding:6px;text-align:left}
+th{opacity:.6;font-weight:500}
+.r{text-align:right}
+.warn{border-left:3px solid #e0a020;padding:10px 14px;background:#e0a0201a;border-radius:8px;font-size:13.5px}
+code{background:#8882;padding:1px 5px;border-radius:5px;font-size:12.5px}
+</style></head><body>
+<h1>免费节点订阅</h1>
+<div class="sub">候选由 GitHub Actions 定时搜集，可用性由<b>本机按真实协议端到端实测</b>决定。</div>
+
+  <h2>订阅地址（点一下复制）</h2>
+  <p class="ok">下面这些节点已在本机按真实协议、对着被墙目标端到端验证过，能通才收录。</p>
+  <div class='card'><div class='fn'>Clash / mihomo / Karing 订阅</div><div class='desc'>10 个已验证可用节点</div><div class='url' onclick="cp(this)">cn/clash.yaml</div></div>
+  <div class='card'><div class='fn'>仅 HTTP 代理（ip:port）</div><div class='desc'>HTTP 代理单独一条，多数时候很少</div><div class='url' onclick="cp(this)">cn/http.txt</div></div>
+  <div class='card'><div class='fn'>base64 订阅（v2rayN 等）</div><div class='desc'>vmess / vless / trojan / ss / hysteria2</div><div class='url' onclick="cp(this)">cn/v2ray.txt</div></div>
+  <div class="meta">校验时间 2026-09-21 13:31:58　|　校验目标 http://www.gstatic.com/generate_204 / http://www.google.com/generate_204<br>
+  候选 493 个 → 可用 10 个（2%）　|　<span class='pill'>vless <b>9</b></span><span class='pill'>vmess <b>1</b></span></div>
+
+  <h2>候选来源</h2>
+  <div class="meta">最近搜集 2026-09-21 13:33 (UTC+8)　|　候选 12436 个　|　<span class='pill'>http <b>8608</b></span><span class='pill'>vless <b>2395</b></span><span class='pill'>vmess <b>798</b></span><span class='pill'>ss <b>342</b></span><span class='pill'>hysteria2 <b>173</b></span><span class='pill'>trojan <b>117</b></span><span class='pill'>socks5 <b>3</b></span></div>
+  <table><tr><th>源</th><th>状态</th><th class="r">抓取</th></tr><tr><td>anaer/Sub</td><td>ok</td><td class='r'>1500</td></tr><tr><td>ermaozi/get_subscribe</td><td>ok</td><td class='r'>186</td></tr><tr><td>peasoft/NoMoreWalls</td><td>ok</td><td class='r'>114</td></tr><tr><td>mahdibland/Eternity</td><td>ok</td><td class='r'>197</td></tr><tr><td>freefq/free</td><td>ok</td><td class='r'>14</td></tr><tr><td>Pawdroid/Free-servers</td><td>ok</td><td class='r'>20</td></tr><tr><td>ripaojiedian/freenode</td><td>ok</td><td class='r'>14</td></tr><tr><td>Barabama/FreeNodes</td><td>ok</td><td class='r'>23</td></tr><tr><td>proxifly/http</td><td>ok</td><td class='r'>1500</td></tr><tr><td>TheSpeedX/http</td><td>ok</td><td class='r'>1500</td></tr><tr><td>monosans/http</td><td>ok</td><td class='r'>465</td></tr><tr><td>free-proxy-list/http.txt</td><td>ok</td><td class='r'>1245</td></tr><tr><td>free-proxy-list/list.txt</td><td>ok</td><td class='r'>1245</td></tr><tr><td>free-vpn-subscriptions/outpu</td><td>ok</td><td class='r'>1500</td></tr><tr><td>lanmao-sub/nodes.txt</td><td>ok</td><td class='r'>13</td></tr><tr><td>Free-Proxy-List/http.txt</td><td>ok</td><td class='r'>1500</td></tr><tr><td>freeip/output/clash.yaml</td><td>ok</td><td class='r'>1407</td></tr><tr><td>free-proxy-list/http.txt</td><td>ok</td><td class='r'>1500</td></tr><tr><td>cn-news/clash.yaml</td><td>ok</td><td class='r'>2</td></tr><tr><td>free/output/clash.yaml</td><td>ok</td><td class='r'>100</td></tr><tr><td>proxy-list/all.txt</td><td>ok</td><td class='r'>1500</td></tr><tr><td>proxy-list/http.txt</td><td>ok</td><td class='r'>1500</td></tr><tr><td>free-proxy-list/all.txt</td><td>ok</td><td class='r'>688</td></tr><tr><td>free-v2ray-nodes/nodes.txt</td><td>ok</td><td class='r'>50</td></tr><tr><td>VMHeaven.io-Free-Proxy-List/</td><td>ok</td><td class='r'>1500</td></tr></table>
+<h2>为什么要本机测</h2>
+<div class="warn">
+之前一版在 GitHub 的海外机器上测存活，结果大量从美国能通、从国内根本走不通的节点（多为
+Cloudflare 边缘 IP，国内连会返回 409 / error 1001）也被写进订阅。所以现在改成：CI 只负责搜集候选，
+真正的判定放在本地，用 mihomo 内核按真实协议打被墙目标，通了才收录。
+实测通过率通常在 2% 左右，这是正常水平。
+</div>
+<h2>注意</h2>
+<div class="warn">
+免费公共节点由陌生人提供，<b>可能被记录、篡改或劫持流量</b>。不要用它登录银行、邮箱、公司账号等敏感服务。
+节点存活期很短，客户端里请把订阅设为自动更新。
+</div>
+<script>
+function cp(e){const t=e.textContent;navigator.clipboard.writeText(t.trim());
+e.textContent='已复制 ✓';setTimeout(()=>e.textContent=t,900);}
+</script></body></html>
