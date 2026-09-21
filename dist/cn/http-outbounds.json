@@ -1,7 +1,7 @@
 [
   {
     "__id_in_gui": "ID_c702b5d0f",
-    "tag": "https|China:1080|156ms|zloi-user/ht",
+    "tag": "https|117.82.138.100:1080|142ms|proxifly/htt",
     "type": "http",
     "server": "117.82.138.100",
     "server_port": 1080,
@@ -13,7 +13,7 @@
   },
   {
     "__id_in_gui": "ID_63fc44f27",
-    "tag": "https|China:4443|165ms|zloi-user/ht",
+    "tag": "https|118.184.157.67:4443|159ms|proxifly/htt",
     "type": "http",
     "server": "118.184.157.67",
     "server_port": 4443,
@@ -24,39 +24,8 @@
     }
   },
   {
-    "__id_in_gui": "ID_625081fcd",
-    "tag": "https|Hong Kong:3128|231ms|zloi-user/ht",
-    "type": "http",
-    "server": "119.28.24.235",
-    "server_port": 3128,
-    "tls": {
-      "enabled": true,
-      "server_name": "119.28.24.235",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_e5d0067e9",
-    "tag": "https|Hong Kong:10088|232ms|zloi-user/ht",
-    "type": "http",
-    "server": "8.210.41.200",
-    "server_port": 10088,
-    "tls": {
-      "enabled": true,
-      "server_name": "8.210.41.200",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1af1880ce",
-    "tag": "http|101.42.41.164:8080|235ms|r00tee/Https",
-    "type": "http",
-    "server": "101.42.41.164",
-    "server_port": 8080
-  },
-  {
     "__id_in_gui": "ID_8e4d0d219",
-    "tag": "https|Japan:1443|247ms|zloi-user/ht",
+    "tag": "https|Japan:1443|239ms|zloi-user/ht",
     "type": "http",
     "server": "118.184.140.90",
     "server_port": 1443,
@@ -67,8 +36,32 @@
     }
   },
   {
+    "__id_in_gui": "ID_625081fcd",
+    "tag": "https|Hong Kong:3128|242ms|zloi-user/ht",
+    "type": "http",
+    "server": "119.28.24.235",
+    "server_port": 3128,
+    "tls": {
+      "enabled": true,
+      "server_name": "119.28.24.235",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9033fb772",
+    "tag": "https|Japan:1443|271ms|zloi-user/ht",
+    "type": "http",
+    "server": "118.184.157.67",
+    "server_port": 1443,
+    "tls": {
+      "enabled": true,
+      "server_name": "118.184.157.67",
+      "insecure": true
+    }
+  },
+  {
     "__id_in_gui": "ID_e4836e3cf",
-    "tag": "https|China:8888|276ms|zloi-user/ht",
+    "tag": "https|China:8888|277ms|zloi-user/ht",
     "type": "http",
     "server": "114.55.209.170",
     "server_port": 8888,
@@ -79,52 +72,11 @@
     }
   },
   {
-    "__id_in_gui": "ID_45dcaa823",
-    "tag": "https|Hong Kong:31343|277ms|zloi-user/ht",
+    "__id_in_gui": "ID_1af1880ce",
+    "tag": "http|101.42.41.164:8080|288ms|r00tee/Https",
     "type": "http",
-    "server": "120.232.204.58",
-    "server_port": 31343,
-    "tls": {
-      "enabled": true,
-      "server_name": "120.232.204.58",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_37334bc8a",
-    "tag": "https|South Korea:443|284ms|zloi-user/ht",
-    "type": "http",
-    "server": "43.166.4.171",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "43.166.4.171",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_2a1846e50",
-    "tag": "https|Hong Kong:8080|347ms|zloi-user/ht",
-    "type": "http",
-    "server": "47.243.181.85",
-    "server_port": 8080,
-    "tls": {
-      "enabled": true,
-      "server_name": "47.243.181.85",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_02db8de98",
-    "tag": "https|Hong Kong:443|355ms|zloi-user/ht",
-    "type": "http",
-    "server": "151.242.183.28",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "151.242.183.28",
-      "insecure": true
-    }
+    "server": "101.42.41.164",
+    "server_port": 8080
   },
   {
     "__id_in_gui": "ID_336f2b811",
@@ -139,80 +91,44 @@
     }
   },
   {
-    "__id_in_gui": "ID_f1ea065e9",
-    "tag": "https|Taiwan:42532|371ms|zloi-user/ht",
+    "__id_in_gui": "ID_37334bc8a",
+    "tag": "https|South Korea:443|371ms|zloi-user/ht",
     "type": "http",
-    "server": "47.243.181.85",
-    "server_port": 42532,
-    "tls": {
-      "enabled": true,
-      "server_name": "47.243.181.85",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1168d085d",
-    "tag": "https|Taiwan:443|422ms|zloi-user/ht",
-    "type": "http",
-    "server": "114.33.6.158",
+    "server": "43.166.4.171",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "114.33.6.158",
+      "server_name": "43.166.4.171",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_539758652",
-    "tag": "https|Japan:343|447ms|zloi-user/ht",
+    "__id_in_gui": "ID_4b96ac321",
+    "tag": "https|Hong Kong:443|377ms|zloi-user/ht",
     "type": "http",
-    "server": "133.18.200.207",
-    "server_port": 343,
-    "tls": {
-      "enabled": true,
-      "server_name": "133.18.200.207",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_c92082e87",
-    "tag": "https|Japan:40583|449ms|zloi-user/ht",
-    "type": "http",
-    "server": "120.232.204.58",
-    "server_port": 40583,
-    "tls": {
-      "enabled": true,
-      "server_name": "120.232.204.58",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_bdd0ddb65",
-    "tag": "https|South Korea:443|466ms|zloi-user/ht",
-    "type": "http",
-    "server": "152.69.230.221",
+    "server": "202.85.53.25",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "152.69.230.221",
+      "server_name": "202.85.53.25",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_2c4ea9ace",
-    "tag": "https|Japan:443|493ms|zloi-user/ht",
+    "__id_in_gui": "ID_6822dbc68",
+    "tag": "https|Japan:7000|380ms|zloi-user/ht",
     "type": "http",
-    "server": "14.137.237.91",
-    "server_port": 443,
+    "server": "103.127.242.229",
+    "server_port": 7000,
     "tls": {
       "enabled": true,
-      "server_name": "14.137.237.91",
+      "server_name": "103.127.242.229",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_530b9c238",
-    "tag": "https|Singapore:443|500ms|zloi-user/ht",
+    "tag": "https|Singapore:443|385ms|zloi-user/ht",
     "type": "http",
     "server": "43.160.239.37",
     "server_port": 443,
@@ -223,39 +139,94 @@
     }
   },
   {
-    "__id_in_gui": "ID_2b695bb07",
-    "tag": "https|Japan:443|566ms|zloi-user/ht",
+    "__id_in_gui": "ID_c92082e87",
+    "tag": "https|Japan:40583|422ms|zloi-user/ht",
     "type": "http",
-    "server": "180.131.255.118",
-    "server_port": 443,
+    "server": "120.232.204.58",
+    "server_port": 40583,
     "tls": {
       "enabled": true,
-      "server_name": "180.131.255.118",
+      "server_name": "120.232.204.58",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_c3573f247",
-    "tag": "https|United States:443|613ms|zloi-user/ht",
+    "__id_in_gui": "ID_1168d085d",
+    "tag": "https|Taiwan:443|463ms|zloi-user/ht",
     "type": "http",
-    "server": "137.175.22.41",
+    "server": "114.33.6.158",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "137.175.22.41",
+      "server_name": "114.33.6.158",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_45dcaa823",
+    "tag": "https|Hong Kong:31343|487ms|zloi-user/ht",
+    "type": "http",
+    "server": "120.232.204.58",
+    "server_port": 31343,
+    "tls": {
+      "enabled": true,
+      "server_name": "120.232.204.58",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_e5d0067e9",
+    "tag": "https|Hong Kong:10088|513ms|zloi-user/ht",
+    "type": "http",
+    "server": "8.210.41.200",
+    "server_port": 10088,
+    "tls": {
+      "enabled": true,
+      "server_name": "8.210.41.200",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_e43ce75b6",
+    "tag": "http|59.153.83.186:8080|627ms|r00tee/Https",
+    "type": "http",
+    "server": "59.153.83.186",
+    "server_port": 8080
+  },
+  {
+    "__id_in_gui": "ID_82e301588",
+    "tag": "https|Vietnam:8443|642ms|zloi-user/ht",
+    "type": "http",
+    "server": "14.225.19.28",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "14.225.19.28",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_951565fdf",
+    "tag": "https|Vietnam:8443|659ms|zloi-user/ht",
+    "type": "http",
+    "server": "14.225.71.128",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "14.225.71.128",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_52a55dc1c",
-    "tag": "http|146.190.60.147:8001|625ms|r00tee/Https",
+    "tag": "http|146.190.60.147:8001|661ms|r00tee/Https",
     "type": "http",
     "server": "146.190.60.147",
     "server_port": 8001
   },
   {
     "__id_in_gui": "ID_bbfdcee0f",
-    "tag": "https|South Africa:8443|653ms|zloi-user/ht",
+    "tag": "https|South Africa:8443|666ms|zloi-user/ht",
     "type": "http",
     "server": "154.81.36.92",
     "server_port": 8443,
@@ -266,8 +237,20 @@
     }
   },
   {
+    "__id_in_gui": "ID_9191acb7c",
+    "tag": "https|The Netherlands:443|669ms|zloi-user/ht",
+    "type": "http",
+    "server": "152.53.107.196",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "152.53.107.196",
+      "insecure": true
+    }
+  },
+  {
     "__id_in_gui": "ID_a93753b01",
-    "tag": "https|South Korea:443|672ms|zloi-user/ht",
+    "tag": "https|South Korea:443|675ms|zloi-user/ht",
     "type": "http",
     "server": "132.226.170.86",
     "server_port": 443,
@@ -278,69 +261,38 @@
     }
   },
   {
-    "__id_in_gui": "ID_64cbab6bd",
-    "tag": "http|203.175.103.97:8080|683ms|r00tee/Https",
+    "__id_in_gui": "ID_8c55d4eb9",
+    "tag": "https|United States:443|689ms|zloi-user/ht",
     "type": "http",
-    "server": "203.175.103.97",
-    "server_port": 8080
-  },
-  {
-    "__id_in_gui": "ID_4ad8d9350",
-    "tag": "https|Bangladesh:443|696ms|zloi-user/ht",
-    "type": "http",
-    "server": "35.247.136.78",
+    "server": "137.175.22.3",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "35.247.136.78",
+      "server_name": "137.175.22.3",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_be1e1c7af",
-    "tag": "https|Japan:443|697ms|zloi-user/ht",
+    "__id_in_gui": "ID_ddc8954d0",
+    "tag": "https|Seychelles:8443|696ms|zloi-user/ht",
     "type": "http",
-    "server": "8.216.57.38",
-    "server_port": 443,
+    "server": "156.225.20.213",
+    "server_port": 8443,
     "tls": {
       "enabled": true,
-      "server_name": "8.216.57.38",
+      "server_name": "156.225.20.213",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_e949c722b",
-    "tag": "https|Luxembourg:443|708ms|zloi-user/ht",
+    "__id_in_gui": "ID_fdad94d00",
+    "tag": "https|Germany:443|697ms|zloi-user/ht",
     "type": "http",
-    "server": "185.221.132.226",
+    "server": "168.119.240.146",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "185.221.132.226",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_234e72637",
-    "tag": "https|The Netherlands:443|714ms|zloi-user/ht",
-    "type": "http",
-    "server": "82.115.7.249",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "82.115.7.249",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ae36a2917",
-    "tag": "https|185.221.132.242:9443|714ms|proxifly/htt",
-    "type": "http",
-    "server": "185.221.132.242",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "185.221.132.242",
+      "server_name": "168.119.240.146",
       "insecure": true
     }
   },
@@ -357,536 +309,20 @@
     }
   },
   {
-    "__id_in_gui": "ID_384a13038",
-    "tag": "https|United States:9002|724ms|zloi-user/ht",
+    "__id_in_gui": "ID_2e57e9944",
+    "tag": "https|France:8090|731ms|zloi-user/ht",
     "type": "http",
-    "server": "138.199.35.219",
-    "server_port": 9002,
+    "server": "80.124.109.22",
+    "server_port": 8090,
     "tls": {
       "enabled": true,
-      "server_name": "138.199.35.219",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1b0dcadd6",
-    "tag": "https|United States:9002|730ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.197",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.197",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_6aa16a35c",
-    "tag": "https|United States:9002|731ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.195",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.195",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_5aa5788f0",
-    "tag": "https|Ireland:443|731ms|zloi-user/ht",
-    "type": "http",
-    "server": "34.249.214.108",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "34.249.214.108",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_e577f2a5b",
-    "tag": "https|United States:9002|732ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.196",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.196",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_39076dc79",
-    "tag": "https|United States:443|732ms|zloi-user/ht",
-    "type": "http",
-    "server": "137.175.22.45",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "137.175.22.45",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_7e3d7dc2b",
-    "tag": "https|United States:9002|736ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.212",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.212",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4dc828144",
-    "tag": "https|Latvia:443|738ms|zloi-user/ht",
-    "type": "http",
-    "server": "109.248.149.34",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "109.248.149.34",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_2841e13e8",
-    "tag": "https|103.62.50.130:9443|739ms|proxifly/htt",
-    "type": "http",
-    "server": "103.62.50.130",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "103.62.50.130",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_bf64745c1",
-    "tag": "https|Ireland:443|742ms|zloi-user/ht",
-    "type": "http",
-    "server": "18.200.158.139",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "18.200.158.139",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9e6e8f070",
-    "tag": "https|United States:9002|743ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.217",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.217",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f2f99dc8a",
-    "tag": "https|United States:443|745ms|zloi-user/ht",
-    "type": "http",
-    "server": "137.175.22.16",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "137.175.22.16",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_21f82da8a",
-    "tag": "https|United States:9002|747ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.220",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.220",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_c55242a41",
-    "tag": "https|United States:443|748ms|zloi-user/ht",
-    "type": "http",
-    "server": "137.175.22.98",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "137.175.22.98",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_871b6995a",
-    "tag": "https|United States:8443|756ms|zloi-user/ht",
-    "type": "http",
-    "server": "44.229.69.166",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "44.229.69.166",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_18b424735",
-    "tag": "https|United States:8443|756ms|zloi-user/ht#46",
-    "type": "http",
-    "server": "54.190.176.228",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "54.190.176.228",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_3b332502d",
-    "tag": "https|Sweden:443|759ms|zloi-user/ht",
-    "type": "http",
-    "server": "217.210.129.243",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "217.210.129.243",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_3f725715f",
-    "tag": "https|France:443|761ms|zloi-user/ht",
-    "type": "http",
-    "server": "130.180.211.56",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "130.180.211.56",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_63834388d",
-    "tag": "https|France:443|765ms|zloi-user/ht",
-    "type": "http",
-    "server": "84.235.228.156",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "84.235.228.156",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_299959c7b",
-    "tag": "https|Vietnam:8443|766ms|zloi-user/ht",
-    "type": "http",
-    "server": "103.70.115.234",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "103.70.115.234",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9a99f987b",
-    "tag": "https|The Netherlands:21384|770ms|zloi-user/ht",
-    "type": "http",
-    "server": "51.158.204.46",
-    "server_port": 21384,
-    "tls": {
-      "enabled": true,
-      "server_name": "51.158.204.46",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_42f101958",
-    "tag": "https|Germany:443|780ms|zloi-user/ht",
-    "type": "http",
-    "server": "87.106.223.158",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "87.106.223.158",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_5c19a6f33",
-    "tag": "https|Germany:443|781ms|zloi-user/ht",
-    "type": "http",
-    "server": "87.106.163.174",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "87.106.163.174",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_89f527f59",
-    "tag": "https|United States:8443|783ms|zloi-user/ht",
-    "type": "http",
-    "server": "45.32.133.102",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "45.32.133.102",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_70975e6d0",
-    "tag": "https|Switzerland:9443|784ms|zloi-user/ht",
-    "type": "http",
-    "server": "146.70.126.50",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "146.70.126.50",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_57e05135e",
-    "tag": "https|Germany:443|789ms|zloi-user/ht",
-    "type": "http",
-    "server": "212.132.126.182",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "212.132.126.182",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_82e301588",
-    "tag": "https|Vietnam:8443|794ms|zloi-user/ht",
-    "type": "http",
-    "server": "14.225.19.28",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "14.225.19.28",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4250c8eb0",
-    "tag": "https|Germany:8443|795ms|zloi-user/ht",
-    "type": "http",
-    "server": "91.107.219.205",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "91.107.219.205",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_addecde39",
-    "tag": "https|United States:443|797ms|zloi-user/ht",
-    "type": "http",
-    "server": "137.175.22.85",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "137.175.22.85",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_b12725001",
-    "tag": "https|France:443|804ms|zloi-user/ht",
-    "type": "http",
-    "server": "82.66.235.221",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "82.66.235.221",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_e4154c39c",
-    "tag": "https|Germany:443|810ms|zloi-user/ht",
-    "type": "http",
-    "server": "116.202.172.99",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "116.202.172.99",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9191acb7c",
-    "tag": "https|The Netherlands:443|816ms|zloi-user/ht",
-    "type": "http",
-    "server": "152.53.107.196",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "152.53.107.196",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_89e53eb1f",
-    "tag": "https|Norway:9443|821ms|zloi-user/ht",
-    "type": "http",
-    "server": "146.70.170.210",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "146.70.170.210",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_fdad94d00",
-    "tag": "https|Germany:443|824ms|zloi-user/ht",
-    "type": "http",
-    "server": "168.119.240.146",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "168.119.240.146",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f554f6b5e",
-    "tag": "https|Russia:1446|828ms|zloi-user/ht",
-    "type": "http",
-    "server": "46.29.166.134",
-    "server_port": 1446,
-    "tls": {
-      "enabled": true,
-      "server_name": "46.29.166.134",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_60e695d5b",
-    "tag": "https|United States:9002|837ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.209",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.209",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_753f124e1",
-    "tag": "https|United States:9002|838ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.214",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.214",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_355fcb99d",
-    "tag": "https|United States:9002|838ms|zloi-user/ht#68",
-    "type": "http",
-    "server": "138.199.35.216",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.216",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_60039c303",
-    "tag": "https|Romania:443|846ms|zloi-user/ht",
-    "type": "http",
-    "server": "172.64.68.89",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "172.64.68.89",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_603501724",
-    "tag": "https|United States:9002|847ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.204",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.204",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_dd4af50e1",
-    "tag": "https|United States:9002|850ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.207",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.207",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_7e6d11744",
-    "tag": "https|United States:443|850ms|zloi-user/ht",
-    "type": "http",
-    "server": "129.153.93.183",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "129.153.93.183",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_5e97a30ea",
-    "tag": "https|United States:9002|851ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.198",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.198",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_40673a0f6",
-    "tag": "https|United States:9002|852ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.203",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.203",
+      "server_name": "80.124.109.22",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_0fd5b9ad1",
-    "tag": "https|United States:9002|852ms|zloi-user/ht#75",
+    "tag": "https|United States:9002|736ms|zloi-user/ht",
     "type": "http",
     "server": "138.199.35.218",
     "server_port": 9002,
@@ -897,32 +333,32 @@
     }
   },
   {
-    "__id_in_gui": "ID_6c91e615e",
-    "tag": "https|Romania:443|853ms|zloi-user/ht",
+    "__id_in_gui": "ID_195d945c5",
+    "tag": "https|United States:443|737ms|zloi-user/ht",
     "type": "http",
-    "server": "172.64.69.89",
+    "server": "137.175.22.120",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "172.64.69.89",
+      "server_name": "137.175.22.120",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_5fb071660",
-    "tag": "https|Luxembourg:9443|854ms|zloi-user/ht",
+    "__id_in_gui": "ID_60e695d5b",
+    "tag": "https|United States:9002|737ms|zloi-user/ht",
     "type": "http",
-    "server": "185.221.132.226",
-    "server_port": 9443,
+    "server": "138.199.35.209",
+    "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "185.221.132.226",
+      "server_name": "138.199.35.209",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_469028e75",
-    "tag": "https|United States:9002|855ms|zloi-user/ht",
+    "tag": "https|United States:9002|739ms|zloi-user/ht",
     "type": "http",
     "server": "138.199.35.208",
     "server_port": 9002,
@@ -933,68 +369,20 @@
     }
   },
   {
-    "__id_in_gui": "ID_48448fa1c",
-    "tag": "https|United States:9002|857ms|zloi-user/ht",
+    "__id_in_gui": "ID_b4f66b89b",
+    "tag": "https|United States:9002|739ms|zloi-user/ht#32",
     "type": "http",
-    "server": "138.199.35.201",
+    "server": "138.199.35.210",
     "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "138.199.35.201",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_52cd5110a",
-    "tag": "https|United States:9002|858ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.211",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.211",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ac97931e3",
-    "tag": "https|United States:9002|859ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.215",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.215",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4e1ef2363",
-    "tag": "https|United States:9002|864ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.206",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.206",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_def3b3e67",
-    "tag": "https|United States:9002|868ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.199",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.199",
+      "server_name": "138.199.35.210",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_f24936546",
-    "tag": "https|United States:9002|869ms|zloi-user/ht",
+    "tag": "https|United States:9002|741ms|zloi-user/ht",
     "type": "http",
     "server": "138.199.35.200",
     "server_port": 9002,
@@ -1005,183 +393,279 @@
     }
   },
   {
-    "__id_in_gui": "ID_9a110741b",
-    "tag": "https|United States:9002|871ms|zloi-user/ht",
+    "__id_in_gui": "ID_e577f2a5b",
+    "tag": "https|United States:9002|741ms|zloi-user/ht#34",
     "type": "http",
-    "server": "138.199.35.205",
+    "server": "138.199.35.196",
     "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "138.199.35.205",
+      "server_name": "138.199.35.196",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_876aab2b1",
-    "tag": "https|United States:9002|872ms|zloi-user/ht",
+    "__id_in_gui": "ID_603501724",
+    "tag": "https|United States:9002|743ms|zloi-user/ht",
     "type": "http",
-    "server": "138.199.35.202",
+    "server": "138.199.35.204",
     "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "138.199.35.202",
+      "server_name": "138.199.35.204",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_2222e3f98",
-    "tag": "https|United States:8443|874ms|zloi-user/ht",
+    "__id_in_gui": "ID_6aa16a35c",
+    "tag": "https|United States:9002|744ms|zloi-user/ht",
     "type": "http",
-    "server": "44.248.167.117",
+    "server": "138.199.35.195",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.195",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_7e3d7dc2b",
+    "tag": "https|United States:9002|745ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.212",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.212",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_be1e1c7af",
+    "tag": "https|Japan:443|746ms|zloi-user/ht",
+    "type": "http",
+    "server": "8.216.57.38",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "8.216.57.38",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_4e1ef2363",
+    "tag": "https|United States:9002|747ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.206",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.206",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_40673a0f6",
+    "tag": "https|United States:9002|749ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.203",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.203",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_c55242a41",
+    "tag": "https|United States:443|758ms|zloi-user/ht",
+    "type": "http",
+    "server": "137.175.22.98",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "137.175.22.98",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_5f658722a",
+    "tag": "https|The Netherlands:19362|770ms|zloi-user/ht",
+    "type": "http",
+    "server": "51.159.225.197",
+    "server_port": 19362,
+    "tls": {
+      "enabled": true,
+      "server_name": "51.159.225.197",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_3f725715f",
+    "tag": "https|France:443|773ms|zloi-user/ht",
+    "type": "http",
+    "server": "130.180.211.56",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "130.180.211.56",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_18b424735",
+    "tag": "https|United States:8443|773ms|zloi-user/ht",
+    "type": "http",
+    "server": "54.190.176.228",
     "server_port": 8443,
     "tls": {
       "enabled": true,
-      "server_name": "44.248.167.117",
+      "server_name": "54.190.176.228",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_547b9ae03",
-    "tag": "https|United States:9002|875ms|zloi-user/ht",
+    "__id_in_gui": "ID_4226e5897",
+    "tag": "https|Russia:9443|773ms|zloi-user/ht",
     "type": "http",
-    "server": "138.199.35.213",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.213",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_2a472fc03",
-    "tag": "http|94.158.49.82:3128|878ms|r00tee/Https",
-    "type": "http",
-    "server": "94.158.49.82",
-    "server_port": 3128
-  },
-  {
-    "__id_in_gui": "ID_43c1dd813",
-    "tag": "https|United Kingdom:9443|880ms|zloi-user/ht",
-    "type": "http",
-    "server": "37.221.113.162",
+    "server": "192.159.101.178",
     "server_port": 9443,
     "tls": {
       "enabled": true,
-      "server_name": "37.221.113.162",
+      "server_name": "192.159.101.178",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_8b9ecf852",
-    "tag": "https|United Kingdom:8443|884ms|zloi-user/ht",
+    "__id_in_gui": "ID_63834388d",
+    "tag": "https|France:443|775ms|zloi-user/ht",
     "type": "http",
-    "server": "5.101.149.245",
+    "server": "84.235.228.156",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "84.235.228.156",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_7b00d5980",
+    "tag": "https|Spain:9443|776ms|zloi-user/ht",
+    "type": "http",
+    "server": "130.195.250.34",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "130.195.250.34",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_a1f8573ed",
+    "tag": "https|Germany:443|778ms|zloi-user/ht",
+    "type": "http",
+    "server": "217.154.160.160",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "217.154.160.160",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_299959c7b",
+    "tag": "https|Vietnam:8443|780ms|zloi-user/ht",
+    "type": "http",
+    "server": "103.70.115.234",
     "server_port": 8443,
     "tls": {
       "enabled": true,
-      "server_name": "5.101.149.245",
+      "server_name": "103.70.115.234",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_d699f65a4",
-    "tag": "https|Switzerland:443|886ms|zloi-user/ht",
+    "__id_in_gui": "ID_d29f3c175",
+    "tag": "http|202.4.127.89:81|793ms|r00tee/Https",
     "type": "http",
-    "server": "87.239.206.115",
+    "server": "202.4.127.89",
+    "server_port": 81
+  },
+  {
+    "__id_in_gui": "ID_6706f8d5a",
+    "tag": "https|The Netherlands:23856|796ms|zloi-user/ht",
+    "type": "http",
+    "server": "51.159.225.196",
+    "server_port": 23856,
+    "tls": {
+      "enabled": true,
+      "server_name": "51.159.225.196",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_234e72637",
+    "tag": "https|The Netherlands:443|799ms|zloi-user/ht",
+    "type": "http",
+    "server": "82.115.7.249",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "87.239.206.115",
+      "server_name": "82.115.7.249",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_1e115fee6",
-    "tag": "https|The Netherlands:443|889ms|zloi-user/ht",
+    "__id_in_gui": "ID_addecde39",
+    "tag": "https|United States:443|802ms|zloi-user/ht",
     "type": "http",
-    "server": "5.255.97.220",
+    "server": "137.175.22.85",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "5.255.97.220",
+      "server_name": "137.175.22.85",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_1586bfb4a",
-    "tag": "https|Germany:8880|896ms|zloi-user/ht",
+    "__id_in_gui": "ID_540f4de69",
+    "tag": "https|Germany:443|817ms|zloi-user/ht",
     "type": "http",
-    "server": "91.107.148.250",
-    "server_port": 8880,
-    "tls": {
-      "enabled": true,
-      "server_name": "91.107.148.250",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ebe66ec42",
-    "tag": "https|Germany:443|899ms|zloi-user/ht",
-    "type": "http",
-    "server": "18.159.186.180",
+    "server": "185.232.70.11",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "18.159.186.180",
+      "server_name": "185.232.70.11",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_b45345c74",
-    "tag": "https|Japan:8443|900ms|zloi-user/ht",
+    "__id_in_gui": "ID_897f3f68e",
+    "tag": "https|Japan:9443|819ms|zloi-user/ht",
     "type": "http",
-    "server": "64.176.51.83",
-    "server_port": 8443,
+    "server": "138.199.39.129",
+    "server_port": 9443,
     "tls": {
       "enabled": true,
-      "server_name": "64.176.51.83",
+      "server_name": "138.199.39.129",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_ff8d49a21",
-    "tag": "https|185.221.132.242:443|904ms|proxifly/htt",
+    "__id_in_gui": "ID_5cb1253fc",
+    "tag": "https|Germany:443|826ms|zloi-user/ht",
     "type": "http",
-    "server": "185.221.132.242",
+    "server": "159.69.94.125",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "185.221.132.242",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_cd2fc4983",
-    "tag": "https|Indonesia:443|908ms|zloi-user/ht",
-    "type": "http",
-    "server": "178.248.73.58",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "178.248.73.58",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_02aabdde0",
-    "tag": "https|The Netherlands:8443|909ms|zloi-user/ht",
-    "type": "http",
-    "server": "45.142.141.5",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "45.142.141.5",
+      "server_name": "159.69.94.125",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_d4ec197b0",
-    "tag": "https|United States:443|913ms|zloi-user/ht",
+    "tag": "https|United States:443|827ms|zloi-user/ht",
     "type": "http",
     "server": "45.63.38.134",
     "server_port": 443,
@@ -1192,20 +676,303 @@
     }
   },
   {
-    "__id_in_gui": "ID_40445a6da",
-    "tag": "https|North Macedonia:9443|917ms|zloi-user/ht",
+    "__id_in_gui": "ID_05719b616",
+    "tag": "http|146.196.40.155:3127|827ms|r00tee/Https",
     "type": "http",
-    "server": "203.12.28.18",
-    "server_port": 9443,
+    "server": "146.196.40.155",
+    "server_port": 3127
+  },
+  {
+    "__id_in_gui": "ID_dd4af50e1",
+    "tag": "https|United States:9002|830ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.207",
+    "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "203.12.28.18",
+      "server_name": "138.199.35.207",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ed3908347",
+    "tag": "https|Lithuania:443|832ms|zloi-user/ht",
+    "type": "http",
+    "server": "89.124.11.9",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "89.124.11.9",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_384a13038",
+    "tag": "https|United States:9002|834ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.219",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.219",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ac97931e3",
+    "tag": "https|United States:9002|837ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.215",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.215",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_753f124e1",
+    "tag": "https|United States:9002|837ms|zloi-user/ht#63",
+    "type": "http",
+    "server": "138.199.35.214",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.214",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_547b9ae03",
+    "tag": "https|United States:9002|843ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.213",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.213",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_52cd5110a",
+    "tag": "https|United States:9002|844ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.211",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.211",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9a110741b",
+    "tag": "https|United States:9002|849ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.205",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.205",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9e6e8f070",
+    "tag": "https|United States:9002|854ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.217",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.217",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_dceaf8416",
+    "tag": "https|France:443|856ms|zloi-user/ht",
+    "type": "http",
+    "server": "51.210.167.149",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "51.210.167.149",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_876aab2b1",
+    "tag": "https|United States:9002|856ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.202",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.202",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_5e97a30ea",
+    "tag": "https|United States:9002|865ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.198",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.198",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_355fcb99d",
+    "tag": "https|United States:9002|866ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.216",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.216",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_def3b3e67",
+    "tag": "https|United States:9002|871ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.199",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.199",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_b45345c74",
+    "tag": "https|Japan:8443|872ms|zloi-user/ht",
+    "type": "http",
+    "server": "64.176.51.83",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "64.176.51.83",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_6c91e615e",
+    "tag": "https|Romania:443|872ms|zloi-user/ht",
+    "type": "http",
+    "server": "172.64.69.89",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "172.64.69.89",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_213079fb5",
+    "tag": "https|United States:443|875ms|zloi-user/ht",
+    "type": "http",
+    "server": "137.175.22.87",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "137.175.22.87",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_48448fa1c",
+    "tag": "https|United States:9002|875ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.201",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.201",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_1b0dcadd6",
+    "tag": "https|United States:9002|875ms|zloi-user/ht#77",
+    "type": "http",
+    "server": "138.199.35.197",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.197",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_2222e3f98",
+    "tag": "https|United States:8443|880ms|zloi-user/ht",
+    "type": "http",
+    "server": "44.248.167.117",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "44.248.167.117",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_1075ae0ec",
+    "tag": "https|Germany:443|884ms|zloi-user/ht",
+    "type": "http",
+    "server": "79.76.126.155",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "79.76.126.155",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ebe66ec42",
+    "tag": "https|Germany:443|894ms|zloi-user/ht",
+    "type": "http",
+    "server": "18.159.186.180",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "18.159.186.180",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_60039c303",
+    "tag": "https|Romania:443|897ms|zloi-user/ht",
+    "type": "http",
+    "server": "172.64.68.89",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "172.64.68.89",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_08905d7b4",
+    "tag": "https|Ireland:443|913ms|zloi-user/ht",
+    "type": "http",
+    "server": "54.194.223.138",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "54.194.223.138",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_1a98f8101",
-    "tag": "https|Ireland:443|917ms|zloi-user/ht",
+    "tag": "https|Ireland:443|915ms|zloi-user/ht",
     "type": "http",
     "server": "52.210.69.60",
     "server_port": 443,
@@ -1216,44 +983,20 @@
     }
   },
   {
-    "__id_in_gui": "ID_6dbd71e26",
-    "tag": "https|Romania:9002|918ms|zloi-user/ht",
+    "__id_in_gui": "ID_cd2fc4983",
+    "tag": "https|Indonesia:443|916ms|zloi-user/ht",
     "type": "http",
-    "server": "193.176.84.27",
-    "server_port": 9002,
+    "server": "178.248.73.58",
+    "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "193.176.84.27",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_b43195228",
-    "tag": "https|84.233.178.33:9443|922ms|proxifly/htt",
-    "type": "http",
-    "server": "84.233.178.33",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "84.233.178.33",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_51bc2035a",
-    "tag": "https|Romania:9002|923ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.23",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.23",
+      "server_name": "178.248.73.58",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_5616359b3",
-    "tag": "https|Ireland:443|923ms|zloi-user/ht",
+    "tag": "https|Ireland:443|918ms|zloi-user/ht",
     "type": "http",
     "server": "52.210.119.93",
     "server_port": 443,
@@ -1264,56 +1007,56 @@
     }
   },
   {
-    "__id_in_gui": "ID_f67ac483c",
-    "tag": "https|Romania:9002|925ms|zloi-user/ht",
+    "__id_in_gui": "ID_39a268429",
+    "tag": "https|Romania:9002|923ms|zloi-user/ht",
     "type": "http",
-    "server": "193.176.84.17",
+    "server": "193.176.84.34",
     "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "193.176.84.17",
+      "server_name": "193.176.84.34",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_746504371",
-    "tag": "https|Italy:443|925ms|zloi-user/ht",
+    "__id_in_gui": "ID_982eba1a3",
+    "tag": "https|United States:443|925ms|zloi-user/ht",
     "type": "http",
-    "server": "91.243.118.217",
+    "server": "20.42.108.114",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "91.243.118.217",
+      "server_name": "20.42.108.114",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_2b3ea48ed",
-    "tag": "https|United States:8443|931ms|zloi-user/ht",
+    "__id_in_gui": "ID_23bf121f2",
+    "tag": "https|France:443|930ms|zloi-user/ht",
     "type": "http",
-    "server": "43.166.187.191",
-    "server_port": 8443,
+    "server": "62.210.70.194",
+    "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "43.166.187.191",
+      "server_name": "62.210.70.194",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_530552f4e",
-    "tag": "https|United States:9443|931ms|zloi-user/ht",
+    "__id_in_gui": "ID_07a0af23d",
+    "tag": "https|Romania:9002|931ms|zloi-user/ht",
     "type": "http",
-    "server": "76.164.193.18",
-    "server_port": 9443,
+    "server": "193.176.84.32",
+    "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "76.164.193.18",
+      "server_name": "193.176.84.32",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_0f064b82e",
-    "tag": "https|Romania:9002|934ms|zloi-user/ht",
+    "tag": "https|Romania:9002|931ms|zloi-user/ht#90",
     "type": "http",
     "server": "193.176.84.22",
     "server_port": 9002,
@@ -1324,14 +1067,74 @@
     }
   },
   {
-    "__id_in_gui": "ID_a1f8573ed",
-    "tag": "https|Germany:443|936ms|zloi-user/ht",
+    "__id_in_gui": "ID_104f71cf2",
+    "tag": "https|Romania:9002|932ms|zloi-user/ht",
     "type": "http",
-    "server": "217.154.160.160",
+    "server": "193.176.84.21",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.21",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_a2c0bd792",
+    "tag": "https|Romania:9002|933ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.176.84.29",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.29",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_4a1262bf2",
+    "tag": "https|Romania:9002|934ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.176.84.19",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.19",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_57e05135e",
+    "tag": "https|Germany:443|935ms|zloi-user/ht",
+    "type": "http",
+    "server": "212.132.126.182",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "217.154.160.160",
+      "server_name": "212.132.126.182",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_37ca9e667",
+    "tag": "https|Romania:9002|935ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.176.84.33",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.33",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_f67ac483c",
+    "tag": "https|Romania:9002|936ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.176.84.17",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.17",
       "insecure": true
     }
   },
@@ -1348,104 +1151,20 @@
     }
   },
   {
-    "__id_in_gui": "ID_8cdf05a77",
-    "tag": "https|Indonesia:443|938ms|zloi-user/ht",
+    "__id_in_gui": "ID_bf64745c1",
+    "tag": "https|Ireland:443|942ms|zloi-user/ht",
     "type": "http",
-    "server": "103.153.135.118",
+    "server": "18.200.158.139",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "103.153.135.118",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4982ca1d2",
-    "tag": "https|Romania:9002|944ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.16",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.16",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_3e087044e",
-    "tag": "https|Romania:9002|948ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.39",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.39",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_993afdb69",
-    "tag": "https|United States:443|959ms|zloi-user/ht",
-    "type": "http",
-    "server": "154.202.118.108",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "154.202.118.108",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4ecaa1937",
-    "tag": "https|Germany:443|966ms|zloi-user/ht",
-    "type": "http",
-    "server": "217.92.132.233",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "217.92.132.233",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1e643474c",
-    "tag": "https|156.146.56.110:9443|973ms|proxifly/htt",
-    "type": "http",
-    "server": "156.146.56.110",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "156.146.56.110",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_391fbdf7e",
-    "tag": "https|United States:9443|975ms|zloi-user/ht",
-    "type": "http",
-    "server": "198.44.137.19",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "198.44.137.19",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9326ac918",
-    "tag": "https|Latvia:9443|977ms|zloi-user/ht",
-    "type": "http",
-    "server": "109.248.149.34",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "109.248.149.34",
+      "server_name": "18.200.158.139",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_1b7f64e03",
-    "tag": "https|Latvia:443|977ms|zloi-user/ht",
+    "tag": "https|Latvia:443|942ms|zloi-user/ht",
     "type": "http",
     "server": "37.128.207.31",
     "server_port": 443,
@@ -1456,68 +1175,56 @@
     }
   },
   {
-    "__id_in_gui": "ID_8b3941b03",
-    "tag": "https|Latvia:443|980ms|zloi-user/ht",
+    "__id_in_gui": "ID_51bc2035a",
+    "tag": "https|Romania:9002|944ms|zloi-user/ht",
     "type": "http",
-    "server": "37.203.35.28",
+    "server": "193.176.84.23",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.23",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_5c19a6f33",
+    "tag": "https|Germany:443|950ms|zloi-user/ht",
+    "type": "http",
+    "server": "87.106.163.174",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "37.203.35.28",
+      "server_name": "87.106.163.174",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_6706f8d5a",
-    "tag": "https|The Netherlands:23856|987ms|zloi-user/ht",
+    "__id_in_gui": "ID_e536a0472",
+    "tag": "https|120.232.204.58:52200|951ms|proxifly/htt",
     "type": "http",
-    "server": "51.159.225.196",
-    "server_port": 23856,
+    "server": "120.232.204.58",
+    "server_port": 52200,
     "tls": {
       "enabled": true,
-      "server_name": "51.159.225.196",
+      "server_name": "120.232.204.58",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_ad28088ef",
-    "tag": "https|Finland:8080|989ms|zloi-user/ht",
+    "__id_in_gui": "ID_84e62404f",
+    "tag": "https|United States:443|969ms|zloi-user/ht",
     "type": "http",
-    "server": "65.109.179.56",
-    "server_port": 8080,
-    "tls": {
-      "enabled": true,
-      "server_name": "65.109.179.56",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_c0424ee42",
-    "tag": "https|United States:9443|994ms|zloi-user/ht",
-    "type": "http",
-    "server": "198.44.139.43",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "198.44.139.43",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9235228ff",
-    "tag": "https|Finland:443|996ms|zloi-user/ht",
-    "type": "http",
-    "server": "65.108.56.95",
+    "server": "161.35.56.204",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "65.108.56.95",
+      "server_name": "161.35.56.204",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_adcb7ce32",
-    "tag": "https|United States:443|997ms|zloi-user/ht",
+    "tag": "https|United States:443|973ms|zloi-user/ht",
     "type": "http",
     "server": "23.133.176.14",
     "server_port": 443,
@@ -1528,99 +1235,44 @@
     }
   },
   {
-    "__id_in_gui": "ID_b8d7badcb",
-    "tag": "http|201.71.2.27:999|1012ms|r00tee/Https",
+    "__id_in_gui": "ID_e1f640e74",
+    "tag": "https|Indonesia:443|973ms|zloi-user/ht",
     "type": "http",
-    "server": "201.71.2.27",
-    "server_port": 999
-  },
-  {
-    "__id_in_gui": "ID_898dbbb76",
-    "tag": "https|United States:443|1014ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.247.141.135",
+    "server": "103.86.116.118",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.247.141.135",
+      "server_name": "103.86.116.118",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_a24ba59a6",
-    "tag": "https|United States:443|1015ms|zloi-user/ht",
+    "__id_in_gui": "ID_7654d147e",
+    "tag": "https|United States:443|976ms|zloi-user/ht",
     "type": "http",
-    "server": "64.98.50.100",
+    "server": "38.28.193.1",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "64.98.50.100",
+      "server_name": "38.28.193.1",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_23bf121f2",
-    "tag": "https|France:443|1020ms|zloi-user/ht",
+    "__id_in_gui": "ID_c3aee6a1c",
+    "tag": "https|South Korea:443|985ms|zloi-user/ht",
     "type": "http",
-    "server": "62.210.70.194",
+    "server": "141.164.39.178",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "62.210.70.194",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_799e3b71f",
-    "tag": "https|The Netherlands:8443|1025ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.16.163.249",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.16.163.249",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_324ce9a11",
-    "tag": "https|The Netherlands:443|1043ms|zloi-user/ht",
-    "type": "http",
-    "server": "185.238.168.20",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "185.238.168.20",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_c31f0a3c8",
-    "tag": "https|The Netherlands:9002|1045ms|zloi-user/ht",
-    "type": "http",
-    "server": "84.17.47.148",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "84.17.47.148",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_0b490f5de",
-    "tag": "https|Finland:8443|1046ms|zloi-user/ht",
-    "type": "http",
-    "server": "163.5.153.163",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "163.5.153.163",
+      "server_name": "141.164.39.178",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_d9f762fef",
-    "tag": "https|Finland:8443|1046ms|zloi-user/ht#137",
+    "tag": "https|Finland:8443|985ms|zloi-user/ht",
     "type": "http",
     "server": "65.108.56.95",
     "server_port": 8443,
@@ -1631,152 +1283,104 @@
     }
   },
   {
-    "__id_in_gui": "ID_2ae8ccb51",
-    "tag": "https|Germany:443|1049ms|zloi-user/ht",
+    "__id_in_gui": "ID_b12725001",
+    "tag": "https|France:443|988ms|zloi-user/ht",
     "type": "http",
-    "server": "79.127.156.177",
+    "server": "82.66.235.221",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "79.127.156.177",
+      "server_name": "82.66.235.221",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_5e07da379",
-    "tag": "https|The Netherlands:9002|1055ms|zloi-user/ht",
+    "__id_in_gui": "ID_861e4fcb4",
+    "tag": "https|United States:9443|992ms|zloi-user/ht",
     "type": "http",
-    "server": "84.17.47.123",
-    "server_port": 9002,
+    "server": "193.239.236.134",
+    "server_port": 9443,
     "tls": {
       "enabled": true,
-      "server_name": "84.17.47.123",
+      "server_name": "193.239.236.134",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_ffd7630a6",
-    "tag": "https|United States:443|1056ms|zloi-user/ht",
+    "__id_in_gui": "ID_cdf1cd727",
+    "tag": "https|Germany:8443|993ms|zloi-user/ht",
     "type": "http",
-    "server": "44.196.66.215",
+    "server": "188.120.225.125",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "188.120.225.125",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_d3dae8d62",
+    "tag": "https|Cyprus:9443|993ms|zloi-user/ht",
+    "type": "http",
+    "server": "213.207.130.34",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "213.207.130.34",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ff7333046",
+    "tag": "https|Latvia:443|999ms|zloi-user/ht",
+    "type": "http",
+    "server": "37.203.35.50",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "44.196.66.215",
+      "server_name": "37.203.35.50",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_5f2f45c34",
-    "tag": "https|The Netherlands:443|1057ms|zloi-user/ht",
+    "__id_in_gui": "ID_f554f6b5e",
+    "tag": "https|Russia:1446|1003ms|zloi-user/ht",
     "type": "http",
-    "server": "185.238.170.10",
+    "server": "46.29.166.134",
+    "server_port": 1446,
+    "tls": {
+      "enabled": true,
+      "server_name": "46.29.166.134",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ad28088ef",
+    "tag": "https|Finland:8080|1005ms|zloi-user/ht",
+    "type": "http",
+    "server": "65.109.179.56",
+    "server_port": 8080,
+    "tls": {
+      "enabled": true,
+      "server_name": "65.109.179.56",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9235228ff",
+    "tag": "https|Finland:443|1009ms|zloi-user/ht",
+    "type": "http",
+    "server": "65.108.56.95",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "185.238.170.10",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f719e3273",
-    "tag": "https|Romania:9002|1062ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.18",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.18",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1a9e1e7c5",
-    "tag": "https|Germany:9002|1062ms|zloi-user/ht",
-    "type": "http",
-    "server": "158.173.154.2",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "158.173.154.2",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f2bd35b60",
-    "tag": "https|Germany:443|1063ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.233.75.115",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.233.75.115",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_db197ecd5",
-    "tag": "https|Romania:443|1065ms|zloi-user/ht",
-    "type": "http",
-    "server": "203.25.108.72",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "203.25.108.72",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f88f9bc33",
-    "tag": "https|Canada:443|1067ms|zloi-user/ht",
-    "type": "http",
-    "server": "99.79.128.139",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "99.79.128.139",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f819fc8a0",
-    "tag": "https|Canada:443|1069ms|zloi-user/ht",
-    "type": "http",
-    "server": "15.223.66.131",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "15.223.66.131",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_a2c0bd792",
-    "tag": "https|Romania:9002|1070ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.29",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.29",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_37ca9e667",
-    "tag": "https|Romania:9002|1080ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.33",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.33",
+      "server_name": "65.108.56.95",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_07eb48c5a",
-    "tag": "https|Latvia:443|1080ms|zloi-user/ht",
+    "tag": "https|Latvia:443|1014ms|zloi-user/ht",
     "type": "http",
     "server": "37.203.35.48",
     "server_port": 443,
@@ -1787,92 +1391,236 @@
     }
   },
   {
-    "__id_in_gui": "ID_8955c5235",
-    "tag": "https|United States:443|1083ms|zloi-user/ht",
+    "__id_in_gui": "ID_acad1c5da",
+    "tag": "https|The Netherlands:14287|1016ms|zloi-user/ht",
     "type": "http",
-    "server": "181.215.52.11",
-    "server_port": 443,
+    "server": "51.158.194.107",
+    "server_port": 14287,
     "tls": {
       "enabled": true,
-      "server_name": "181.215.52.11",
+      "server_name": "51.158.194.107",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_2bca4bd65",
-    "tag": "https|23.189.168.146:443|1083ms|proxifly/htt",
+    "__id_in_gui": "ID_0b490f5de",
+    "tag": "https|Finland:8443|1019ms|zloi-user/ht",
     "type": "http",
-    "server": "23.189.168.146",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "23.189.168.146",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4a1262bf2",
-    "tag": "https|Romania:9002|1084ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.19",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.19",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_03e1723e8",
-    "tag": "https|Germany:9002|1084ms|zloi-user/ht",
-    "type": "http",
-    "server": "158.173.154.3",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "158.173.154.3",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_d318b1eb9",
-    "tag": "https|United States:443|1084ms|zloi-user/ht",
-    "type": "http",
-    "server": "198.44.135.35",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "198.44.135.35",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_fe546fdf5",
-    "tag": "https|United States:8443|1085ms|zloi-user/ht",
-    "type": "http",
-    "server": "3.133.140.176",
+    "server": "163.5.153.163",
     "server_port": 8443,
     "tls": {
       "enabled": true,
-      "server_name": "3.133.140.176",
+      "server_name": "163.5.153.163",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_6d5f525e9",
-    "tag": "https|135.136.5.34:9443|1085ms|proxifly/htt",
+    "__id_in_gui": "ID_2db751fcd",
+    "tag": "https|France:8090|1024ms|zloi-user/ht",
     "type": "http",
-    "server": "135.136.5.34",
+    "server": "83.206.1.225",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "83.206.1.225",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_eb7148177",
+    "tag": "https|Sweden:8443|1025ms|zloi-user/ht",
+    "type": "http",
+    "server": "77.221.136.60",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "77.221.136.60",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_d621b7932",
+    "tag": "https|Latvia:443|1025ms|zloi-user/ht",
+    "type": "http",
+    "server": "37.203.35.53",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "37.203.35.53",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_6cf2d6073",
+    "tag": "https|United States:9443|1034ms|zloi-user/ht",
+    "type": "http",
+    "server": "12.221.146.147",
     "server_port": 9443,
     "tls": {
       "enabled": true,
-      "server_name": "135.136.5.34",
+      "server_name": "12.221.146.147",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_799e3b71f",
+    "tag": "https|The Netherlands:8443|1039ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.16.163.249",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.16.163.249",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_6b53e3563",
+    "tag": "https|France:8090|1045ms|zloi-user/ht",
+    "type": "http",
+    "server": "80.15.99.54",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "80.15.99.54",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_2b3ea48ed",
+    "tag": "https|United States:8443|1048ms|zloi-user/ht",
+    "type": "http",
+    "server": "43.166.187.191",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "43.166.187.191",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_2b695bb07",
+    "tag": "https|Japan:443|1049ms|zloi-user/ht",
+    "type": "http",
+    "server": "180.131.255.118",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "180.131.255.118",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_f2bd35b60",
+    "tag": "https|Germany:443|1055ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.233.75.115",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.233.75.115",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_324ce9a11",
+    "tag": "https|The Netherlands:443|1056ms|zloi-user/ht",
+    "type": "http",
+    "server": "185.238.168.20",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "185.238.168.20",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_b7c435967",
+    "tag": "https|The Netherlands:9002|1058ms|zloi-user/ht",
+    "type": "http",
+    "server": "84.17.47.150",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "84.17.47.150",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_1a9e1e7c5",
+    "tag": "https|Germany:9002|1059ms|zloi-user/ht",
+    "type": "http",
+    "server": "158.173.154.2",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "158.173.154.2",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_d9407425b",
+    "tag": "https|The Netherlands:9002|1060ms|zloi-user/ht",
+    "type": "http",
+    "server": "84.17.47.124",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "84.17.47.124",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_19085647b",
+    "tag": "https|Canada:443|1063ms|zloi-user/ht",
+    "type": "http",
+    "server": "15.222.13.132",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "15.222.13.132",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_993afdb69",
+    "tag": "https|United States:443|1068ms|zloi-user/ht",
+    "type": "http",
+    "server": "154.202.118.108",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "154.202.118.108",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_f88f9bc33",
+    "tag": "https|Canada:443|1069ms|zloi-user/ht",
+    "type": "http",
+    "server": "99.79.128.139",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "99.79.128.139",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_263d9922c",
+    "tag": "https|United States:443|1069ms|zloi-user/ht",
+    "type": "http",
+    "server": "104.36.250.48",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "104.36.250.48",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_7a847e8aa",
-    "tag": "https|Romania:9002|1086ms|zloi-user/ht",
+    "tag": "https|Romania:9002|1072ms|zloi-user/ht",
     "type": "http",
     "server": "193.176.84.20",
     "server_port": 9002,
@@ -1883,8 +1631,80 @@
     }
   },
   {
+    "__id_in_gui": "ID_f719e3273",
+    "tag": "https|Romania:9002|1077ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.176.84.18",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.18",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_6dbd71e26",
+    "tag": "https|Romania:9002|1077ms|zloi-user/ht#139",
+    "type": "http",
+    "server": "193.176.84.27",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.27",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_03e1723e8",
+    "tag": "https|Germany:9002|1080ms|zloi-user/ht",
+    "type": "http",
+    "server": "158.173.154.3",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "158.173.154.3",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_e4400ac53",
+    "tag": "https|Germany:9002|1081ms|zloi-user/ht",
+    "type": "http",
+    "server": "158.173.154.4",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "158.173.154.4",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9cd4740aa",
+    "tag": "https|France:443|1084ms|zloi-user/ht",
+    "type": "http",
+    "server": "62.210.27.111",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "62.210.27.111",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_1caa6cdbe",
+    "tag": "https|Germany:9002|1084ms|zloi-user/ht",
+    "type": "http",
+    "server": "158.173.154.5",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "158.173.154.5",
+      "insecure": true
+    }
+  },
+  {
     "__id_in_gui": "ID_1ddf058d0",
-    "tag": "https|United States:8080|1087ms|zloi-user/ht",
+    "tag": "https|United States:8080|1086ms|zloi-user/ht",
     "type": "http",
     "server": "47.253.46.218",
     "server_port": 8080,
@@ -1907,164 +1727,8 @@
     }
   },
   {
-    "__id_in_gui": "ID_39a268429",
-    "tag": "https|Romania:9002|1092ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.34",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.34",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_07a0af23d",
-    "tag": "https|Romania:9002|1092ms|zloi-user/ht#162",
-    "type": "http",
-    "server": "193.176.84.32",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.32",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_878103136",
-    "tag": "https|North Macedonia:443|1097ms|zloi-user/ht",
-    "type": "http",
-    "server": "203.12.28.18",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "203.12.28.18",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_6649b7726",
-    "tag": "https|169.150.197.234:9443|1097ms|proxifly/htt",
-    "type": "http",
-    "server": "169.150.197.234",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "169.150.197.234",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_104f71cf2",
-    "tag": "https|Romania:9002|1099ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.21",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.21",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9767ec737",
-    "tag": "https|The Netherlands:443|1099ms|zloi-user/ht",
-    "type": "http",
-    "server": "5.2.73.112",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "5.2.73.112",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_263d9922c",
-    "tag": "https|United States:443|1100ms|zloi-user/ht",
-    "type": "http",
-    "server": "104.36.250.48",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "104.36.250.48",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_baa89f3df",
-    "tag": "https|Albania:443|1101ms|zloi-user/ht",
-    "type": "http",
-    "server": "91.92.250.33",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "91.92.250.33",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_cb0066bf2",
-    "tag": "https|The Netherlands:443|1102ms|zloi-user/ht",
-    "type": "http",
-    "server": "89.150.35.94",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "89.150.35.94",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_0b235e485",
-    "tag": "https|United States:9443|1102ms|zloi-user/ht",
-    "type": "http",
-    "server": "198.44.159.27",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "198.44.159.27",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4d203c32a",
-    "tag": "https|Romania:9002|1105ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.36",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.36",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_8527e54b2",
-    "tag": "https|Romania:9002|1107ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.38",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.38",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_c9336244a",
-    "tag": "https|France:443|1109ms|zloi-user/ht",
-    "type": "http",
-    "server": "82.64.255.151",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "82.64.255.151",
-      "insecure": true
-    }
-  },
-  {
     "__id_in_gui": "ID_4e2aa48ad",
-    "tag": "https|Romania:9002|1121ms|zloi-user/ht",
+    "tag": "https|Romania:9002|1090ms|zloi-user/ht",
     "type": "http",
     "server": "193.176.84.37",
     "server_port": 9002,
@@ -2075,188 +1739,44 @@
     }
   },
   {
-    "__id_in_gui": "ID_6b53e3563",
-    "tag": "https|France:8090|1121ms|zloi-user/ht",
+    "__id_in_gui": "ID_4da831dc5",
+    "tag": "https|Romania:9002|1090ms|zloi-user/ht#147",
     "type": "http",
-    "server": "80.15.99.54",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "80.15.99.54",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1cb7f8594",
-    "tag": "https|United States:9443|1122ms|zloi-user/ht",
-    "type": "http",
-    "server": "198.44.135.35",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "198.44.135.35",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_a24ed2a48",
-    "tag": "https|Italy:443|1125ms|zloi-user/ht",
-    "type": "http",
-    "server": "178.237.4.200",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "178.237.4.200",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_dbf38cc73",
-    "tag": "https|Czechia:9443|1127ms|zloi-user/ht",
-    "type": "http",
-    "server": "152.233.16.161",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "152.233.16.161",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_84e62404f",
-    "tag": "https|United States:443|1136ms|zloi-user/ht",
-    "type": "http",
-    "server": "161.35.56.204",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "161.35.56.204",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_e8e4bef73",
-    "tag": "https|Vietnam:8443|1138ms|zloi-user/ht",
-    "type": "http",
-    "server": "157.66.81.25",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "157.66.81.25",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_20589a6c7",
-    "tag": "https|Romania:9002|1141ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.30",
+    "server": "193.176.84.31",
     "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "193.176.84.30",
+      "server_name": "193.176.84.31",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_73f475b0a",
-    "tag": "https|Romania:9002|1149ms|zloi-user/ht",
+    "__id_in_gui": "ID_8527e54b2",
+    "tag": "https|Romania:9002|1093ms|zloi-user/ht",
     "type": "http",
-    "server": "193.176.84.40",
+    "server": "193.176.84.38",
     "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "193.176.84.40",
+      "server_name": "193.176.84.38",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_13c0df893",
-    "tag": "https|Italy:443|1151ms|zloi-user/ht",
+    "__id_in_gui": "ID_5f2f45c34",
+    "tag": "https|The Netherlands:443|1095ms|zloi-user/ht",
     "type": "http",
-    "server": "93.42.177.250",
+    "server": "185.238.170.10",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "93.42.177.250",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_0e662ed4b",
-    "tag": "https|United States:9443|1152ms|zloi-user/ht",
-    "type": "http",
-    "server": "181.215.52.11",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "181.215.52.11",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ba72de3b4",
-    "tag": "https|Bulgaria:443|1154ms|zloi-user/ht",
-    "type": "http",
-    "server": "169.150.237.1",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "169.150.237.1",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_3a9869af5",
-    "tag": "https|United States:443|1155ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.28.193.42",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "38.28.193.42",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_e3137228c",
-    "tag": "https|United States:443|1162ms|zloi-user/ht",
-    "type": "http",
-    "server": "71.43.26.234",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "71.43.26.234",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_08905d7b4",
-    "tag": "https|Ireland:443|1163ms|zloi-user/ht",
-    "type": "http",
-    "server": "54.194.223.138",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "54.194.223.138",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f321f07cc",
-    "tag": "https|Bulgaria:9443|1164ms|zloi-user/ht",
-    "type": "http",
-    "server": "169.150.237.1",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "169.150.237.1",
+      "server_name": "185.238.170.10",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_041c6aaa7",
-    "tag": "https|South Korea:8443|1168ms|zloi-user/ht",
+    "tag": "https|South Korea:8443|1097ms|zloi-user/ht",
     "type": "http",
     "server": "158.247.204.254",
     "server_port": 8443,
@@ -2267,27 +1787,32 @@
     }
   },
   {
-    "__id_in_gui": "ID_61996400c",
-    "tag": "https|United States:8090|1170ms|zloi-user/ht",
+    "__id_in_gui": "ID_4982ca1d2",
+    "tag": "https|Romania:9002|1098ms|zloi-user/ht",
     "type": "http",
-    "server": "66.153.187.90",
-    "server_port": 8090,
+    "server": "193.176.84.16",
+    "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "66.153.187.90",
+      "server_name": "193.176.84.16",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_eb83d3339",
-    "tag": "http|190.97.236.128:999|1170ms|r00tee/Https",
+    "__id_in_gui": "ID_cb3be0c17",
+    "tag": "https|Germany:443|1099ms|zloi-user/ht",
     "type": "http",
-    "server": "190.97.236.128",
-    "server_port": 999
+    "server": "217.110.121.54",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "217.110.121.54",
+      "insecure": true
+    }
   },
   {
     "__id_in_gui": "ID_f7efc3e96",
-    "tag": "https|United States:443|1171ms|zloi-user/ht",
+    "tag": "https|United States:443|1099ms|zloi-user/ht",
     "type": "http",
     "server": "52.15.98.63",
     "server_port": 443,
@@ -2298,44 +1823,80 @@
     }
   },
   {
-    "__id_in_gui": "ID_b03c04915",
-    "tag": "https|United States:443|1178ms|zloi-user/ht",
+    "__id_in_gui": "ID_20589a6c7",
+    "tag": "https|Romania:9002|1104ms|zloi-user/ht",
     "type": "http",
-    "server": "18.116.108.189",
-    "server_port": 443,
+    "server": "193.176.84.30",
+    "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "18.116.108.189",
+      "server_name": "193.176.84.30",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_4d47f6aec",
-    "tag": "https|United States:443|1179ms|zloi-user/ht",
+    "__id_in_gui": "ID_49f22bcdc",
+    "tag": "https|The Netherlands:14287|1107ms|zloi-user/ht",
     "type": "http",
-    "server": "38.28.193.188",
-    "server_port": 443,
+    "server": "51.158.202.56",
+    "server_port": 14287,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.193.188",
+      "server_name": "51.158.202.56",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_f922b76d8",
-    "tag": "https|135.136.1.2:9443|1183ms|proxifly/htt",
+    "__id_in_gui": "ID_73f475b0a",
+    "tag": "https|Romania:9002|1109ms|zloi-user/ht",
     "type": "http",
-    "server": "135.136.1.2",
-    "server_port": 9443,
+    "server": "193.176.84.40",
+    "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "135.136.1.2",
+      "server_name": "193.176.84.40",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_4250c8eb0",
+    "tag": "https|Germany:8443|1112ms|zloi-user/ht",
+    "type": "http",
+    "server": "91.107.219.205",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "91.107.219.205",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_8cdf05a77",
+    "tag": "https|Indonesia:443|1114ms|zloi-user/ht",
+    "type": "http",
+    "server": "103.153.135.118",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "103.153.135.118",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_4d203c32a",
+    "tag": "https|Romania:9002|1115ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.176.84.36",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.36",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_a78707078",
-    "tag": "https|Czechia:8443|1195ms|zloi-user/ht",
+    "tag": "https|Czechia:8443|1116ms|zloi-user/ht",
     "type": "http",
     "server": "5.35.100.14",
     "server_port": 8443,
@@ -2346,56 +1907,188 @@
     }
   },
   {
-    "__id_in_gui": "ID_a61fefb39",
-    "tag": "https|United States:443|1198ms|zloi-user/ht",
+    "__id_in_gui": "ID_3e087044e",
+    "tag": "https|Romania:9002|1118ms|zloi-user/ht",
     "type": "http",
-    "server": "38.28.193.47",
-    "server_port": 443,
+    "server": "193.176.84.39",
+    "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.193.47",
+      "server_name": "193.176.84.39",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_5795ce2a0",
-    "tag": "https|Bosnia and Herzegovi:9443|1202ms|zloi-user/ht",
+    "__id_in_gui": "ID_08cfc1b24",
+    "tag": "https|Romania:9002|1119ms|zloi-user/ht",
     "type": "http",
-    "server": "45.156.248.50",
+    "server": "193.176.84.24",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.24",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_e12c55750",
+    "tag": "https|Germany:443|1123ms|zloi-user/ht",
+    "type": "http",
+    "server": "176.94.74.21",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "176.94.74.21",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_89c047dd6",
+    "tag": "https|United States:9443|1123ms|zloi-user/ht",
+    "type": "http",
+    "server": "149.102.227.77",
     "server_port": 9443,
     "tls": {
       "enabled": true,
-      "server_name": "45.156.248.50",
+      "server_name": "149.102.227.77",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_1075ae0ec",
-    "tag": "https|Germany:443|1203ms|zloi-user/ht",
+    "__id_in_gui": "ID_14db430e5",
+    "tag": "https|The Netherlands:443|1126ms|zloi-user/ht",
     "type": "http",
-    "server": "79.76.126.155",
+    "server": "52.142.253.29",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "79.76.126.155",
+      "server_name": "52.142.253.29",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_08422a4cb",
-    "tag": "https|United States:443|1209ms|zloi-user/ht",
+    "__id_in_gui": "ID_fe546fdf5",
+    "tag": "https|United States:8443|1127ms|zloi-user/ht",
     "type": "http",
-    "server": "170.199.233.89",
+    "server": "3.133.140.176",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "3.133.140.176",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_cca6c9081",
+    "tag": "https|United Kingdom:8443|1141ms|zloi-user/ht",
+    "type": "http",
+    "server": "198.105.124.180",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "198.105.124.180",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_e8e4bef73",
+    "tag": "https|Vietnam:8443|1144ms|zloi-user/ht",
+    "type": "http",
+    "server": "157.66.81.25",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "157.66.81.25",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_087ada733",
+    "tag": "https|Cyprus:443|1157ms|zloi-user/ht",
+    "type": "http",
+    "server": "213.207.130.34",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "170.199.233.89",
+      "server_name": "213.207.130.34",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_f819fc8a0",
+    "tag": "https|Canada:443|1157ms|zloi-user/ht",
+    "type": "http",
+    "server": "15.223.66.131",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "15.223.66.131",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ffd7630a6",
+    "tag": "https|United States:443|1159ms|zloi-user/ht",
+    "type": "http",
+    "server": "44.196.66.215",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "44.196.66.215",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_61996400c",
+    "tag": "https|United States:8090|1162ms|zloi-user/ht",
+    "type": "http",
+    "server": "66.153.187.90",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "66.153.187.90",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_85fbe67bf",
+    "tag": "https|Romania:9002|1166ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.176.84.35",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.176.84.35",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_13c0df893",
+    "tag": "https|Italy:443|1168ms|zloi-user/ht",
+    "type": "http",
+    "server": "93.42.177.250",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "93.42.177.250",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_a158ac7ed",
+    "tag": "https|United States:9443|1172ms|zloi-user/ht",
+    "type": "http",
+    "server": "23.169.224.3",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "23.169.224.3",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_2cdf3b0c9",
-    "tag": "https|United States:9443|1210ms|zloi-user/ht",
+    "tag": "https|United States:9443|1182ms|zloi-user/ht",
     "type": "http",
     "server": "162.191.226.246",
     "server_port": 9443,
@@ -2406,8 +2099,56 @@
     }
   },
   {
+    "__id_in_gui": "ID_a24ed2a48",
+    "tag": "https|Italy:443|1189ms|zloi-user/ht",
+    "type": "http",
+    "server": "178.237.4.200",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "178.237.4.200",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_12183c269",
+    "tag": "https|United Kingdom:443|1191ms|zloi-user/ht",
+    "type": "http",
+    "server": "167.172.50.198",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "167.172.50.198",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_02aabdde0",
+    "tag": "https|Germany:8443|1199ms|zloi-user/ht",
+    "type": "http",
+    "server": "45.142.141.5",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "45.142.141.5",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_fea746f45",
+    "tag": "https|The Netherlands:9443|1199ms|zloi-user/ht",
+    "type": "http",
+    "server": "161.129.60.66",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "161.129.60.66",
+      "insecure": true
+    }
+  },
+  {
     "__id_in_gui": "ID_22ad95802",
-    "tag": "https|The Netherlands:9002|1211ms|zloi-user/ht",
+    "tag": "https|The Netherlands:9002|1204ms|zloi-user/ht",
     "type": "http",
     "server": "84.17.47.149",
     "server_port": 9002,
@@ -2418,20 +2159,20 @@
     }
   },
   {
-    "__id_in_gui": "ID_b7c435967",
-    "tag": "https|The Netherlands:9002|1216ms|zloi-user/ht",
+    "__id_in_gui": "ID_5e07da379",
+    "tag": "https|The Netherlands:9002|1204ms|zloi-user/ht#182",
     "type": "http",
-    "server": "84.17.47.150",
+    "server": "84.17.47.123",
     "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "84.17.47.150",
+      "server_name": "84.17.47.123",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_eff9668cf",
-    "tag": "https|The Netherlands:9002|1217ms|zloi-user/ht",
+    "tag": "https|The Netherlands:9002|1207ms|zloi-user/ht",
     "type": "http",
     "server": "84.17.47.147",
     "server_port": 9002,
@@ -2442,68 +2183,32 @@
     }
   },
   {
-    "__id_in_gui": "ID_9626f1659",
-    "tag": "https|Germany:443|1217ms|zloi-user/ht",
+    "__id_in_gui": "ID_c31f0a3c8",
+    "tag": "https|The Netherlands:9002|1209ms|zloi-user/ht",
     "type": "http",
-    "server": "194.67.110.12",
-    "server_port": 443,
+    "server": "84.17.47.148",
+    "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "194.67.110.12",
+      "server_name": "84.17.47.148",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_d9407425b",
+    "__id_in_gui": "ID_e1004fdaa",
     "tag": "https|The Netherlands:9002|1218ms|zloi-user/ht",
     "type": "http",
-    "server": "84.17.47.124",
+    "server": "84.17.47.146",
     "server_port": 9002,
     "tls": {
       "enabled": true,
-      "server_name": "84.17.47.124",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_8cd0de405",
-    "tag": "https|The Netherlands:9002|1219ms|zloi-user/ht",
-    "type": "http",
-    "server": "84.17.47.125",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "84.17.47.125",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1caa6cdbe",
-    "tag": "https|Germany:9002|1220ms|zloi-user/ht",
-    "type": "http",
-    "server": "158.173.154.5",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "158.173.154.5",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_53b165517",
-    "tag": "https|Germany:9443|1220ms|zloi-user/ht",
-    "type": "http",
-    "server": "79.127.156.177",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "79.127.156.177",
+      "server_name": "84.17.47.146",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_7cbad5516",
-    "tag": "https|The Netherlands:9002|1226ms|zloi-user/ht",
+    "tag": "https|The Netherlands:9002|1230ms|zloi-user/ht",
     "type": "http",
     "server": "84.17.47.126",
     "server_port": 9002,
@@ -2515,7 +2220,7 @@
   },
   {
     "__id_in_gui": "ID_afd7e7a1a",
-    "tag": "https|Germany:9002|1228ms|zloi-user/ht",
+    "tag": "https|Germany:9002|1239ms|zloi-user/ht",
     "type": "http",
     "server": "158.173.154.1",
     "server_port": 9002,
@@ -2526,116 +2231,56 @@
     }
   },
   {
-    "__id_in_gui": "ID_0aa32441d",
-    "tag": "https|France:443|1233ms|zloi-user/ht",
+    "__id_in_gui": "ID_460b3843f",
+    "tag": "https|Switzerland:9443|1246ms|zloi-user/ht",
     "type": "http",
-    "server": "82.65.162.76",
+    "server": "169.150.197.247",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "169.150.197.247",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_7c8b57466",
+    "tag": "https|United States:443|1273ms|zloi-user/ht",
+    "type": "http",
+    "server": "24.225.10.211",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "82.65.162.76",
+      "server_name": "24.225.10.211",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_e1004fdaa",
-    "tag": "https|The Netherlands:9002|1236ms|zloi-user/ht",
+    "__id_in_gui": "ID_4ad8d9350",
+    "tag": "https|Bangladesh:443|1274ms|zloi-user/ht",
     "type": "http",
-    "server": "84.17.47.146",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "84.17.47.146",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1bc0b8c3f",
-    "tag": "https|Indonesia:443|1237ms|zloi-user/ht",
-    "type": "http",
-    "server": "103.86.117.202",
+    "server": "35.247.136.78",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "103.86.117.202",
+      "server_name": "35.247.136.78",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_e4400ac53",
-    "tag": "https|Germany:9002|1238ms|zloi-user/ht",
+    "__id_in_gui": "ID_db197ecd5",
+    "tag": "https|Romania:443|1278ms|zloi-user/ht",
     "type": "http",
-    "server": "158.173.154.4",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "158.173.154.4",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_d4ffa562d",
-    "tag": "https|United States:443|1240ms|zloi-user/ht",
-    "type": "http",
-    "server": "178.156.158.24",
+    "server": "203.25.108.72",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "178.156.158.24",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_0d3a9bede",
-    "tag": "https|United States:443|1254ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.28.193.178",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "38.28.193.178",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_5bceb2266",
-    "tag": "https|Poland:443|1259ms|zloi-user/ht",
-    "type": "http",
-    "server": "31.186.220.204",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "31.186.220.204",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9033fb772",
-    "tag": "https|Japan:1443|1261ms|zloi-user/ht",
-    "type": "http",
-    "server": "118.184.157.67",
-    "server_port": 1443,
-    "tls": {
-      "enabled": true,
-      "server_name": "118.184.157.67",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_69c9f8652",
-    "tag": "https|Russia:443|1282ms|zloi-user/ht",
-    "type": "http",
-    "server": "178.219.43.226",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "178.219.43.226",
+      "server_name": "203.25.108.72",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_c42080920",
-    "tag": "https|France:8090|1283ms|zloi-user/ht",
+    "tag": "https|France:8090|1278ms|zloi-user/ht",
     "type": "http",
     "server": "217.181.201.254",
     "server_port": 8090,
@@ -2646,14 +2291,26 @@
     }
   },
   {
-    "__id_in_gui": "ID_a32f15dc8",
-    "tag": "https|United States:443|1283ms|zloi-user/ht",
+    "__id_in_gui": "ID_1bc0b8c3f",
+    "tag": "https|Indonesia:443|1286ms|zloi-user/ht",
     "type": "http",
-    "server": "66.135.172.202",
+    "server": "103.86.117.202",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "66.135.172.202",
+      "server_name": "103.86.117.202",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_288c0958d",
+    "tag": "https|Sweden:9443|1290ms|zloi-user/ht",
+    "type": "http",
+    "server": "68.67.118.162",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "68.67.118.162",
       "insecure": true
     }
   },
@@ -2670,128 +2327,20 @@
     }
   },
   {
-    "__id_in_gui": "ID_80c28935c",
-    "tag": "https|United States:443|1312ms|zloi-user/ht",
+    "__id_in_gui": "ID_057423222",
+    "tag": "https|Latvia:443|1291ms|zloi-user/ht#196",
     "type": "http",
-    "server": "44.195.167.30",
+    "server": "185.219.159.15",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "44.195.167.30",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f79b639ba",
-    "tag": "https|United States:8443|1313ms|zloi-user/ht",
-    "type": "http",
-    "server": "18.206.28.143",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "18.206.28.143",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_02ccc4ff1",
-    "tag": "https|United States:443|1319ms|zloi-user/ht",
-    "type": "http",
-    "server": "66.64.100.66",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "66.64.100.66",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_3bb298da3",
-    "tag": "https|United States:443|1321ms|zloi-user/ht",
-    "type": "http",
-    "server": "52.44.235.33",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "52.44.235.33",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_5939b73c2",
-    "tag": "https|The Netherlands:14287|1325ms|zloi-user/ht",
-    "type": "http",
-    "server": "51.158.194.16",
-    "server_port": 14287,
-    "tls": {
-      "enabled": true,
-      "server_name": "51.158.194.16",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_acad1c5da",
-    "tag": "https|The Netherlands:14287|1327ms|zloi-user/ht",
-    "type": "http",
-    "server": "51.158.194.107",
-    "server_port": 14287,
-    "tls": {
-      "enabled": true,
-      "server_name": "51.158.194.107",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_49f22bcdc",
-    "tag": "https|The Netherlands:14287|1335ms|zloi-user/ht",
-    "type": "http",
-    "server": "51.158.202.56",
-    "server_port": 14287,
-    "tls": {
-      "enabled": true,
-      "server_name": "51.158.202.56",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_0b935f1c4",
-    "tag": "https|United States:8443|1339ms|zloi-user/ht",
-    "type": "http",
-    "server": "44.217.145.28",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "44.217.145.28",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_5f658722a",
-    "tag": "https|The Netherlands:19362|1341ms|zloi-user/ht",
-    "type": "http",
-    "server": "51.159.225.197",
-    "server_port": 19362,
-    "tls": {
-      "enabled": true,
-      "server_name": "51.159.225.197",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_6822dbc68",
-    "tag": "https|Japan:7000|1341ms|zloi-user/ht",
-    "type": "http",
-    "server": "103.127.242.229",
-    "server_port": 7000,
-    "tls": {
-      "enabled": true,
-      "server_name": "103.127.242.229",
+      "server_name": "185.219.159.15",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_128a4ca74",
-    "tag": "https|Russia:443|1343ms|zloi-user/ht",
+    "tag": "https|Russia:443|1293ms|zloi-user/ht",
     "type": "http",
     "server": "194.186.179.62",
     "server_port": 443,
@@ -2802,866 +2351,8 @@
     }
   },
   {
-    "__id_in_gui": "ID_cca6c9081",
-    "tag": "https|United Kingdom:8443|1352ms|zloi-user/ht",
-    "type": "http",
-    "server": "198.105.124.180",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "198.105.124.180",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_a02f33b05",
-    "tag": "https|United States:443|1355ms|zloi-user/ht",
-    "type": "http",
-    "server": "76.164.193.18",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "76.164.193.18",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_b5a2e8bab",
-    "tag": "https|178.175.142.7:9443|1366ms|proxifly/htt",
-    "type": "http",
-    "server": "178.175.142.7",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "178.175.142.7",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_c642e6c90",
-    "tag": "https|178.175.142.7:443|1380ms|proxifly/htt",
-    "type": "http",
-    "server": "178.175.142.7",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "178.175.142.7",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_cfb0ec774",
-    "tag": "https|United States:443|1382ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.28.193.215",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "38.28.193.215",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_fc6af65ad",
-    "tag": "http|103.172.42.189:1111|1383ms|r00tee/Https",
-    "type": "http",
-    "server": "103.172.42.189",
-    "server_port": 1111
-  },
-  {
-    "__id_in_gui": "ID_4d79e37e0",
-    "tag": "https|United States:8443|1384ms|zloi-user/ht",
-    "type": "http",
-    "server": "162.191.87.112",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "162.191.87.112",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ecbb3b487",
-    "tag": "https|United States:8443|1395ms|zloi-user/ht",
-    "type": "http",
-    "server": "107.91.88.70",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "107.91.88.70",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_84bf86d54",
-    "tag": "https|United States:8443|1398ms|zloi-user/ht",
-    "type": "http",
-    "server": "162.191.235.197",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "162.191.235.197",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_b0bea01d7",
-    "tag": "https|United States:8443|1407ms|zloi-user/ht",
-    "type": "http",
-    "server": "129.212.181.253",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "129.212.181.253",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_0fc0d822f",
-    "tag": "https|Israel:443|1419ms|zloi-user/ht",
-    "type": "http",
-    "server": "62.90.77.30",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "62.90.77.30",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_86cd97dab",
-    "tag": "https|Australia:443|1420ms|zloi-user/ht",
-    "type": "http",
-    "server": "159.13.44.228",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "159.13.44.228",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_8488f0a0e",
-    "tag": "https|Bosnia and Herzegovi:443|1424ms|zloi-user/ht",
-    "type": "http",
-    "server": "45.156.248.50",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "45.156.248.50",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9434a621e",
-    "tag": "https|Italy:443|1442ms|zloi-user/ht",
-    "type": "http",
-    "server": "109.116.41.154",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "109.116.41.154",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ddc8954d0",
-    "tag": "https|Seychelles:8443|1452ms|zloi-user/ht",
-    "type": "http",
-    "server": "156.225.20.213",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "156.225.20.213",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_479a9a993",
-    "tag": "https|Australia:443|1453ms|zloi-user/ht",
-    "type": "http",
-    "server": "150.230.14.159",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "150.230.14.159",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_03de76e04",
-    "tag": "https|The Netherlands:443|1463ms|zloi-user/ht",
-    "type": "http",
-    "server": "5.255.120.245",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "5.255.120.245",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_c9aca8326",
-    "tag": "https|United States:443|1465ms|zloi-user/ht",
-    "type": "http",
-    "server": "207.5.30.9",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "207.5.30.9",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_530cf2840",
-    "tag": "https|United States:8090|1475ms|zloi-user/ht",
-    "type": "http",
-    "server": "206.253.147.105",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "206.253.147.105",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_8c402637b",
-    "tag": "https|United States:8090|1484ms|zloi-user/ht",
-    "type": "http",
-    "server": "173.42.49.102",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "173.42.49.102",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_dfee04da9",
-    "tag": "http|165.99.194.32:8085|1486ms|r00tee/Https",
-    "type": "http",
-    "server": "165.99.194.32",
-    "server_port": 8085
-  },
-  {
-    "__id_in_gui": "ID_1ee21a343",
-    "tag": "https|Singapore:8443|1504ms|zloi-user/ht",
-    "type": "http",
-    "server": "66.42.49.247",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "66.42.49.247",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_d12daab39",
-    "tag": "https|United States:8090|1542ms|zloi-user/ht",
-    "type": "http",
-    "server": "209.148.53.153",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "209.148.53.153",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_44cec83d6",
-    "tag": "https|United States:443|1543ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.28.193.83",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "38.28.193.83",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9dcada80b",
-    "tag": "https|Brazil:443|1555ms|zloi-user/ht",
-    "type": "http",
-    "server": "134.65.17.77",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "134.65.17.77",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_e536a0472",
-    "tag": "https|India:52200|1581ms|zloi-user/ht",
-    "type": "http",
-    "server": "120.232.204.58",
-    "server_port": 52200,
-    "tls": {
-      "enabled": true,
-      "server_name": "120.232.204.58",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_7de697b26",
-    "tag": "https|United States:8090|1602ms|zloi-user/ht",
-    "type": "http",
-    "server": "98.101.229.212",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "98.101.229.212",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_7d0f6acf5",
-    "tag": "https|United States:8090|1649ms|zloi-user/ht",
-    "type": "http",
-    "server": "72.28.165.185",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "72.28.165.185",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_30c5d3965",
-    "tag": "https|Germany:443|1653ms|zloi-user/ht",
-    "type": "http",
-    "server": "216.57.109.34",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "216.57.109.34",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_b88b60cb7",
-    "tag": "https|Russia:443|1662ms|zloi-user/ht",
-    "type": "http",
-    "server": "82.147.71.46",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "82.147.71.46",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_951565fdf",
-    "tag": "https|Vietnam:8443|1672ms|zloi-user/ht",
-    "type": "http",
-    "server": "14.225.71.128",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "14.225.71.128",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_867bc6e97",
-    "tag": "https|Russia:8443|1686ms|zloi-user/ht",
-    "type": "http",
-    "server": "87.242.85.187",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "87.242.85.187",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_3f4c717c9",
-    "tag": "https|Brazil:3128|1688ms|zloi-user/ht",
-    "type": "http",
-    "server": "134.65.238.25",
-    "server_port": 3128,
-    "tls": {
-      "enabled": true,
-      "server_name": "134.65.238.25",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_49e2c07f6",
-    "tag": "https|United States:443|1736ms|zloi-user/ht",
-    "type": "http",
-    "server": "137.175.22.84",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "137.175.22.84",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_2482da492",
-    "tag": "https|Singapore:443|1738ms|zloi-user/ht",
-    "type": "http",
-    "server": "154.26.139.27",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "154.26.139.27",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f68b88c32",
-    "tag": "https|103.62.50.130:443|1740ms|proxifly/htt",
-    "type": "http",
-    "server": "103.62.50.130",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "103.62.50.130",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_8fa4a1768",
-    "tag": "http|202.58.77.194:8031|1741ms|r00tee/Https",
-    "type": "http",
-    "server": "202.58.77.194",
-    "server_port": 8031
-  },
-  {
-    "__id_in_gui": "ID_540f4de69",
-    "tag": "https|Germany:443|1750ms|zloi-user/ht",
-    "type": "http",
-    "server": "185.232.70.11",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "185.232.70.11",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_cd5785524",
-    "tag": "https|The Netherlands:443|1761ms|zloi-user/ht",
-    "type": "http",
-    "server": "5.255.97.222",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "5.255.97.222",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_35c90fb34",
-    "tag": "https|United States:443|1775ms|zloi-user/ht",
-    "type": "http",
-    "server": "104.233.178.179",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "104.233.178.179",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_bd822c803",
-    "tag": "https|United States:443|1776ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.28.193.71",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "38.28.193.71",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ca0b54058",
-    "tag": "https|United States:9443|1799ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.239.236.147",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.239.236.147",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_f2d3b56bf",
-    "tag": "https|The Netherlands:9443|1819ms|zloi-user/ht",
-    "type": "http",
-    "server": "147.45.173.104",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "147.45.173.104",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_87f960ea5",
-    "tag": "https|United States:443|1824ms|zloi-user/ht",
-    "type": "http",
-    "server": "137.175.22.52",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "137.175.22.52",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_b32262932",
-    "tag": "http|31.135.214.17:8026|1850ms|r00tee/Https",
-    "type": "http",
-    "server": "31.135.214.17",
-    "server_port": 8026
-  },
-  {
-    "__id_in_gui": "ID_473edc15f",
-    "tag": "https|France:4443|1854ms|zloi-user/ht",
-    "type": "http",
-    "server": "83.172.143.53",
-    "server_port": 4443,
-    "tls": {
-      "enabled": true,
-      "server_name": "83.172.143.53",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_9cd4740aa",
-    "tag": "https|France:443|1866ms|zloi-user/ht",
-    "type": "http",
-    "server": "62.210.27.111",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "62.210.27.111",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_b4f66b89b",
-    "tag": "https|United States:9002|1868ms|zloi-user/ht",
-    "type": "http",
-    "server": "138.199.35.210",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "138.199.35.210",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4bbf278fd",
-    "tag": "http|160.191.192.45:8090|1884ms|r00tee/Https",
-    "type": "http",
-    "server": "160.191.192.45",
-    "server_port": 8090
-  },
-  {
-    "__id_in_gui": "ID_cdf1cd727",
-    "tag": "https|Germany:8443|1890ms|zloi-user/ht",
-    "type": "http",
-    "server": "188.120.225.125",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "188.120.225.125",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_2e57e9944",
-    "tag": "https|France:8090|1909ms|zloi-user/ht",
-    "type": "http",
-    "server": "80.124.109.22",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "80.124.109.22",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_dceaf8416",
-    "tag": "https|France:443|1914ms|zloi-user/ht",
-    "type": "http",
-    "server": "51.210.167.149",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "51.210.167.149",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_0677eacd7",
-    "tag": "https|The Netherlands:443|1970ms|zloi-user/ht",
-    "type": "http",
-    "server": "5.255.120.238",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "5.255.120.238",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_29df627e1",
-    "tag": "https|United States:443|1976ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.28.193.129",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "38.28.193.129",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_de89c9490",
-    "tag": "https|United States:443|1988ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.28.193.122",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "38.28.193.122",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_1da4c2e7d",
-    "tag": "https|Italy:8090|1989ms|zloi-user/ht",
-    "type": "http",
-    "server": "185.187.43.38",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "185.187.43.38",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_5467df323",
-    "tag": "https|Switzerland:443|1991ms|zloi-user/ht",
-    "type": "http",
-    "server": "199.68.196.153",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "199.68.196.153",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_6d7ede336",
-    "tag": "https|Germany:443|1993ms|zloi-user/ht",
-    "type": "http",
-    "server": "185.44.107.166",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "185.44.107.166",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_bce71651d",
-    "tag": "https|Singapore:6443|1998ms|zloi-user/ht",
-    "type": "http",
-    "server": "47.84.230.119",
-    "server_port": 6443,
-    "tls": {
-      "enabled": true,
-      "server_name": "47.84.230.119",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ff7333046",
-    "tag": "https|Latvia:443|2007ms|zloi-user/ht",
-    "type": "http",
-    "server": "37.203.35.50",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "37.203.35.50",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_40483352c",
-    "tag": "https|Singapore:443|2027ms|zloi-user/ht",
-    "type": "http",
-    "server": "213.35.107.110",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "213.35.107.110",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_d621b7932",
-    "tag": "https|Latvia:443|2036ms|zloi-user/ht",
-    "type": "http",
-    "server": "37.203.35.53",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "37.203.35.53",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ed3908347",
-    "tag": "https|Lithuania:443|2040ms|zloi-user/ht",
-    "type": "http",
-    "server": "89.124.11.9",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "89.124.11.9",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_82deff49d",
-    "tag": "http|190.97.236.129:999|2042ms|r00tee/Https",
-    "type": "http",
-    "server": "190.97.236.129",
-    "server_port": 999
-  },
-  {
-    "__id_in_gui": "ID_85fbe67bf",
-    "tag": "https|Romania:9002|2075ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.35",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.35",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_4da831dc5",
-    "tag": "https|Romania:9002|2084ms|zloi-user/ht",
-    "type": "http",
-    "server": "193.176.84.31",
-    "server_port": 9002,
-    "tls": {
-      "enabled": true,
-      "server_name": "193.176.84.31",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_ef21bb56e",
-    "tag": "https|United States:9443|2085ms|zloi-user/ht",
-    "type": "http",
-    "server": "198.44.138.35",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "198.44.138.35",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_7654d147e",
-    "tag": "https|United States:443|2097ms|zloi-user/ht",
-    "type": "http",
-    "server": "38.28.193.1",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "38.28.193.1",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_5cb1253fc",
-    "tag": "https|Germany:443|2104ms|zloi-user/ht",
-    "type": "http",
-    "server": "159.69.94.125",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "159.69.94.125",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_77e32ff65",
-    "tag": "https|Czechia:9443|2128ms|zloi-user/ht",
-    "type": "http",
-    "server": "152.233.16.174",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "152.233.16.174",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_eb7148177",
-    "tag": "https|Sweden:8443|2151ms|zloi-user/ht",
-    "type": "http",
-    "server": "77.221.136.60",
-    "server_port": 8443,
-    "tls": {
-      "enabled": true,
-      "server_name": "77.221.136.60",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_3a1680a5f",
-    "tag": "https|181.215.52.122:9443|2167ms|proxifly/htt",
-    "type": "http",
-    "server": "181.215.52.122",
-    "server_port": 9443,
-    "tls": {
-      "enabled": true,
-      "server_name": "181.215.52.122",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_12183c269",
-    "tag": "https|United Kingdom:443|2211ms|zloi-user/ht",
-    "type": "http",
-    "server": "167.172.50.198",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "167.172.50.198",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_e1f640e74",
-    "tag": "https|Indonesia:443|2217ms|zloi-user/ht",
-    "type": "http",
-    "server": "103.86.116.118",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "103.86.116.118",
-      "insecure": true
-    }
-  },
-  {
     "__id_in_gui": "ID_33603c4a2",
-    "tag": "https|Italy:443|2236ms|zloi-user/ht",
+    "tag": "https|Italy:443|1299ms|zloi-user/ht",
     "type": "http",
     "server": "94.177.163.156",
     "server_port": 443,
@@ -3672,56 +2363,32 @@
     }
   },
   {
-    "__id_in_gui": "ID_a522dac01",
-    "tag": "https|United States:8443|2250ms|zloi-user/ht",
+    "__id_in_gui": "ID_4db598b5e",
+    "tag": "https|Chile:9443|1312ms|zloi-user/ht",
     "type": "http",
-    "server": "107.91.88.6",
-    "server_port": 8443,
+    "server": "149.88.104.225",
+    "server_port": 9443,
     "tls": {
       "enabled": true,
-      "server_name": "107.91.88.6",
+      "server_name": "149.88.104.225",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_7c8b57466",
-    "tag": "https|United States:443|2286ms|zloi-user/ht",
+    "__id_in_gui": "ID_baa89f3df",
+    "tag": "https|Albania:443|1313ms|zloi-user/ht",
     "type": "http",
-    "server": "24.225.10.211",
+    "server": "91.92.250.33",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "24.225.10.211",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_2db751fcd",
-    "tag": "https|France:8090|2295ms|zloi-user/ht",
-    "type": "http",
-    "server": "83.206.1.225",
-    "server_port": 8090,
-    "tls": {
-      "enabled": true,
-      "server_name": "83.206.1.225",
-      "insecure": true
-    }
-  },
-  {
-    "__id_in_gui": "ID_cb3be0c17",
-    "tag": "https|Germany:443|2363ms|zloi-user/ht",
-    "type": "http",
-    "server": "217.110.121.54",
-    "server_port": 443,
-    "tls": {
-      "enabled": true,
-      "server_name": "217.110.121.54",
+      "server_name": "91.92.250.33",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_69987c3b9",
-    "tag": "https|United States:443|2365ms|zloi-user/ht",
+    "tag": "https|United States:443|1318ms|zloi-user/ht",
     "type": "http",
     "server": "162.244.227.36",
     "server_port": 443,
@@ -3732,32 +2399,212 @@
     }
   },
   {
-    "__id_in_gui": "ID_fa6e45571",
-    "tag": "https|United States:443|2386ms|zloi-user/ht",
+    "__id_in_gui": "ID_f79b639ba",
+    "tag": "https|United States:8443|1318ms|zloi-user/ht",
     "type": "http",
-    "server": "38.28.193.6",
-    "server_port": 443,
+    "server": "18.206.28.143",
+    "server_port": 8443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.193.6",
+      "server_name": "18.206.28.143",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_08cfc1b24",
-    "tag": "https|Romania:9002|2442ms|zloi-user/ht",
+    "__id_in_gui": "ID_3bb298da3",
+    "tag": "https|United States:443|1330ms|zloi-user/ht",
     "type": "http",
-    "server": "193.176.84.24",
-    "server_port": 9002,
+    "server": "52.44.235.33",
+    "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "193.176.84.24",
+      "server_name": "52.44.235.33",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_02ccc4ff1",
+    "tag": "https|United States:443|1332ms|zloi-user/ht",
+    "type": "http",
+    "server": "66.64.100.66",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "66.64.100.66",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9a99f987b",
+    "tag": "https|The Netherlands:21384|1334ms|zloi-user/ht",
+    "type": "http",
+    "server": "51.158.204.46",
+    "server_port": 21384,
+    "tls": {
+      "enabled": true,
+      "server_name": "51.158.204.46",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_5939b73c2",
+    "tag": "https|The Netherlands:14287|1334ms|zloi-user/ht",
+    "type": "http",
+    "server": "51.158.194.16",
+    "server_port": 14287,
+    "tls": {
+      "enabled": true,
+      "server_name": "51.158.194.16",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_0b935f1c4",
+    "tag": "https|United States:8443|1337ms|zloi-user/ht",
+    "type": "http",
+    "server": "44.217.145.28",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "44.217.145.28",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_2a1846e50",
+    "tag": "https|Hong Kong:8080|1346ms|zloi-user/ht",
+    "type": "http",
+    "server": "47.243.181.85",
+    "server_port": 8080,
+    "tls": {
+      "enabled": true,
+      "server_name": "47.243.181.85",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_dd92b5f60",
+    "tag": "https|Moldova:443|1348ms|zloi-user/ht",
+    "type": "http",
+    "server": "178.175.134.186",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "178.175.134.186",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_220532ba8",
+    "tag": "https|Moldova:9443|1360ms|zloi-user/ht",
+    "type": "http",
+    "server": "178.175.134.186",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "178.175.134.186",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_89f527f59",
+    "tag": "https|United States:8443|1394ms|zloi-user/ht",
+    "type": "http",
+    "server": "45.32.133.102",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "45.32.133.102",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_cb0066bf2",
+    "tag": "https|The Netherlands:443|1407ms|zloi-user/ht",
+    "type": "http",
+    "server": "89.150.35.94",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "89.150.35.94",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_84bf86d54",
+    "tag": "https|United States:8443|1407ms|zloi-user/ht",
+    "type": "http",
+    "server": "162.191.235.197",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "162.191.235.197",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_0fc0d822f",
+    "tag": "https|Israel:443|1423ms|zloi-user/ht",
+    "type": "http",
+    "server": "62.90.77.30",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "62.90.77.30",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_b0bea01d7",
+    "tag": "https|United States:8443|1427ms|zloi-user/ht",
+    "type": "http",
+    "server": "129.212.181.253",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "129.212.181.253",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_479a9a993",
+    "tag": "https|Australia:443|1428ms|zloi-user/ht",
+    "type": "http",
+    "server": "150.230.14.159",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "150.230.14.159",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_d12daab39",
+    "tag": "https|United States:8090|1431ms|zloi-user/ht",
+    "type": "http",
+    "server": "209.148.53.153",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "209.148.53.153",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_c9aca8326",
+    "tag": "https|United States:443|1435ms|zloi-user/ht",
+    "type": "http",
+    "server": "207.5.30.9",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "207.5.30.9",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_2732abc3d",
-    "tag": "https|United States:8090|2469ms|zloi-user/ht",
+    "tag": "https|United States:8090|1435ms|zloi-user/ht",
     "type": "http",
     "server": "24.142.229.178",
     "server_port": 8090,
@@ -3768,20 +2615,68 @@
     }
   },
   {
-    "__id_in_gui": "ID_4416d0a68",
-    "tag": "https|United States:8090|2500ms|zloi-user/ht",
+    "__id_in_gui": "ID_e4154c39c",
+    "tag": "https|Germany:443|1437ms|zloi-user/ht",
     "type": "http",
-    "server": "50.76.211.251",
+    "server": "116.202.172.99",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "116.202.172.99",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9434a621e",
+    "tag": "https|Italy:443|1439ms|zloi-user/ht",
+    "type": "http",
+    "server": "109.116.41.154",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "109.116.41.154",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_86cd97dab",
+    "tag": "https|Australia:443|1441ms|zloi-user/ht",
+    "type": "http",
+    "server": "159.13.44.228",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "159.13.44.228",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_02db8de98",
+    "tag": "https|Hong Kong:443|1444ms|zloi-user/ht",
+    "type": "http",
+    "server": "151.242.183.28",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "151.242.183.28",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_530cf2840",
+    "tag": "https|United States:8090|1448ms|zloi-user/ht",
+    "type": "http",
+    "server": "206.253.147.105",
     "server_port": 8090,
     "tls": {
       "enabled": true,
-      "server_name": "50.76.211.251",
+      "server_name": "206.253.147.105",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_c48c560fa",
-    "tag": "https|Italy:8090|2533ms|zloi-user/ht",
+    "tag": "https|Italy:8090|1463ms|zloi-user/ht",
     "type": "http",
     "server": "93.71.245.84",
     "server_port": 8090,
@@ -3792,32 +2687,291 @@
     }
   },
   {
-    "__id_in_gui": "ID_a84136a2b",
-    "tag": "https|United States:8090|2541ms|zloi-user/ht",
+    "__id_in_gui": "ID_06392fa9f",
+    "tag": "https|China:19518|1477ms|zloi-user/ht",
     "type": "http",
-    "server": "184.188.139.2",
-    "server_port": 8090,
+    "server": "47.111.179.99",
+    "server_port": 19518,
     "tls": {
       "enabled": true,
-      "server_name": "184.188.139.2",
+      "server_name": "47.111.179.99",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_bb467c977",
-    "tag": "https|United States:443|2698ms|zloi-user/ht",
+    "__id_in_gui": "ID_8c402637b",
+    "tag": "https|United States:8090|1482ms|zloi-user/ht",
     "type": "http",
-    "server": "141.148.181.144",
+    "server": "173.42.49.102",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "173.42.49.102",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_bdd0ddb65",
+    "tag": "https|South Korea:443|1492ms|zloi-user/ht",
+    "type": "http",
+    "server": "152.69.230.221",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "141.148.181.144",
+      "server_name": "152.69.230.221",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_f2d3b56bf",
+    "tag": "https|The Netherlands:9443|1496ms|zloi-user/ht",
+    "type": "http",
+    "server": "147.45.173.104",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "147.45.173.104",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_7d0f6acf5",
+    "tag": "https|United States:8090|1501ms|zloi-user/ht",
+    "type": "http",
+    "server": "72.28.165.185",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "72.28.165.185",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_1ee21a343",
+    "tag": "https|Singapore:8443|1508ms|zloi-user/ht",
+    "type": "http",
+    "server": "66.42.49.247",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "66.42.49.247",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9dcada80b",
+    "tag": "https|Brazil:443|1551ms|zloi-user/ht",
+    "type": "http",
+    "server": "134.65.17.77",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "134.65.17.77",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_539758652",
+    "tag": "https|Japan:343|1555ms|zloi-user/ht",
+    "type": "http",
+    "server": "133.18.200.207",
+    "server_port": 343,
+    "tls": {
+      "enabled": true,
+      "server_name": "133.18.200.207",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_8b9ecf852",
+    "tag": "https|United Kingdom:8443|1591ms|zloi-user/ht",
+    "type": "http",
+    "server": "5.101.149.245",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "5.101.149.245",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_8cd0de405",
+    "tag": "https|The Netherlands:9002|1596ms|zloi-user/ht",
+    "type": "http",
+    "server": "84.17.47.125",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "84.17.47.125",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_f34fe703b",
+    "tag": "https|United States:443|1608ms|zloi-user/ht",
+    "type": "http",
+    "server": "137.175.22.116",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "137.175.22.116",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_4416d0a68",
+    "tag": "https|United States:8090|1627ms|zloi-user/ht",
+    "type": "http",
+    "server": "50.76.211.251",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "50.76.211.251",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_39076dc79",
+    "tag": "https|United States:443|1628ms|zloi-user/ht",
+    "type": "http",
+    "server": "137.175.22.45",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "137.175.22.45",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_4d79e37e0",
+    "tag": "https|United States:8443|1646ms|zloi-user/ht",
+    "type": "http",
+    "server": "162.191.87.112",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "162.191.87.112",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_c535f1fc6",
+    "tag": "https|United States:8090|1655ms|zloi-user/ht",
+    "type": "http",
+    "server": "50.184.176.222",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "50.184.176.222",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_3f4c717c9",
+    "tag": "https|Brazil:3128|1671ms|zloi-user/ht",
+    "type": "http",
+    "server": "134.65.238.25",
+    "server_port": 3128,
+    "tls": {
+      "enabled": true,
+      "server_name": "134.65.238.25",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_7de697b26",
+    "tag": "https|United States:8090|1676ms|zloi-user/ht",
+    "type": "http",
+    "server": "98.101.229.212",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "98.101.229.212",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_1586bfb4a",
+    "tag": "https|Germany:8880|1702ms|zloi-user/ht",
+    "type": "http",
+    "server": "91.107.148.250",
+    "server_port": 8880,
+    "tls": {
+      "enabled": true,
+      "server_name": "91.107.148.250",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_702f57e15",
+    "tag": "http|103.171.182.229:8080|1703ms|r00tee/Https",
+    "type": "http",
+    "server": "103.171.182.229",
+    "server_port": 8080
+  },
+  {
+    "__id_in_gui": "ID_867bc6e97",
+    "tag": "https|Russia:8443|1732ms|zloi-user/ht",
+    "type": "http",
+    "server": "87.242.85.187",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "87.242.85.187",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_2c481a8a1",
+    "tag": "https|United States:443|1741ms|zloi-user/ht",
+    "type": "http",
+    "server": "137.175.22.56",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "137.175.22.56",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9767ec737",
+    "tag": "https|The Netherlands:443|1747ms|zloi-user/ht",
+    "type": "http",
+    "server": "5.2.73.112",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "5.2.73.112",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_3b332502d",
+    "tag": "https|Sweden:443|1753ms|zloi-user/ht",
+    "type": "http",
+    "server": "217.210.129.243",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "217.210.129.243",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_2482da492",
+    "tag": "https|Singapore:443|1788ms|zloi-user/ht",
+    "type": "http",
+    "server": "154.26.139.27",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "154.26.139.27",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_7c22a10ba",
-    "tag": "https|United States:8443|2698ms|zloi-user/ht",
+    "tag": "https|United States:8443|1825ms|zloi-user/ht",
     "type": "http",
     "server": "162.191.139.40",
     "server_port": 8443,
@@ -3828,68 +2982,142 @@
     }
   },
   {
-    "__id_in_gui": "ID_309b7113a",
-    "tag": "https|Paraguay:9443|2776ms|zloi-user/ht",
+    "__id_in_gui": "ID_7d3ac3cce",
+    "tag": "http|103.173.138.171:8080|1848ms|r00tee/Https",
     "type": "http",
-    "server": "38.165.233.178",
+    "server": "103.173.138.171",
+    "server_port": 8080
+  },
+  {
+    "__id_in_gui": "ID_80de9db0e",
+    "tag": "https|South Africa:9443|1854ms|zloi-user/ht",
+    "type": "http",
+    "server": "213.139.10.46",
     "server_port": 9443,
     "tls": {
       "enabled": true,
-      "server_name": "38.165.233.178",
+      "server_name": "213.139.10.46",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_dbc4f3046",
-    "tag": "https|Singapore:443|2843ms|zloi-user/ht",
+    "__id_in_gui": "ID_0fd557ffe",
+    "tag": "http|103.238.232.98:8080|1855ms|r00tee/Https",
     "type": "http",
-    "server": "154.26.139.29",
+    "server": "103.238.232.98",
+    "server_port": 8080
+  },
+  {
+    "__id_in_gui": "ID_a84136a2b",
+    "tag": "https|United States:8090|1858ms|zloi-user/ht",
+    "type": "http",
+    "server": "184.188.139.2",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "184.188.139.2",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_87f960ea5",
+    "tag": "https|United States:443|1866ms|zloi-user/ht",
+    "type": "http",
+    "server": "137.175.22.52",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "154.26.139.29",
+      "server_name": "137.175.22.52",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_41b35f029",
-    "tag": "https|Thailand:8800|2893ms|zloi-user/ht",
+    "__id_in_gui": "ID_871b6995a",
+    "tag": "https|United States:8443|1894ms|zloi-user/ht",
     "type": "http",
-    "server": "47.81.15.95",
-    "server_port": 8800,
+    "server": "44.229.69.166",
+    "server_port": 8443,
     "tls": {
       "enabled": true,
-      "server_name": "47.81.15.95",
+      "server_name": "44.229.69.166",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_c73c91f03",
-    "tag": "https|The Netherlands:443|2924ms|zloi-user/ht",
+    "__id_in_gui": "ID_d699f65a4",
+    "tag": "https|Switzerland:443|1896ms|zloi-user/ht",
     "type": "http",
-    "server": "5.255.118.82",
+    "server": "87.239.206.115",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "5.255.118.82",
+      "server_name": "87.239.206.115",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_453df1d73",
-    "tag": "https|Germany:443|2943ms|zloi-user/ht",
+    "__id_in_gui": "ID_473edc15f",
+    "tag": "https|France:4443|1918ms|zloi-user/ht",
     "type": "http",
-    "server": "176.9.2.254",
+    "server": "83.172.143.53",
+    "server_port": 4443,
+    "tls": {
+      "enabled": true,
+      "server_name": "83.172.143.53",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_5aa5788f0",
+    "tag": "https|Ireland:443|1921ms|zloi-user/ht",
+    "type": "http",
+    "server": "34.249.214.108",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "176.9.2.254",
+      "server_name": "34.249.214.108",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_21f82da8a",
+    "tag": "https|United States:9002|1923ms|zloi-user/ht",
+    "type": "http",
+    "server": "138.199.35.220",
+    "server_port": 9002,
+    "tls": {
+      "enabled": true,
+      "server_name": "138.199.35.220",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_03de76e04",
+    "tag": "https|The Netherlands:443|1926ms|zloi-user/ht",
+    "type": "http",
+    "server": "5.255.120.245",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "5.255.120.245",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_42f101958",
+    "tag": "https|Germany:443|1936ms|zloi-user/ht",
+    "type": "http",
+    "server": "87.106.223.158",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "87.106.223.158",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_2032cc4c7",
-    "tag": "https|Spain:8090|2944ms|zloi-user/ht",
+    "tag": "https|Spain:8090|1946ms|zloi-user/ht",
     "type": "http",
     "server": "80.24.34.107",
     "server_port": 8090,
@@ -3900,128 +3128,216 @@
     }
   },
   {
-    "__id_in_gui": "ID_4b96ac321",
-    "tag": "https|Hong Kong:443|3096ms|zloi-user/ht",
+    "__id_in_gui": "ID_0aa32441d",
+    "tag": "https|France:443|1962ms|zloi-user/ht",
     "type": "http",
-    "server": "202.85.53.25",
+    "server": "82.65.162.76",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "202.85.53.25",
+      "server_name": "82.65.162.76",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_28a5f0ed5",
-    "tag": "https|United States:443|3189ms|zloi-user/ht",
+    "__id_in_gui": "ID_f6ac082dd",
+    "tag": "http|103.12.204.33:8080|1968ms|r00tee/Https",
     "type": "http",
-    "server": "38.28.193.84",
+    "server": "103.12.204.33",
+    "server_port": 8080
+  },
+  {
+    "__id_in_gui": "ID_0677eacd7",
+    "tag": "https|The Netherlands:443|1984ms|zloi-user/ht",
+    "type": "http",
+    "server": "5.255.120.238",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.193.84",
+      "server_name": "5.255.120.238",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_0addba116",
-    "tag": "https|United States:443|3277ms|zloi-user/ht",
+    "__id_in_gui": "ID_898dbbb76",
+    "tag": "https|United States:443|2008ms|zloi-user/ht",
     "type": "http",
-    "server": "38.28.185.222",
+    "server": "38.247.141.135",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.185.222",
+      "server_name": "38.247.141.135",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_8da2a0d1c",
-    "tag": "https|United States:443|3310ms|zloi-user/ht",
+    "__id_in_gui": "ID_40483352c",
+    "tag": "https|Singapore:443|2018ms|zloi-user/ht",
     "type": "http",
-    "server": "38.28.185.207",
+    "server": "213.35.107.110",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.185.207",
+      "server_name": "213.35.107.110",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_31f25b0b3",
-    "tag": "https|United States:443|3333ms|zloi-user/ht",
+    "__id_in_gui": "ID_a32f15dc8",
+    "tag": "https|United States:443|2022ms|zloi-user/ht",
     "type": "http",
-    "server": "38.28.185.197",
+    "server": "66.135.172.202",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.185.197",
+      "server_name": "66.135.172.202",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_ef88fdae4",
-    "tag": "https|United States:443|3346ms|zloi-user/ht",
+    "__id_in_gui": "ID_8b3941b03",
+    "tag": "https|Latvia:443|2029ms|zloi-user/ht",
     "type": "http",
-    "server": "38.28.185.166",
+    "server": "37.203.35.28",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.185.166",
+      "server_name": "37.203.35.28",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_24655c422",
-    "tag": "https|United States:443|3382ms|zloi-user/ht",
+    "__id_in_gui": "ID_82deff49d",
+    "tag": "http|190.97.236.129:999|2058ms|r00tee/Https",
     "type": "http",
-    "server": "137.175.77.35",
+    "server": "190.97.236.129",
+    "server_port": 999
+  },
+  {
+    "__id_in_gui": "ID_4ecaa1937",
+    "tag": "https|Germany:443|2064ms|zloi-user/ht",
+    "type": "http",
+    "server": "217.92.132.233",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "137.175.77.35",
+      "server_name": "217.92.132.233",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_ac2a7661f",
-    "tag": "https|United States:443|3411ms|zloi-user/ht",
+    "__id_in_gui": "ID_eb83d3339",
+    "tag": "http|190.97.236.128:999|2086ms|r00tee/Https",
     "type": "http",
-    "server": "38.28.185.224",
+    "server": "190.97.236.128",
+    "server_port": 999
+  },
+  {
+    "__id_in_gui": "ID_9626f1659",
+    "tag": "https|Germany:443|2093ms|zloi-user/ht",
+    "type": "http",
+    "server": "194.67.110.12",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.185.224",
+      "server_name": "194.67.110.12",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_6f9e7f49e",
-    "tag": "https|United States:443|3418ms|zloi-user/ht",
+    "__id_in_gui": "ID_c9336244a",
+    "tag": "https|France:443|2102ms|zloi-user/ht",
     "type": "http",
-    "server": "38.28.185.249",
+    "server": "82.64.255.151",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.185.249",
+      "server_name": "82.64.255.151",
       "insecure": true
     }
   },
   {
-    "__id_in_gui": "ID_0b8f74efa",
-    "tag": "https|United States:443|3419ms|zloi-user/ht",
+    "__id_in_gui": "ID_c59f289af",
+    "tag": "http|217.182.195.221:30003|2112ms|r00tee/Https",
     "type": "http",
-    "server": "38.28.185.247",
+    "server": "217.182.195.221",
+    "server_port": 30003
+  },
+  {
+    "__id_in_gui": "ID_b03c04915",
+    "tag": "https|United States:443|2123ms|zloi-user/ht",
+    "type": "http",
+    "server": "18.116.108.189",
     "server_port": 443,
     "tls": {
       "enabled": true,
-      "server_name": "38.28.185.247",
+      "server_name": "18.116.108.189",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_a522dac01",
+    "tag": "https|United States:8443|2125ms|zloi-user/ht",
+    "type": "http",
+    "server": "107.91.88.6",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "107.91.88.6",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_30c5d3965",
+    "tag": "https|Germany:443|2149ms|zloi-user/ht",
+    "type": "http",
+    "server": "216.57.109.34",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "216.57.109.34",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_a24ba59a6",
+    "tag": "https|United States:443|2162ms|zloi-user/ht",
+    "type": "http",
+    "server": "64.98.50.100",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "64.98.50.100",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_e3137228c",
+    "tag": "https|United States:443|2174ms|zloi-user/ht",
+    "type": "http",
+    "server": "71.43.26.234",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "71.43.26.234",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_d4ffa562d",
+    "tag": "https|United States:443|2210ms|zloi-user/ht",
+    "type": "http",
+    "server": "178.156.158.24",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "178.156.158.24",
       "insecure": true
     }
   },
   {
     "__id_in_gui": "ID_842b20566",
-    "tag": "https|United States:443|3434ms|zloi-user/ht",
+    "tag": "https|United States:443|2219ms|zloi-user/ht",
     "type": "http",
     "server": "38.28.185.152",
     "server_port": 443,
@@ -4032,8 +3348,164 @@
     }
   },
   {
+    "__id_in_gui": "ID_b942adc85",
+    "tag": "https|The Netherlands:443|2223ms|zloi-user/ht",
+    "type": "http",
+    "server": "161.129.60.66",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "161.129.60.66",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_0b8f74efa",
+    "tag": "https|United States:443|2229ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.247",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.247",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_5467df323",
+    "tag": "https|Switzerland:443|2236ms|zloi-user/ht",
+    "type": "http",
+    "server": "199.68.196.153",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "199.68.196.153",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_746504371",
+    "tag": "https|Italy:443|2242ms|zloi-user/ht",
+    "type": "http",
+    "server": "91.243.118.217",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "91.243.118.217",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_08422a4cb",
+    "tag": "https|United States:443|2244ms|zloi-user/ht",
+    "type": "http",
+    "server": "170.199.233.89",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "170.199.233.89",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_705f63b0a",
+    "tag": "https|United States:443|2247ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.55.192.122",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.55.192.122",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_8da2a0d1c",
+    "tag": "https|United States:443|2259ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.207",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.207",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_c3a1a1acc",
+    "tag": "https|United States:443|2260ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.208",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.208",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ac2a7661f",
+    "tag": "https|United States:443|2265ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.224",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.224",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_5bceb2266",
+    "tag": "https|Poland:443|2290ms|zloi-user/ht",
+    "type": "http",
+    "server": "31.186.220.204",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "31.186.220.204",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_6f9e7f49e",
+    "tag": "https|United States:443|2304ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.249",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.249",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_0addba116",
+    "tag": "https|United States:443|2306ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.222",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.222",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_80c28935c",
+    "tag": "https|United States:443|2316ms|zloi-user/ht",
+    "type": "http",
+    "server": "44.195.167.30",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "44.195.167.30",
+      "insecure": true
+    }
+  },
+  {
     "__id_in_gui": "ID_f07c8da01",
-    "tag": "https|United States:443|3440ms|zloi-user/ht",
+    "tag": "https|United States:443|2327ms|zloi-user/ht",
     "type": "http",
     "server": "38.28.185.163",
     "server_port": 443,
@@ -4044,15 +3516,32 @@
     }
   },
   {
-    "__id_in_gui": "ID_d5db56c2a",
-    "tag": "http|180.191.2.166:8081|3457ms|r00tee/Https",
+    "__id_in_gui": "ID_f4ebf3fb6",
+    "tag": "https|United States:443|2398ms|zloi-user/ht",
     "type": "http",
-    "server": "180.191.2.166",
-    "server_port": 8081
+    "server": "38.28.185.196",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.196",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ef88fdae4",
+    "tag": "https|United States:443|2407ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.166",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.166",
+      "insecure": true
+    }
   },
   {
     "__id_in_gui": "ID_88604bd39",
-    "tag": "https|United States:443|3458ms|zloi-user/ht",
+    "tag": "https|United States:443|2420ms|zloi-user/ht",
     "type": "http",
     "server": "38.28.185.205",
     "server_port": 443,
@@ -4063,14 +3552,256 @@
     }
   },
   {
+    "__id_in_gui": "ID_91991aac2",
+    "tag": "https|United States:443|2468ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.180",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.180",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_60d756ce9",
+    "tag": "https|United States:443|2482ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.130",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.130",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_bce71651d",
+    "tag": "https|Singapore:6443|2483ms|zloi-user/ht",
+    "type": "http",
+    "server": "47.84.230.119",
+    "server_port": 6443,
+    "tls": {
+      "enabled": true,
+      "server_name": "47.84.230.119",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_24655c422",
+    "tag": "https|United States:443|2488ms|zloi-user/ht",
+    "type": "http",
+    "server": "137.175.77.35",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "137.175.77.35",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_69c9f8652",
+    "tag": "https|Russia:443|2492ms|zloi-user/ht",
+    "type": "http",
+    "server": "178.219.43.226",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "178.219.43.226",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_6d7ede336",
+    "tag": "https|Germany:443|2515ms|zloi-user/ht",
+    "type": "http",
+    "server": "185.44.107.166",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "185.44.107.166",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_9a34ae6ba",
+    "tag": "https|United States:443|2531ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.143",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.143",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_f33098d44",
+    "tag": "https|United States:443|2566ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.134",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.134",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_2c4ea9ace",
+    "tag": "https|Japan:443|2606ms|zloi-user/ht",
+    "type": "http",
+    "server": "14.137.237.91",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "14.137.237.91",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_ecbb3b487",
+    "tag": "https|United States:8443|2620ms|zloi-user/ht",
+    "type": "http",
+    "server": "107.91.88.70",
+    "server_port": 8443,
+    "tls": {
+      "enabled": true,
+      "server_name": "107.91.88.70",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_b88b60cb7",
+    "tag": "https|Russia:443|2668ms|zloi-user/ht",
+    "type": "http",
+    "server": "82.147.71.46",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "82.147.71.46",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_976b47a4e",
+    "tag": "https|United States:443|2678ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.193.39",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.193.39",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_bb467c977",
+    "tag": "https|United States:443|2843ms|zloi-user/ht",
+    "type": "http",
+    "server": "141.148.181.144",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "141.148.181.144",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_dbc4f3046",
+    "tag": "https|Singapore:443|2863ms|zloi-user/ht",
+    "type": "http",
+    "server": "154.26.139.29",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "154.26.139.29",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_6ab1cda30",
+    "tag": "https|Australia:9443|2865ms|zloi-user/ht",
+    "type": "http",
+    "server": "103.108.95.226",
+    "server_port": 9443,
+    "tls": {
+      "enabled": true,
+      "server_name": "103.108.95.226",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_fa490603b",
+    "tag": "https|United States:443|2883ms|zloi-user/ht",
+    "type": "http",
+    "server": "193.239.236.134",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "193.239.236.134",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_6f4c93087",
+    "tag": "http|38.43.88.102:999|2934ms|r00tee/Https",
+    "type": "http",
+    "server": "38.43.88.102",
+    "server_port": 999
+  },
+  {
+    "__id_in_gui": "ID_b4df08a00",
+    "tag": "http|45.249.77.145:83|3163ms|r00tee/Https",
+    "type": "http",
+    "server": "45.249.77.145",
+    "server_port": 83
+  },
+  {
+    "__id_in_gui": "ID_1da4c2e7d",
+    "tag": "https|Italy:8090|3190ms|zloi-user/ht",
+    "type": "http",
+    "server": "185.187.43.38",
+    "server_port": 8090,
+    "tls": {
+      "enabled": true,
+      "server_name": "185.187.43.38",
+      "insecure": true
+    }
+  },
+  {
     "__id_in_gui": "ID_2614befb4",
-    "tag": "https|United States:443|3475ms|zloi-user/ht",
+    "tag": "https|United States:443|3369ms|zloi-user/ht",
     "type": "http",
     "server": "38.28.185.187",
     "server_port": 443,
     "tls": {
       "enabled": true,
       "server_name": "38.28.185.187",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_31f25b0b3",
+    "tag": "https|United States:443|3470ms|zloi-user/ht",
+    "type": "http",
+    "server": "38.28.185.197",
+    "server_port": 443,
+    "tls": {
+      "enabled": true,
+      "server_name": "38.28.185.197",
+      "insecure": true
+    }
+  },
+  {
+    "__id_in_gui": "ID_f1ea065e9",
+    "tag": "https|Taiwan:42532|3474ms|zloi-user/ht",
+    "type": "http",
+    "server": "47.243.181.85",
+    "server_port": 42532,
+    "tls": {
+      "enabled": true,
+      "server_name": "47.243.181.85",
       "insecure": true
     }
   }
