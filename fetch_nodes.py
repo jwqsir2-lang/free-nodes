@@ -702,6 +702,43 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     t_start = time.time()
     log("=" * 68)
+    log("Step 1/2 拉取节点源")
+    raw, stats = collect()
+    log(f"原始 {len(raw)} 条")
+    nodes = dedupe(raw)
+    log(f"去重后 {len(nodes)} 条")
+    nodes = nodes[:MAX_TOTAL_TEST]
+
+    # 注意：这里**不做**可用性判定。
+    # 早期版本在 GitHub 的海外机器上测存活，结果是从美国能通、从国内根本不能用的节点
+    # （大量 Cloudflare 边缘 IP，从国内连会返回 409/error 1001）也进了订阅。
+    # 真正的校验由 verify_cn.py 在本机按真实协议跑。
+    log("\nStep 2/2 写出候选清单（不做可用性判定，交给本机真实校验）")
+    cand = []
+    for n in nodes:
+        p = {k: v for k, v in n.items() if not k.startswith("_")}
+        p["name"] = f"{str(n.get('_src','?'))[:16]}|{n['type']}|{n['server']}"
+        cand.append(p)
+    with open(f"{OUT_DIR}/candidates.yaml", "w", encoding="utf-8") as f:
+        f.write("# 全量候选节点（未做可用性判定）\n"
+                f"# 由 GitHub Actions 搜集，真正的可用性校验在本机按真实协议执行\n"
+                f"# 生成时间：{datetime.now(timezone.utc).isoformat(timespec='seconds')}\n"
+                f"# 候选数：{len(cand)}\n" + yaml_dump({"proxies": cand}))
+    log(f"候选清单已写出：{OUT_DIR}/candidates.yaml（{len(cand)} 个）")
+    counts = Counter(n["type"] for n in nodes)
+    updated = (datetime.now(timezone.utc) + timedelta(hours=8)).strftime("%Y-%m-%d %H:%M (UTC+8)")
+    with open(f"{OUT_DIR}/stats.json", "w", encoding="utf-8") as f:
+        json.dump({"updated_utc8": updated, "candidates": len(nodes), "counts": counts,
+                   "sources": [{"name": a, "status": b, "count": c} for a, b, c in stats],
+                   "seconds": round(time.time() - t_start, 1)}, f, ensure_ascii=False, indent=2)
+    log(f"\n完成，用时 {time.time()-t_start:.0f}s，输出到 {OUT_DIR}/")
+
+
+def main_legacy():
+    """海外侧存活检测 + 生成订阅。默认不使用：判定地点错误，会混入国内不可用的节点。"""
+    os.makedirs(OUT_DIR, exist_ok=True)
+    t_start = time.time()
+    log("=" * 68)
     log("Step 1/4 拉取节点源")
     raw, stats = collect()
     log(f"原始 {len(raw)} 条")
@@ -709,7 +746,7 @@ def main():
     log(f"去重后 {len(nodes)} 条")
     nodes = nodes[:MAX_TOTAL_TEST]
 
-    log("\nStep 2/4 存活检测")
+    log("\nStep 2/4 存活检测（海外侧，仅供参考）")
     alive = test_all(nodes) if nodes else []
 
     log("\nStep 3/4 排序")

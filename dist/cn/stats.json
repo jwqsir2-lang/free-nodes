@@ -1,0 +1,65 @@
+{
+  "verified_at": "2026-09-21 13:31:58",
+  "test_targets": [
+    "http://www.gstatic.com/generate_204",
+    "http://www.google.com/generate_204"
+  ],
+  "candidates": 493,
+  "alive": 10,
+  "counts": {
+    "vless": 9,
+    "vmess": 1
+  },
+  "fastest": [
+    {
+      "name": "vless-0000|?|535ms",
+      "delay": 535,
+      "type": "vless"
+    },
+    {
+      "name": "vless-0001|?|691ms",
+      "delay": 691,
+      "type": "vless"
+    },
+    {
+      "name": "vless-0002|?|923ms",
+      "delay": 923,
+      "type": "vless"
+    },
+    {
+      "name": "vless-0003|?|928ms",
+      "delay": 928,
+      "type": "vless"
+    },
+    {
+      "name": "vless-0004|?|1163ms",
+      "delay": 1163,
+      "type": "vless"
+    },
+    {
+      "name": "vless-0005|?|1265ms",
+      "delay": 1265,
+      "type": "vless"
+    },
+    {
+      "name": "vless-0006|?|1387ms",
+      "delay": 1387,
+      "type": "vless"
+    },
+    {
+      "name": "vless-0007|?|1528ms",
+      "delay": 1528,
+      "type": "vless"
+    },
+    {
+      "name": "vless-0008|?|2567ms",
+      "delay": 2567,
+      "type": "vless"
+    },
+    {
+      "name": "vmess-0009|?|3526ms",
+      "delay": 3526,
+      "type": "vmess"
+    }
+  ]
+}

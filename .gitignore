@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+.verify_work/
+.probe/
+tools/mihomo.exe
+tools/mihomo.zip
+*.log
