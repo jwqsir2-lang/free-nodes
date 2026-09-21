@@ -4,4 +4,6 @@ __pycache__/
 .probe/
 tools/mihomo.exe
 tools/mihomo.zip
-*.log
+tools/cache.db
+tools/*.log
+tools/*.yaml
