@@ -397,6 +397,8 @@ def parse_iplist(text, src, tls_hint=False):
         host, port, extra = m.group(1), as_int(m.group(2)), (m.group(3) or "").strip()
         if not (1 <= port <= 65535):
             continue
+        if scheme == "socks4":
+            continue          # mihomo 与 sing-box 都没有 SOCKS4 出站，收了也无法用（实测确认）
         typ = "socks5" if scheme.startswith("socks") else "http"
         n = {"name": f"{src}-{host}", "type": typ, "server": host.strip("[]"), "port": port,
              "udp": False, "_src": src}

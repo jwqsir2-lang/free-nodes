@@ -31,9 +31,16 @@ import yaml
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(HERE, "dist", "cn")
 WORK = os.path.join(HERE, ".verify_work")
-MIHOMO = os.path.join(HERE, "tools", "mihomo.exe")
+
+# 内核路径：可用 MIHOMO_BIN 覆盖；Windows 带 .exe，Linux 不带
+MIHOMO = os.environ.get("MIHOMO_BIN") or os.path.join(
+    HERE, "tools", "mihomo.exe" if os.name == "nt" else "mihomo")
+
+# 基于 UDP 的协议。GitHub Runner 的 UDP 出站不一定可用，用前先探测。
+UDP_TYPES = {"hysteria2", "hysteria", "tuic", "wireguard"}
 
 CANDIDATE_URLS = [
+    "dist/candidates.yaml",     # 仓库里由搜集工作流产出的候选（CI 里直接用这个）
     "https://raw.githubusercontent.com/jwqsir2-lang/free-nodes/main/dist/candidates.yaml",
     "https://cdn.jsdelivr.net/gh/jwqsir2-lang/free-nodes@main/dist/candidates.yaml",
 ]
@@ -74,6 +81,13 @@ def load_candidates(path=None):
         text, err = None, None
         for u in CANDIDATE_URLS:
             try:
+                if not u.startswith("http"):
+                    if not os.path.exists(os.path.join(HERE, u)):
+                        continue
+                    with open(os.path.join(HERE, u), encoding="utf-8") as f:
+                        text = f.read()
+                    log(f"已读取仓库内候选：{u}（{len(text)} 字符）")
+                    break
                 with _dl.open(u, timeout=60) as r:
                     text = r.read().decode("utf-8", "ignore")
                 log(f"已拉取候选：{u}（{len(text)} 字符）")
@@ -266,6 +280,25 @@ def expand_variants(proxies):
     return out
 
 
+def udp_egress_ok():
+    """探测本机能否对外发 UDP。GitHub Runner 上这个不一定可用，
+    而 hysteria2 / tuic 走 QUIC(UDP)，UDP 不通就没法验证。"""
+    probe = (b"\xaa\xbb\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00"
+             b"\x06google\x03com\x00\x00\x01\x00\x01")
+    for host in ("1.1.1.1", "8.8.8.8", "9.9.9.9", "223.5.5.5"):
+        try:
+            s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            s.settimeout(4)
+            s.sendto(probe, (host, 53))
+            data, _ = s.recvfrom(512)
+            s.close()
+            if data:
+                return True, host
+        except Exception:
+            continue
+    return False, ""
+
+
 # ---------------------------------------------------------------- mihomo
 class Mihomo:
     def __init__(self, proxies):
@@ -456,7 +489,8 @@ def write_singbox_config(http_ok, out_dir):
         json.dump(cfg, f, ensure_ascii=False, indent=2)
 
 
-def build_outputs(proxies, results):
+def build_outputs(proxies, results, meta=None):
+    meta = meta or {}
     os.makedirs(OUT_DIR, exist_ok=True)
     ok = []
     for p in proxies:
@@ -562,12 +596,15 @@ def build_outputs(proxies, results):
     counts = Counter(p.get("type") for p in ok)
     stats = {
         "verified_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "verified_from": meta.get("verified_from", "unknown"),
         "test_targets": TEST_URLS,
         "candidates": len(proxies),
         "alive": len(ok),
         "counts": dict(counts),
         "http_total": len(http_ok),
         "http_tls": http_tls_n,
+        "udp_egress": bool(meta.get("udp_ok")),
+        "skipped_protocols": list(meta.get("skipped_udp") or []),
         "fastest": [{"name": p["name"], "delay": p["_delay"], "type": p.get("type"),
                      "tls": bool(p.get("tls"))} for p in ok[:20]],
     }
@@ -602,8 +639,18 @@ def main():
         return
 
     if not os.path.exists(MIHOMO):
-        raise SystemExit(f"找不到 mihomo：{MIHOMO}")
+        raise SystemExit(f"找不到 mihomo：{MIHOMO}（可用 MIHOMO_BIN 指定路径）")
     all_cands = normalize(load_candidates(args.input))
+
+    udp_ok, udp_host = udp_egress_ok()
+    log(f"UDP 出站探测：{'可用（回应来自 %s）' % udp_host if udp_ok else '❌ 不可用'}")
+    skipped_udp = []
+    if not udp_ok:
+        skipped_udp = sorted({p["type"] for p in all_cands if p["type"] in UDP_TYPES})
+        if skipped_udp:
+            all_cands = [p for p in all_cands if p["type"] not in UDP_TYPES]
+            log(f"  跳过这些基于 UDP 的协议（无法验证，不放进订阅）：{skipped_udp}")
+
     # 上限只作用于 http：http 候选动辄上万，会把 vless/vmess 这些挤掉
     non_http = [p for p in all_cands if p.get("type") != "http"]
     http = [p for p in all_cands if p.get("type") == "http"]
@@ -626,7 +673,11 @@ def main():
         m.stop()
     if not results:
         raise SystemExit("没有任何节点通过真实校验，保持上一版订阅不动")
-    stats = build_outputs(proxies, results)
+    stats = build_outputs(proxies, results, {
+        "udp_ok": udp_ok, "skipped_udp": skipped_udp,
+        "verified_from": os.environ.get("VERIFIED_FROM",
+                                        "本机（国内）" if os.name == "nt" else "GitHub Actions runner"),
+    })
     # 不在这里写 dist/index.html：CI 的部署工作流会现算订阅页，
     # 两边同时提交同一个文件必然冲突（历史上每次推送失败都因为这一处）。
     if not args.no_push:

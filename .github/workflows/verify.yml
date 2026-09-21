@@ -1,0 +1,148 @@
+name: 真实协议校验（在 Runner 上完成）
+
+# 这个工作流是订阅的“判定环节”：在 GitHub 的机器上用 mihomo 内核
+# 按真实协议逐个握手打被墙目标，只有通了才写进订阅。
+# 本机（Windows）不再参与任何环节。
+#
+# 时间上排在“搜集候选节点”之后 30 分钟（搜集是 0 */6 * * *）。
+#
+# 需要说明的判定局限见 README 与订阅页：
+#   1) 这里是海外机器，判定的是“海外能否连通”，不等于“国内能连通”；
+#   2) SOCKS4 无法验证（两个内核都不支持该出站类型）；
+#   3) 基于 UDP 的 hysteria2 / tuic 取决于 Runner 的 UDP 出站是否可用，脚本会实测。
+
+on:
+  schedule:
+    - cron: '30 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      http_limit:
+        description: 'HTTP 代理最多测多少个（会展开成明文/TLS 两个变体，等于×2）'
+        required: false
+        default: '3000'
+      delay_timeout_ms:
+        description: '单个节点超时（毫秒）'
+        required: false
+        default: '4000'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: 取出仓库
+        uses: actions/checkout@v5
+
+      - name: 安装 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 缓存 mihomo 内核
+        uses: actions/cache@v6
+        with:
+          path: tools/mihomo
+          key: mihomo-${{ runner.os }}-v1.19.31
+
+      - name: 下载 mihomo 内核
+        run: |
+          set -e
+          mkdir -p tools
+          if [ -x tools/mihomo ]; then
+            echo "已有缓存"; tools/mihomo -v; exit 0
+          fi
+          URL="https://github.com/MetaCubeX/mihomo/releases/download/v1.19.31/mihomo-linux-amd64-compatible-v1.19.31.gz"
+          curl -sL --retry 3 -o mihomo.gz "$URL"
+          ls -la mihomo.gz
+          # gunzip 默认按 gz 头里的原名解，名字不可预期，所以用 -c 重定向
+          gunzip -c mihomo.gz > tools/mihomo
+          chmod +x tools/mihomo
+          test "$(head -c 4 tools/mihomo | od -An -tx1 | tr -d ' \n')" = "7f454c46" || { echo "::error::不是 ELF 文件"; exit 1; }
+          tools/mihomo -v
+
+      - name: 确认候选名单存在
+        run: |
+          set -e
+          test -s dist/candidates.yaml || { echo "::error::没有候选名单，先跑一次“搜集候选节点”工作流"; exit 1; }
+          python -c "
+          import yaml
+          d = yaml.safe_load(open('dist/candidates.yaml', encoding='utf-8'))
+          n = len(d.get('proxies') or [])
+          print(f'候选节点 {n} 个')
+          assert n > 0
+          "
+
+      - name: 真实协议校验并生成订阅
+        env:
+          HTTP_LIMIT: ${{ github.event.inputs.http_limit || '3000' }}
+          DELAY_TIMEOUT_MS: ${{ github.event.inputs.delay_timeout_ms || '4000' }}
+          CONCURRENCY: '160'
+          VERIFIED_FROM: 'GitHub Actions runner（海外机器）'
+        run: python verify.py
+
+      - name: 校验产物
+        run: |
+          set -e
+          for f in dist/cn/clash.yaml dist/cn/http.yaml dist/cn/singbox.json dist/cn/stats.json; do
+            test -s "$f" || { echo "::error::$f 为空"; exit 1; }
+          done
+          python - <<'PY'
+          import json, yaml
+          c = yaml.safe_load(open("dist/cn/clash.yaml", encoding="utf-8"))
+          n = len(c.get("proxies") or [])
+          st = json.load(open("dist/cn/stats.json", encoding="utf-8"))
+          print(f"订阅节点 {n} 个 | 候选 {st['candidates']} | UDP 出站 {st['udp_egress']}")
+          print(f"跳过协议 {st['skipped_protocols']}")
+          assert n > 0, "没有可用节点"
+          names = {p["name"] for p in c["proxies"]} | {"DIRECT", "REJECT"}
+          for g in c.get("proxy-groups") or []:
+              missing = [m for m in g["proxies"] if m not in names]
+              assert not missing, f"分组 {g['name']} 引用缺失 {missing[:3]}"
+          sb = json.load(open("dist/cn/singbox.json", encoding="utf-8"))
+          tags = {o["tag"] for o in sb["outbounds"]}
+          for o in sb["outbounds"]:
+              if o["type"] == "selector":
+                  miss = [t for t in o["outbounds"] if t not in tags]
+                  assert not miss, f"sing-box selector 引用缺失 {miss[:3]}"
+          print("结构校验通过")
+          PY
+
+      - name: 提交结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/cn
+          if git diff --cached --quiet; then
+            echo "本次没有变化"
+          else
+            git commit -m "chore: Runner 侧真实协议校验 $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase --autostash || true
+            git push
+          fi
+
+      - name: 生成订阅页
+        run: python render_index.py
+
+      - name: 打包网页
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+      - name: 部署到 GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5

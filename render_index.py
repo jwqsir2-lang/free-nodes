@@ -58,12 +58,15 @@ def main():
 
     if cn and os.path.exists(os.path.join(DIST, "cn", "clash.yaml")):
         cards = "".join(card(*c) for c in FILES)
+        where = cn.get("verified_from", "GitHub Actions runner")
         sub = f"""
   <h2>订阅地址（点一下复制完整链接）</h2>
-  <p class="ok">下面这些节点已在本机按真实协议、对着被墙目标端到端验证过，能通才收录。</p>
+  <p class="ok">候选由 GitHub Actions 定时搜集，可用性由 <b>{where}</b> 用 mihomo 内核按真实协议
+  逐个握手、对着被墙目标发真实请求验证，通了才收录。全程在 GitHub 上自动完成，不需要你的电脑参与。</p>
   {cards}
-  <div class="meta">校验时间 {cn['verified_at']}　|　目标 {' / '.join(cn['test_targets'])}<br>
-  候选 {cn['candidates']} → 可用 {cn['alive']}　|　HTTP 代理 {cn.get('http_total', 0)} 个（其中带 TLS {cn.get('http_tls', 0)} 个）</div>"""
+  <div class="meta">校验时间 {cn['verified_at']}　|　判定地点 {where}　|　目标 {' / '.join(cn['test_targets'])}<br>
+  候选 {cn['candidates']} → 可用 {cn['alive']}　|　HTTP 代理 {cn.get('http_total', 0)} 个（其中带 TLS {cn.get('http_tls', 0)} 个）
+  {f"　|　UDP 出站可用（hysteria2/tuic 可测）" if cn.get('udp_egress') else "　|　<b>UDP 出站不可用，已跳过 hysteria2/tuic</b>"}</div>"""
     else:
         sub = f"""
   <h2>还没有可用订阅</h2>
@@ -117,11 +120,16 @@ sing-box <b>内核本身没有订阅/自动更新机制</b>，它只接受一份
 URL 就自动更新。上面给的 <code>cn/singbox.json</code> 是可直接 <code>sing-box check -c</code> 通过、
 导入即用的完整配置；要自动更新就用支持订阅的客户端（Karing 等）订阅 <code>cn/clash.yaml</code>。
 </div>
-<h2>为什么要本机测</h2>
+<h2>判定局限（重要，务必看）</h2>
 <div class="warn">
-海外机器上判定的“可用”在国内基本无效（大量 Cloudflare 边缘 IP，国内连返回 409 / error 1001）。
-所以 CI 只负责搜集候选，判定放在本地：用 mihomo 内核按真实协议打被墙目标，通了才收录。
-HTTP 代理还会分别按「明文」和「TLS 包装」两种形态各测一遍，通过率通常在 2~3%。
+校验在 <b>GitHub 的海外机器</b>上完成，所以它判定的是「海外能否连通」，<b>不完全等于「你那边能否连通」</b>。
+已知的局限：<br>
+① 部分节点只对特定地区开放，海外机器测不通但国内能用 —— 这类会被误删；<br>
+② 反过来，海外能通的节点在国内可能走不通（典型是被 Cloudflare 边缘接管的地址，国内连会返回 409/error 1001）；<br>
+③ <b>SOCKS4 无法验证</b>：mihomo 与 sing-box 都没有 SOCKS4 出站类型（实测报 <code>unsupport proxy type: socks4</code>），
+此类节点只能丢弃，不做收录；<br>
+④ hysteria2 / tuic 走 UDP(QUIC)，能否验证取决于 Runner 的 UDP 出站，页面顶部会标注；<br>
+⑤ 延迟只是海外机器视角的数值，不代表你在国内的实际速度。
 </div>
 <h2>注意</h2>
 <div class="warn">
