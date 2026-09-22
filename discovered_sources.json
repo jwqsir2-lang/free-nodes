@@ -14,6 +14,13 @@
     "found_at": "2026-09-22"
   },
   {
+    "name": "free-home-broadband-subscription/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/AntoninusRothschild/free-home-broadband-subscription/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "AntoninusRothschild/free-home-broadband-subscription",
+    "found_at": "2026-09-22"
+  },
+  {
     "name": "free-vpn-subscriptions/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml",
     "fmt": "auto",
@@ -49,6 +56,20 @@
     "found_at": "2026-09-22"
   },
   {
+    "name": "xiaohegengxin/clash.yaml",
+    "url": "https://raw.githubusercontent.com/apeng3627/xiaohegengxin/main/clash.yaml",
+    "fmt": "auto",
+    "from": "apeng3627/xiaohegengxin",
+    "found_at": "2026-09-22"
+  },
+  {
+    "name": "xiaohegengxin/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/apeng3627/xiaohegengxin/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "apeng3627/xiaohegengxin",
+    "found_at": "2026-09-22"
+  },
+  {
     "name": "xiaohejiakuan/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/apeng3627/xiaohejiakuan/main/output/clash.yaml",
     "fmt": "auto",
@@ -67,6 +88,13 @@
     "url": "https://raw.githubusercontent.com/baidu169msn/wodeip/main/output/clash.yaml",
     "fmt": "auto",
     "from": "baidu169msn/wodeip",
+    "found_at": "2026-09-22"
+  },
+  {
+    "name": "Freevps/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/blackhole2019/Freevps/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "blackhole2019/Freevps",
     "found_at": "2026-09-22"
   },
   {
@@ -144,34 +172,6 @@
     "url": "https://raw.githubusercontent.com/hello-world-1989/cn-news/main/clash.yaml",
     "fmt": "auto",
     "from": "hello-world-1989/cn-news",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "zycfreesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/hwzyc6912/zycfreesub/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "hwzyc6912/zycfreesub",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "cm98/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/innalmaty/cm98/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "innalmaty/cm98",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "free/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/jewell998998/free/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "jewell998998/free",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "freesubb/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/joachim508/freesubb/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "joachim508/freesubb",
     "found_at": "2026-09-22"
   }
 ]
