@@ -21,6 +21,13 @@
     "found_at": "2026-09-22"
   },
   {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/MeditatorV/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "MeditatorV/freesub",
+    "found_at": "2026-09-22"
+  },
+  {
     "name": "Free-Proxy-List/http.txt",
     "url": "https://raw.githubusercontent.com/Moleway/Free-Proxy-List/main/http.txt",
     "fmt": "auto",
@@ -74,6 +81,13 @@
     "url": "https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/http.txt",
     "fmt": "auto",
     "from": "databay-labs/free-proxy-list",
+    "found_at": "2026-09-22"
+  },
+  {
+    "name": "free_broadband/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/delphilg/free_broadband/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "delphilg/free_broadband",
     "found_at": "2026-09-22"
   },
   {
@@ -140,6 +154,13 @@
     "found_at": "2026-09-22"
   },
   {
+    "name": "cm98/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/innalmaty/cm98/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "innalmaty/cm98",
+    "found_at": "2026-09-22"
+  },
+  {
     "name": "free/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/jewell998998/free/main/output/clash.yaml",
     "fmt": "auto",
@@ -147,31 +168,10 @@
     "found_at": "2026-09-22"
   },
   {
-    "name": "huoFREESUB/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/jonny0830/huoFREESUB/main/output/clash.yaml",
+    "name": "freesubb/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/joachim508/freesubb/main/output/clash.yaml",
     "fmt": "auto",
-    "from": "jonny0830/huoFREESUB",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "free-clash-verge/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/kevin-sanas/free-clash-verge/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "kevin-sanas/free-clash-verge",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "jiakuansub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/ljhlovehui/jiakuansub/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "ljhlovehui/jiakuansub",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "freesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/lmq587/freesub/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "lmq587/freesub",
+    "from": "joachim508/freesubb",
     "found_at": "2026-09-22"
   }
 ]
