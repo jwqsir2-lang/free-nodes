@@ -35,6 +35,13 @@
     "found_at": "2026-09-22"
   },
   {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/WillpowerJin/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "WillpowerJin/freesub",
+    "found_at": "2026-09-22"
+  },
+  {
     "name": "xiaohejiakuan/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/apeng3627/xiaohejiakuan/main/output/clash.yaml",
     "fmt": "auto",
@@ -78,9 +85,23 @@
   },
   {
     "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/fsxllg/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "fsxllg/freesub",
+    "found_at": "2026-09-22"
+  },
+  {
+    "name": "freesub/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/g1xy/freesub/main/output/clash.yaml",
     "fmt": "auto",
     "from": "g1xy/freesub",
+    "found_at": "2026-09-22"
+  },
+  {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/gaopingcheng/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "gaopingcheng/freesub",
     "found_at": "2026-09-22"
   },
   {
@@ -88,6 +109,13 @@
     "url": "https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-for-automation/main/http.txt",
     "fmt": "auto",
     "from": "gnxD3RfTT2WE/proxies-for-automation",
+    "found_at": "2026-09-22"
+  },
+  {
+    "name": "proxy-list-socks5/http.txt",
+    "url": "https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-socks5/main/http.txt",
+    "fmt": "auto",
+    "from": "gnxD3RfTT2WE/proxy-list-socks5",
     "found_at": "2026-09-22"
   },
   {
@@ -144,34 +172,6 @@
     "url": "https://raw.githubusercontent.com/lmq587/freesub/main/output/clash.yaml",
     "fmt": "auto",
     "from": "lmq587/freesub",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "yjg0908/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/mrbean2050/yjg0908/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "mrbean2050/yjg0908",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "06-9-13/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/my7960/06-9-13/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "my7960/06-9-13",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "SubSyncForge/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/nociex/SubSyncForge/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "nociex/SubSyncForge",
-    "found_at": "2026-09-22"
-  },
-  {
-    "name": "yu/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/paomian312/yu/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "paomian312/yu",
     "found_at": "2026-09-22"
   }
 ]
