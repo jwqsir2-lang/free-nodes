@@ -1,15 +1,15 @@
 {
-  "updated_utc8": "2026-09-22 02:11 (UTC+8)",
+  "updated_utc8": "2026-09-22 11:18 (UTC+8)",
   "candidates": 15000,
   "counts": {
-    "trojan": 49,
-    "vless": 1544,
-    "vmess": 775,
-    "hysteria2": 115,
+    "trojan": 64,
+    "vless": 1328,
+    "vmess": 790,
+    "hysteria2": 99,
     "hysteria": 1,
-    "ss": 230,
-    "socks5": 1,
-    "http": 12285
+    "ss": 192,
+    "http": 12525,
+    "socks5": 1
   },
   "sources": [
     {
@@ -20,12 +20,12 @@
     {
       "name": "ermaozi/get_subscribe",
       "status": "ok",
-      "count": 187
+      "count": 200
     },
     {
       "name": "peasoft/NoMoreWalls",
       "status": "ok",
-      "count": 111
+      "count": 115
     },
     {
       "name": "mahdibland/Eternity",
@@ -55,27 +55,27 @@
     {
       "name": "proxifly/http",
       "status": "ok",
-      "count": 3966
+      "count": 3844
     },
     {
       "name": "TheSpeedX/http",
       "status": "ok",
-      "count": 1966
+      "count": 2719
     },
     {
       "name": "monosans/http",
       "status": "ok",
-      "count": 196
+      "count": 325
     },
     {
       "name": "zloi-user/https",
       "status": "ok",
-      "count": 971
+      "count": 964
     },
     {
       "name": "proxifly/https",
       "status": "ok",
-      "count": 936
+      "count": 946
     },
     {
       "name": "r00tee/Https",
@@ -95,7 +95,7 @@
     {
       "name": "roosterkid/HTTPS",
       "status": "ok",
-      "count": 73
+      "count": 65
     },
     {
       "name": "ShiftyTR/https",
@@ -105,37 +105,42 @@
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 573
+      "count": 702
     },
     {
       "name": "free-proxy-list/list.txt",
       "status": "ok",
-      "count": 573
+      "count": 702
     },
     {
       "name": "free-vpn-subscriptions/outpu",
       "status": "ok",
-      "count": 1702
+      "count": 1658
     },
     {
       "name": "Free-Proxy-List/http.txt",
       "status": "ok",
-      "count": 565
+      "count": 726
     },
     {
       "name": "proxy-list/all.txt",
       "status": "ok",
-      "count": 263
+      "count": 492
     },
     {
       "name": "xiaohejiakuan/output/clash.y",
       "status": "ok",
-      "count": 1239
+      "count": 1454
     },
     {
       "name": "freeip/output/clash.yaml",
       "status": "ok",
-      "count": 913
+      "count": 925
+    },
+    {
+      "name": "wodeip/output/clash.yaml",
+      "status": "ok",
+      "count": 537
     },
     {
       "name": "qq2026.9.9-/output/clash.yam",
@@ -145,17 +150,17 @@
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 3192
+      "count": 3829
     },
     {
       "name": "v2yn/output/clash.yaml",
       "status": "ok",
-      "count": 526
+      "count": 622
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 1311
+      "count": 1530
     },
     {
       "name": "proxies-for-automation/http.",
@@ -165,7 +170,7 @@
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 1248
+      "count": 1455
     },
     {
       "name": "cn-news/clash.yaml",
@@ -175,7 +180,7 @@
     {
       "name": "zycfreesub/output/clash.yaml",
       "status": "ok",
-      "count": 1235
+      "count": 1453
     },
     {
       "name": "free/output/clash.yaml",
@@ -195,22 +200,22 @@
     {
       "name": "jiakuansub/output/clash.yaml",
       "status": "ok",
-      "count": 545
+      "count": 631
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 1261
+      "count": 1458
     },
     {
       "name": "yjg0908/output/clash.yaml",
       "status": "ok",
-      "count": 1239
+      "count": 1448
     },
     {
       "name": "06-9-13/output/clash.yaml",
       "status": "ok",
-      "count": 530
+      "count": 618
     },
     {
       "name": "SubSyncForge/output/clash.ya",
@@ -221,12 +226,7 @@
       "name": "yu/output/clash.yaml",
       "status": "ok",
       "count": 1234
-    },
-    {
-      "name": "proxy-list/all.txt",
-      "status": "ok",
-      "count": 6000
     }
   ],
-  "seconds": 25.0
+  "seconds": 17.4
 }
