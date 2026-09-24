@@ -56,6 +56,13 @@
     "found_at": "2026-09-24"
   },
   {
+    "name": "123/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/STFKLM/123/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "STFKLM/123",
+    "found_at": "2026-09-24"
+  },
+  {
     "name": "freesub/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/WillpowerJin/freesub/main/output/clash.yaml",
     "fmt": "auto",
@@ -165,13 +172,6 @@
     "url": "https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-socks5/main/http.txt",
     "fmt": "auto",
     "from": "gnxD3RfTT2WE/proxy-list-socks5",
-    "found_at": "2026-09-24"
-  },
-  {
-    "name": "freesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/halazimeishi/freesub/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "halazimeishi/freesub",
     "found_at": "2026-09-24"
   }
 ]
