@@ -56,6 +56,13 @@
     "found_at": "2026-09-25"
   },
   {
+    "name": "chunjinIP/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/OutMan0010/chunjinIP/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "OutMan0010/chunjinIP",
+    "found_at": "2026-09-25"
+  },
+  {
     "name": "123/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/STFKLM/123/main/output/clash.yaml",
     "fmt": "auto",
@@ -102,6 +109,13 @@
     "url": "https://raw.githubusercontent.com/baidu169msn/wodeip/main/output/clash.yaml",
     "fmt": "auto",
     "from": "baidu169msn/wodeip",
+    "found_at": "2026-09-25"
+  },
+  {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/bg6pabkhl/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "bg6pabkhl/freesub",
     "found_at": "2026-09-25"
   },
   {
@@ -158,20 +172,6 @@
     "url": "https://raw.githubusercontent.com/gaopingcheng/freesub/main/output/clash.yaml",
     "fmt": "auto",
     "from": "gaopingcheng/freesub",
-    "found_at": "2026-09-25"
-  },
-  {
-    "name": "proxies-for-automation/http.txt",
-    "url": "https://raw.githubusercontent.com/gnxD3RfTT2WE/proxies-for-automation/main/http.txt",
-    "fmt": "auto",
-    "from": "gnxD3RfTT2WE/proxies-for-automation",
-    "found_at": "2026-09-25"
-  },
-  {
-    "name": "proxy-list-socks5/http.txt",
-    "url": "https://raw.githubusercontent.com/gnxD3RfTT2WE/proxy-list-socks5/main/http.txt",
-    "fmt": "auto",
-    "from": "gnxD3RfTT2WE/proxy-list-socks5",
     "found_at": "2026-09-25"
   }
 ]
