@@ -126,6 +126,13 @@
     "found_at": "2026-09-26"
   },
   {
+    "name": "zhuzai/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/boboji2025/zhuzai/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "boboji2025/zhuzai",
+    "found_at": "2026-09-26"
+  },
+  {
     "name": "qq2026.9.9-/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/chenhaha9464/qq2026.9.9-/main/output/clash.yaml",
     "fmt": "auto",
@@ -165,13 +172,6 @@
     "url": "https://raw.githubusercontent.com/g1xy/freesub/main/output/clash.yaml",
     "fmt": "auto",
     "from": "g1xy/freesub",
-    "found_at": "2026-09-26"
-  },
-  {
-    "name": "freesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/gaopingcheng/freesub/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "gaopingcheng/freesub",
     "found_at": "2026-09-26"
   }
 ]
