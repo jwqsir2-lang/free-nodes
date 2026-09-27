@@ -98,13 +98,6 @@
     "found_at": "2026-09-27"
   },
   {
-    "name": "freeip/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/appalwnfin/freeip/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "appalwnfin/freeip",
-    "found_at": "2026-09-27"
-  },
-  {
     "name": "wodeip/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/baidu169msn/wodeip/main/output/clash.yaml",
     "fmt": "auto",
@@ -172,6 +165,13 @@
     "url": "https://raw.githubusercontent.com/fsxllg/freesub/main/output/clash.yaml",
     "fmt": "auto",
     "from": "fsxllg/freesub",
+    "found_at": "2026-09-27"
+  },
+  {
+    "name": "free-proxy-list/all.txt",
+    "url": "https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/all.txt",
+    "fmt": "auto",
+    "from": "hproxy-com/free-proxy-list",
     "found_at": "2026-09-27"
   }
 ]
