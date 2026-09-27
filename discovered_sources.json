@@ -161,17 +161,17 @@
     "found_at": "2026-09-27"
   },
   {
-    "name": "freesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/fsxllg/freesub/main/output/clash.yaml",
+    "name": "subfree/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/firstmall/subfree/main/output/clash.yaml",
     "fmt": "auto",
-    "from": "fsxllg/freesub",
+    "from": "firstmall/subfree",
     "found_at": "2026-09-27"
   },
   {
     "name": "freesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/g1xy/freesub/main/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/fsxllg/freesub/main/output/clash.yaml",
     "fmt": "auto",
-    "from": "g1xy/freesub",
+    "from": "fsxllg/freesub",
     "found_at": "2026-09-27"
   }
 ]
