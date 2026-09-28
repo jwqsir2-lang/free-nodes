@@ -35,6 +35,13 @@
     "found_at": "2026-09-28"
   },
   {
+    "name": "sub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/CaiyunXiao/sub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "CaiyunXiao/sub",
+    "found_at": "2026-09-28"
+  },
+  {
     "name": "sun/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/Lostar-sir/sun/main/output/clash.yaml",
     "fmt": "auto",
@@ -133,10 +140,24 @@
     "found_at": "2026-09-28"
   },
   {
+    "name": "mhdfbvjmB/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/callmebabahhh/mhdfbvjmB/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "callmebabahhh/mhdfbvjmB",
+    "found_at": "2026-09-28"
+  },
+  {
     "name": "qq2026.9.9-/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/chenhaha9464/qq2026.9.9-/main/output/clash.yaml",
     "fmt": "auto",
     "from": "chenhaha9464/qq2026.9.9-",
+    "found_at": "2026-09-28"
+  },
+  {
+    "name": "free914-sub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/cwy1971/free914-sub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "cwy1971/free914-sub",
     "found_at": "2026-09-28"
   },
   {
@@ -151,27 +172,6 @@
     "url": "https://raw.githubusercontent.com/delphilg/free_broadband/main/output/clash.yaml",
     "fmt": "auto",
     "from": "delphilg/free_broadband",
-    "found_at": "2026-09-28"
-  },
-  {
-    "name": "v2yn/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/ef-ef-ef/v2yn/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "ef-ef-ef/v2yn",
-    "found_at": "2026-09-28"
-  },
-  {
-    "name": "subfree/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/firstmall/subfree/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "firstmall/subfree",
-    "found_at": "2026-09-28"
-  },
-  {
-    "name": "freesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/fsxllg/freesub/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "fsxllg/freesub",
     "found_at": "2026-09-28"
   }
 ]
