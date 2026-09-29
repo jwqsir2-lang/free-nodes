@@ -91,6 +91,13 @@
     "found_at": "2026-09-29"
   },
   {
+    "name": "ly910/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/andy1516744/ly910/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "andy1516744/ly910",
+    "found_at": "2026-09-29"
+  },
+  {
     "name": "xiaohegengxin/clash.yaml",
     "url": "https://raw.githubusercontent.com/apeng3627/xiaohegengxin/main/clash.yaml",
     "fmt": "auto",
@@ -165,13 +172,6 @@
     "url": "https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/http.txt",
     "fmt": "auto",
     "from": "databay-labs/free-proxy-list",
-    "found_at": "2026-09-29"
-  },
-  {
-    "name": "free_broadband/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/delphilg/free_broadband/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "delphilg/free_broadband",
     "found_at": "2026-09-29"
   }
 ]
