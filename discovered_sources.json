@@ -154,6 +154,13 @@
     "found_at": "2026-09-30"
   },
   {
+    "name": "FREESUB/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/chen54088/FREESUB/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "chen54088/FREESUB",
+    "found_at": "2026-09-30"
+  },
+  {
     "name": "qq2026.9.9-/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/chenhaha9464/qq2026.9.9-/main/output/clash.yaml",
     "fmt": "auto",
@@ -165,13 +172,6 @@
     "url": "https://raw.githubusercontent.com/cwy1971/free914-sub/main/output/clash.yaml",
     "fmt": "auto",
     "from": "cwy1971/free914-sub",
-    "found_at": "2026-09-30"
-  },
-  {
-    "name": "free-proxy-list/http.txt",
-    "url": "https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/http.txt",
-    "fmt": "auto",
-    "from": "databay-labs/free-proxy-list",
     "found_at": "2026-09-30"
   }
 ]
