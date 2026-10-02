@@ -1,5 +1,12 @@
 [
   {
+    "name": "wangmian/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/2183766122/wangmian/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "2183766122/wangmian",
+    "found_at": "2026-10-02"
+  },
+  {
     "name": "free-proxy-list/http.txt",
     "url": "https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http.txt",
     "fmt": "auto",
@@ -91,6 +98,13 @@
     "found_at": "2026-10-02"
   },
   {
+    "name": "free-sub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/Zero-william/free-sub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "Zero-william/free-sub",
+    "found_at": "2026-10-02"
+  },
+  {
     "name": "ly910/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/andy1516744/ly910/main/output/clash.yaml",
     "fmt": "auto",
@@ -158,20 +172,6 @@
     "url": "https://raw.githubusercontent.com/chen54088/FREESUB/main/output/clash.yaml",
     "fmt": "auto",
     "from": "chen54088/FREESUB",
-    "found_at": "2026-10-02"
-  },
-  {
-    "name": "qq2026.9.9-/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/chenhaha9464/qq2026.9.9-/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "chenhaha9464/qq2026.9.9-",
-    "found_at": "2026-10-02"
-  },
-  {
-    "name": "free914-sub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/cwy1971/free914-sub/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "cwy1971/free914-sub",
     "found_at": "2026-10-02"
   }
 ]
