@@ -21,13 +21,6 @@
     "found_at": "2026-10-07"
   },
   {
-    "name": "free-proxy-list/list.txt",
-    "url": "https://raw.githubusercontent.com/6yyn/free-proxy-list/main/list.txt",
-    "fmt": "auto",
-    "from": "6yyn/free-proxy-list",
-    "found_at": "2026-10-07"
-  },
-  {
     "name": "free-sub/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/908002075/free-sub/main/output/clash.yaml",
     "fmt": "auto",
@@ -172,6 +165,13 @@
     "url": "https://raw.githubusercontent.com/boboji2025/zhuzai/main/output/clash.yaml",
     "fmt": "auto",
     "from": "boboji2025/zhuzai",
+    "found_at": "2026-10-07"
+  },
+  {
+    "name": "free-proxy-list/http.txt",
+    "url": "https://raw.githubusercontent.com/databay-labs/free-proxy-list/master/http.txt",
+    "fmt": "auto",
+    "from": "databay-labs/free-proxy-list",
     "found_at": "2026-10-07"
   }
 ]
