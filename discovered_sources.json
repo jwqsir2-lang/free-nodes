@@ -112,6 +112,13 @@
     "found_at": "2026-10-07"
   },
   {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/aiou06987/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "aiou06987/freesub",
+    "found_at": "2026-10-07"
+  },
+  {
     "name": "ly910/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/andy1516744/ly910/main/output/clash.yaml",
     "fmt": "auto",
@@ -165,13 +172,6 @@
     "url": "https://raw.githubusercontent.com/boboji2025/zhuzai/main/output/clash.yaml",
     "fmt": "auto",
     "from": "boboji2025/zhuzai",
-    "found_at": "2026-10-07"
-  },
-  {
-    "name": "mhdfbvjmB/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/callmebabahhh/mhdfbvjmB/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "callmebabahhh/mhdfbvjmB",
     "found_at": "2026-10-07"
   }
 ]
