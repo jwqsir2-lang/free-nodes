@@ -7,13 +7,6 @@
     "found_at": "2026-10-09"
   },
   {
-    "name": "xf0908/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/5543003/xf0908/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "5543003/xf0908",
-    "found_at": "2026-10-09"
-  },
-  {
     "name": "free-proxy-list/http.txt",
     "url": "https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http.txt",
     "fmt": "auto",
@@ -81,6 +74,13 @@
     "url": "https://raw.githubusercontent.com/MrMarble/proxy-list/main/all.txt",
     "fmt": "auto",
     "from": "MrMarble/proxy-list",
+    "found_at": "2026-10-09"
+  },
+  {
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/OgdenThomas/freesub/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "OgdenThomas/freesub",
     "found_at": "2026-10-09"
   },
   {
