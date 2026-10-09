@@ -1,20 +1,20 @@
 {
-  "updated_utc8": "2026-10-09 20:34 (UTC+8)",
+  "updated_utc8": "2026-10-10 06:14 (UTC+8)",
   "candidates": 15000,
   "counts": {
-    "vmess": 427,
-    "trojan": 179,
-    "vless": 1065,
-    "hysteria2": 102,
-    "ss": 251,
+    "vless": 1139,
+    "trojan": 145,
+    "vmess": 802,
+    "hysteria2": 71,
+    "ss": 163,
     "socks5": 3,
-    "http": 12973
+    "http": 12677
   },
   "sources": [
     {
       "name": "anaer/Sub",
       "status": "ok",
-      "count": 564
+      "count": 1693
     },
     {
       "name": "ermaozi/get_subscribe",
@@ -24,7 +24,7 @@
     {
       "name": "peasoft/NoMoreWalls",
       "status": "ok",
-      "count": 451
+      "count": 464
     },
     {
       "name": "mahdibland/Eternity",
@@ -39,7 +39,7 @@
     {
       "name": "Pawdroid/Free-servers",
       "status": "ok",
-      "count": 12
+      "count": 9
     },
     {
       "name": "ripaojiedian/freenode",
@@ -54,27 +54,27 @@
     {
       "name": "proxifly/http",
       "status": "ok",
-      "count": 4724
+      "count": 5259
     },
     {
       "name": "TheSpeedX/http",
       "status": "ok",
-      "count": 2406
+      "count": 2354
     },
     {
       "name": "monosans/http",
       "status": "ok",
-      "count": 204
+      "count": 276
     },
     {
       "name": "zloi-user/https",
       "status": "ok",
-      "count": 1050
+      "count": 943
     },
     {
       "name": "proxifly/https",
       "status": "ok",
-      "count": 931
+      "count": 967
     },
     {
       "name": "r00tee/Https",
@@ -94,7 +94,7 @@
     {
       "name": "roosterkid/HTTPS",
       "status": "ok",
-      "count": 82
+      "count": 120
     },
     {
       "name": "ShiftyTR/https",
@@ -119,32 +119,32 @@
     {
       "name": "free-sub/output/clash.yaml",
       "status": "ok",
-      "count": 808
+      "count": 546
     },
     {
       "name": "free-home-broadband-subscrip",
       "status": "ok",
-      "count": 792
+      "count": 527
     },
     {
       "name": "free-vpn-subscriptions/outpu",
       "status": "ok",
-      "count": 1810
+      "count": 1805
     },
     {
       "name": "sub/output/clash.yaml",
       "status": "ok",
-      "count": 453
+      "count": 497
     },
     {
       "name": "sun/output/clash.yaml",
       "status": "ok",
-      "count": 553
+      "count": 450
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 785
+      "count": 513
     },
     {
       "name": "Free-Proxy-List/http.txt",
@@ -154,7 +154,7 @@
     {
       "name": "proxy-list/all.txt",
       "status": "ok",
-      "count": 259
+      "count": 320
     },
     {
       "name": "freesub/output/clash.yaml",
@@ -164,22 +164,22 @@
     {
       "name": "chunjinIP/output/clash.yaml",
       "status": "ok",
-      "count": 528
+      "count": 560
     },
     {
       "name": "123/output/clash.yaml",
       "status": "ok",
-      "count": 526
+      "count": 558
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 559
+      "count": 443
     },
     {
       "name": "free-sub/output/clash.yaml",
       "status": "ok",
-      "count": 791
+      "count": 521
     },
     {
       "name": "freesub/output/clash.yaml",
@@ -189,7 +189,7 @@
     {
       "name": "ly910/output/clash.yaml",
       "status": "ok",
-      "count": 521
+      "count": 559
     },
     {
       "name": "xiaohegengxin/clash.yaml",
@@ -199,17 +199,17 @@
     {
       "name": "xiaohegengxin/output/clash.y",
       "status": "ok",
-      "count": 448
+      "count": 492
     },
     {
       "name": "xiaohejiakuan/output/clash.y",
       "status": "ok",
-      "count": 787
+      "count": 517
     },
     {
       "name": "wodeip/output/clash.yaml",
       "status": "ok",
-      "count": 395
+      "count": 389
     },
     {
       "name": "Freevps/output/clash.yaml",
@@ -219,7 +219,7 @@
     {
       "name": "zhuzai/output/clash.yaml",
       "status": "ok",
-      "count": 518
+      "count": 562
     },
     {
       "name": "free-proxy-list/http.txt",
@@ -227,5 +227,5 @@
       "count": 6000
     }
   ],
-  "seconds": 18.2
+  "seconds": 11.2
 }
