@@ -168,10 +168,10 @@
     "found_at": "2026-10-12"
   },
   {
-    "name": "free-proxy-list/all.txt",
-    "url": "https://raw.githubusercontent.com/hproxy-com/free-proxy-list/main/all.txt",
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/fsxllg/freesub/main/output/clash.yaml",
     "fmt": "auto",
-    "from": "hproxy-com/free-proxy-list",
+    "from": "fsxllg/freesub",
     "found_at": "2026-10-12"
   }
 ]
