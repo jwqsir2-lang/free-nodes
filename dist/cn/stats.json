@@ -1,143 +1,142 @@
 {
-  "verified_at": "2026-10-17 11:10:11",
+  "verified_at": "2026-10-17 15:55:41",
   "verified_from": "GitHub Actions runner（海外机器）",
   "test_targets": [
     "http://www.gstatic.com/generate_204",
     "http://www.google.com/generate_204"
   ],
-  "candidates": 14162,
-  "alive": 933,
+  "candidates": 14365,
+  "alive": 1519,
   "counts": {
-    "http": 682,
-    "socks5": 5,
-    "hysteria2": 12,
-    "trojan": 45,
-    "vless": 49,
-    "ss": 113,
-    "vmess": 27
+    "http": 571,
+    "hysteria2": 44,
+    "trojan": 44,
+    "vless": 608,
+    "ss": 194,
+    "vmess": 58
   },
-  "http_total": 682,
-  "http_tls": 515,
+  "http_total": 571,
+  "http_tls": 517,
   "udp_egress": true,
   "skipped_protocols": [],
   "fastest": [
     {
-      "name": "https|The Netherlands:999|14ms|zloi-user/ht",
-      "delay": 14,
+      "name": "https|152.233.50.129:9443|12ms|proxifly/htt",
+      "delay": 12,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|United States:443|16ms|zloi-user/ht",
-      "delay": 16,
+      "name": "https|152.233.50.177:9443|12ms|proxifly/htt",
+      "delay": 12,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|United States:3172|17ms|zloi-user/ht",
-      "delay": 17,
+      "name": "https|United States:443|18ms|zloi-user/ht",
+      "delay": 18,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|3.231.160.150:12960|22ms|proxifly/htt",
-      "delay": 22,
+      "name": "https|United States:3172|26ms|zloi-user/ht",
+      "delay": 26,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|United States:8443|28ms|zloi-user/ht",
-      "delay": 28,
+      "name": "https|United States:9443|26ms|zloi-user/ht",
+      "delay": 26,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|Romania:443|30ms|zloi-user/ht",
+      "name": "https|United States:443|27ms|zloi-user/ht",
+      "delay": 27,
+      "type": "http",
+      "tls": true
+    },
+    {
+      "name": "https|United States:8443|29ms|zloi-user/ht",
+      "delay": 29,
+      "type": "http",
+      "tls": true
+    },
+    {
+      "name": "https|198.44.135.11:9443|30ms|proxifly/htt",
       "delay": 30,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|149.88.21.140:9443|33ms|proxifly/htt",
-      "delay": 33,
+      "name": "https|United States:8443|31ms|zloi-user/ht",
+      "delay": 31,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|United States:443|39ms|zloi-user/ht",
-      "delay": 39,
+      "name": "https|98.81.204.137:18522|32ms|proxifly/htt",
+      "delay": 32,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|135.136.3.66:9443|42ms|proxifly/htt",
-      "delay": 42,
+      "name": "https|United States:443|40ms|zloi-user/ht",
+      "delay": 40,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|Romania:443|62ms|zloi-user/ht",
-      "delay": 62,
+      "name": "https|135.136.3.66:9443|46ms|proxifly/htt",
+      "delay": 46,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|United States:8443|65ms|zloi-user/ht",
-      "delay": 65,
+      "name": "https|Romania:443|49ms|zloi-user/ht",
+      "delay": 49,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|Canada:443|75ms|zloi-user/ht",
-      "delay": 75,
+      "name": "https|198.44.159.27:9443|52ms|proxifly/htt",
+      "delay": 52,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|Germany:8888|84ms|zloi-user/ht",
-      "delay": 84,
+      "name": "https|198.44.159.19:9443|54ms|proxifly/htt",
+      "delay": 54,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|The Netherlands:25348|85ms|zloi-user/ht",
+      "name": "https|Canada:443|78ms|zloi-user/ht",
+      "delay": 78,
+      "type": "http",
+      "tls": true
+    },
+    {
+      "name": "https|Romania:443|85ms|zloi-user/ht",
       "delay": 85,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|Germany:8888|85ms|zloi-user/ht",
-      "delay": 85,
+      "name": "https|181.215.52.40:9443|90ms|proxifly/htt",
+      "delay": 90,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|121.127.34.82:443|86ms|proxifly/htt",
-      "delay": 86,
+      "name": "https|198.44.157.19:9443|101ms|proxifly/htt",
+      "delay": 101,
       "type": "http",
       "tls": true
     },
     {
-      "name": "https|121.127.34.82:9443|87ms|proxifly/htt",
-      "delay": 87,
-      "type": "http",
-      "tls": true
-    },
-    {
-      "name": "https|181.215.52.40:9443|88ms|proxifly/htt",
-      "delay": 88,
-      "type": "http",
-      "tls": true
-    },
-    {
-      "name": "https|198.44.157.19:9443|89ms|proxifly/htt",
-      "delay": 89,
-      "type": "http",
-      "tls": true
-    },
-    {
-      "name": "https|198.44.142.43:443|105ms|proxifly/htt",
-      "delay": 105,
+      "name": "https|149.88.98.81:9443|109ms|proxifly/htt",
+      "delay": 109,
       "type": "http",
       "tls": true
     }
