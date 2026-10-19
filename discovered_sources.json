@@ -49,6 +49,13 @@
     "found_at": "2026-10-19"
   },
   {
+    "name": "freeip/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/Emptyxinge/freeip/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "Emptyxinge/freeip",
+    "found_at": "2026-10-19"
+  },
+  {
     "name": "daiqiulin/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/JACKdai1982/daiqiulin/main/output/clash.yaml",
     "fmt": "auto",
@@ -126,6 +133,13 @@
     "found_at": "2026-10-19"
   },
   {
+    "name": "zhuzhaiIP/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/ZLykaios/zhuzhaiIP/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "ZLykaios/zhuzhaiIP",
+    "found_at": "2026-10-19"
+  },
+  {
     "name": "free-sub/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/Zero-william/free-sub/main/output/clash.yaml",
     "fmt": "auto",
@@ -158,20 +172,6 @@
     "url": "https://raw.githubusercontent.com/apeng3627/xiaohegengxin/main/output/clash.yaml",
     "fmt": "auto",
     "from": "apeng3627/xiaohegengxin",
-    "found_at": "2026-10-19"
-  },
-  {
-    "name": "xiaohejiakuan/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/apeng3627/xiaohejiakuan/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "apeng3627/xiaohejiakuan",
-    "found_at": "2026-10-19"
-  },
-  {
-    "name": "free-zhuzhai-ip/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/awingcz-proton/free-zhuzhai-ip/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "awingcz-proton/free-zhuzhai-ip",
     "found_at": "2026-10-19"
   }
 ]
