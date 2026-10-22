@@ -1,13 +1,13 @@
 {
-  "updated_utc8": "2026-10-22 11:16 (UTC+8)",
+  "updated_utc8": "2026-10-22 19:09 (UTC+8)",
   "candidates": 15000,
   "counts": {
-    "vless": 1086,
-    "trojan": 77,
-    "vmess": 816,
-    "ss": 164,
-    "hysteria2": 38,
-    "http": 12818,
+    "vless": 1476,
+    "trojan": 78,
+    "vmess": 835,
+    "ss": 209,
+    "hysteria2": 39,
+    "http": 12362,
     "socks5": 1
   },
   "sources": [
@@ -24,7 +24,7 @@
     {
       "name": "peasoft/NoMoreWalls",
       "status": "ok",
-      "count": 414
+      "count": 425
     },
     {
       "name": "mahdibland/Eternity",
@@ -54,27 +54,27 @@
     {
       "name": "proxifly/http",
       "status": "ok",
-      "count": 5171
+      "count": 5242
     },
     {
       "name": "TheSpeedX/http",
       "status": "ok",
-      "count": 3091
+      "count": 2610
     },
     {
       "name": "monosans/http",
       "status": "ok",
-      "count": 353
+      "count": 459
     },
     {
       "name": "zloi-user/https",
       "status": "ok",
-      "count": 996
+      "count": 938
     },
     {
       "name": "proxifly/https",
       "status": "ok",
-      "count": 1103
+      "count": 1027
     },
     {
       "name": "r00tee/Https",
@@ -94,7 +94,7 @@
     {
       "name": "roosterkid/HTTPS",
       "status": "ok",
-      "count": 123
+      "count": 112
     },
     {
       "name": "ShiftyTR/https",
@@ -104,12 +104,12 @@
     {
       "name": "wangmian/output/clash.yaml",
       "status": "ok",
-      "count": 1170
+      "count": 1002
     },
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 967
+      "count": 1143
     },
     {
       "name": "free-sub/output/clash.yaml",
@@ -119,12 +119,12 @@
     {
       "name": "free-home-broadband-subscrip",
       "status": "ok",
-      "count": 1166
+      "count": 983
     },
     {
       "name": "free-vpn-subscriptions/outpu",
       "status": "ok",
-      "count": 1599
+      "count": 1526
     },
     {
       "name": "cfhomip/output/clash.yaml",
@@ -134,17 +134,17 @@
     {
       "name": "sub/output/clash.yaml",
       "status": "ok",
-      "count": 465
+      "count": 360
     },
     {
       "name": "freeip/output/clash.yaml",
       "status": "ok",
-      "count": 1168
+      "count": 1002
     },
     {
       "name": "daiqiulin/output/clash.yaml",
       "status": "ok",
-      "count": 1169
+      "count": 993
     },
     {
       "name": "WINPN/output/clash.yaml",
@@ -159,7 +159,7 @@
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 1168
+      "count": 993
     },
     {
       "name": "Free-Proxy-List/http.txt",
@@ -169,57 +169,57 @@
     {
       "name": "proxy-list/all.txt",
       "status": "ok",
-      "count": 613
+      "count": 829
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 183
+      "count": 252
     },
     {
       "name": "chunjinIP/output/clash.yaml",
       "status": "ok",
-      "count": 1168
+      "count": 994
     },
     {
       "name": "chunjinIP2/output/clash.yaml",
       "status": "ok",
-      "count": 473
+      "count": 358
     },
     {
       "name": "123/output/clash.yaml",
       "status": "ok",
-      "count": 1168
+      "count": 991
     },
     {
       "name": "freeTami/output/clash.yaml",
       "status": "ok",
-      "count": 1168
+      "count": 992
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 454
+      "count": 357
     },
     {
       "name": "zhuzhaiIP/output/clash.yaml",
       "status": "ok",
-      "count": 1325
+      "count": 1147
     },
     {
       "name": "free-sub/output/clash.yaml",
       "status": "ok",
-      "count": 1160
+      "count": 1000
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 458
+      "count": 358
     },
     {
       "name": "ly910/output/clash.yaml",
       "status": "ok",
-      "count": 1169
+      "count": 995
     },
     {
       "name": "xiaohegengxin/clash.yaml",
@@ -227,5 +227,5 @@
       "count": 623
     }
   ],
-  "seconds": 27.3
+  "seconds": 20.6
 }
