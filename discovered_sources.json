@@ -91,6 +91,13 @@
     "found_at": "2026-10-30"
   },
   {
+    "name": "shuaipotsub260909/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/Micyhuai/shuaipotsub260909/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "Micyhuai/shuaipotsub260909",
+    "found_at": "2026-10-30"
+  },
+  {
     "name": "Free-Proxy-List/http.txt",
     "url": "https://raw.githubusercontent.com/Moleway/Free-Proxy-List/main/http.txt",
     "fmt": "auto",
@@ -165,13 +172,6 @@
     "url": "https://raw.githubusercontent.com/Zero-william/free-sub/main/output/clash.yaml",
     "fmt": "auto",
     "from": "Zero-william/free-sub",
-    "found_at": "2026-10-30"
-  },
-  {
-    "name": "freesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/aiou06987/freesub/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "aiou06987/freesub",
     "found_at": "2026-10-30"
   }
 ]
