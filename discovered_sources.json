@@ -105,8 +105,8 @@
     "found_at": "2026-11-05"
   },
   {
-    "name": "proxy-list/all.txt",
-    "url": "https://raw.githubusercontent.com/MrMarble/proxy-list/main/all.txt",
+    "name": "proxy-list/http.txt",
+    "url": "https://raw.githubusercontent.com/MrMarble/proxy-list/main/http.txt",
     "fmt": "auto",
     "from": "MrMarble/proxy-list",
     "found_at": "2026-11-05"
