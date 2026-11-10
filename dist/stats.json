@@ -1,35 +1,36 @@
 {
-  "updated_utc8": "2026-11-09 23:09 (UTC+8)",
+  "updated_utc8": "2026-11-10 09:11 (UTC+8)",
   "candidates": 15000,
   "counts": {
-    "vless": 1096,
-    "trojan": 385,
-    "vmess": 960,
-    "ss": 192,
-    "hysteria": 3,
-    "hysteria2": 43,
-    "http": 12321
+    "vmess": 995,
+    "vless": 1109,
+    "trojan": 381,
+    "ss": 195,
+    "hysteria": 6,
+    "hysteria2": 44,
+    "http": 12269,
+    "socks5": 1
   },
   "sources": [
     {
       "name": "anaer/Sub",
       "status": "ok",
-      "count": 2169
+      "count": 2192
     },
     {
       "name": "ermaozi/get_subscribe",
       "status": "ok",
-      "count": 484
+      "count": 495
     },
     {
       "name": "peasoft/NoMoreWalls",
       "status": "ok",
-      "count": 411
+      "count": 416
     },
     {
       "name": "mahdibland/Eternity",
       "status": "ok",
-      "count": 199
+      "count": 198
     },
     {
       "name": "freefq/free",
@@ -54,27 +55,27 @@
     {
       "name": "proxifly/http",
       "status": "ok",
-      "count": 4616
+      "count": 4381
     },
     {
       "name": "TheSpeedX/http",
       "status": "ok",
-      "count": 2438
+      "count": 2330
     },
     {
       "name": "monosans/http",
       "status": "ok",
-      "count": 398
+      "count": 356
     },
     {
       "name": "zloi-user/https",
       "status": "ok",
-      "count": 965
+      "count": 954
     },
     {
       "name": "proxifly/https",
       "status": "ok",
-      "count": 897
+      "count": 941
     },
     {
       "name": "r00tee/Https",
@@ -94,7 +95,7 @@
     {
       "name": "roosterkid/HTTPS",
       "status": "ok",
-      "count": 116
+      "count": 150
     },
     {
       "name": "ShiftyTR/https",
@@ -104,7 +105,7 @@
     {
       "name": "freeIP/output/clash.yaml",
       "status": "ok",
-      "count": 622
+      "count": 764
     },
     {
       "name": "wangmian/output/clash.yaml",
@@ -114,7 +115,7 @@
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 686
+      "count": 616
     },
     {
       "name": "free-sub/output/clash.yaml",
@@ -134,22 +135,22 @@
     {
       "name": "cfhomip/output/clash.yaml",
       "status": "ok",
-      "count": 696
+      "count": 603
     },
     {
       "name": "sub/output/clash.yaml",
       "status": "ok",
-      "count": 401
+      "count": 481
     },
     {
       "name": "freeip/output/clash.yaml",
       "status": "ok",
-      "count": 621
+      "count": 767
     },
     {
       "name": "daiqiulin/output/clash.yaml",
       "status": "ok",
-      "count": 613
+      "count": 746
     },
     {
       "name": "WINPN/output/clash.yaml",
@@ -169,7 +170,7 @@
     {
       "name": "shuaipotsub260909/output/cla",
       "status": "ok",
-      "count": 615
+      "count": 766
     },
     {
       "name": "Free-Proxy-List/http.txt",
@@ -179,37 +180,37 @@
     {
       "name": "proxy-list/http.txt",
       "status": "ok",
-      "count": 554
+      "count": 511
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 134
+      "count": 105
     },
     {
       "name": "chunjinIP/output/clash.yaml",
       "status": "ok",
-      "count": 615
+      "count": 752
     },
     {
       "name": "chunjinIP2/output/clash.yaml",
       "status": "ok",
-      "count": 408
+      "count": 485
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 622
+      "count": 756
     },
     {
       "name": "123/output/clash.yaml",
       "status": "ok",
-      "count": 616
+      "count": 789
     },
     {
       "name": "freeTami/output/clash.yaml",
       "status": "ok",
-      "count": 626
+      "count": 759
     },
     {
       "name": "freesub/output/clash.yaml",
@@ -219,7 +220,7 @@
     {
       "name": "zhuzhaiIP/output/clash.yaml",
       "status": "ok",
-      "count": 709
+      "count": 822
     },
     {
       "name": "free-sub/output/clash.yaml",
@@ -227,5 +228,5 @@
       "count": 598
     }
   ],
-  "seconds": 19.2
+  "seconds": 16.3
 }
