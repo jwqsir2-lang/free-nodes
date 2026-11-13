@@ -1,15 +1,15 @@
 {
-  "updated_utc8": "2026-11-13 07:13 (UTC+8)",
+  "updated_utc8": "2026-11-13 13:02 (UTC+8)",
   "candidates": 15000,
   "counts": {
-    "vless": 1176,
-    "trojan": 379,
-    "vmess": 957,
-    "ss": 201,
+    "vless": 1107,
+    "trojan": 375,
+    "vmess": 955,
+    "ss": 203,
     "hysteria": 6,
-    "hysteria2": 46,
-    "socks5": 2,
-    "http": 12233
+    "hysteria2": 43,
+    "http": 12310,
+    "socks5": 1
   },
   "sources": [
     {
@@ -20,7 +20,7 @@
     {
       "name": "ermaozi/get_subscribe",
       "status": "ok",
-      "count": 507
+      "count": 505
     },
     {
       "name": "peasoft/NoMoreWalls",
@@ -40,7 +40,7 @@
     {
       "name": "Pawdroid/Free-servers",
       "status": "ok",
-      "count": 6
+      "count": 15
     },
     {
       "name": "ripaojiedian/freenode",
@@ -55,27 +55,27 @@
     {
       "name": "proxifly/http",
       "status": "ok",
-      "count": 5292
+      "count": 4826
     },
     {
       "name": "TheSpeedX/http",
       "status": "ok",
-      "count": 2645
+      "count": 2896
     },
     {
       "name": "monosans/http",
       "status": "ok",
-      "count": 765
+      "count": 764
     },
     {
       "name": "zloi-user/https",
       "status": "ok",
-      "count": 963
+      "count": 1009
     },
     {
       "name": "proxifly/https",
       "status": "ok",
-      "count": 945
+      "count": 1043
     },
     {
       "name": "r00tee/Https",
@@ -95,7 +95,7 @@
     {
       "name": "roosterkid/HTTPS",
       "status": "ok",
-      "count": 150
+      "count": 111
     },
     {
       "name": "ShiftyTR/https",
@@ -105,32 +105,32 @@
     {
       "name": "v2ray_convert_clash/clash.ya",
       "status": "ok",
-      "count": 2052
+      "count": 1808
     },
     {
       "name": "freeIP/output/clash.yaml",
       "status": "ok",
-      "count": 669
+      "count": 718
     },
     {
       "name": "wangmian/output/clash.yaml",
       "status": "ok",
-      "count": 640
+      "count": 700
     },
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 865
+      "count": 1262
     },
     {
       "name": "free-sub/output/clash.yaml",
       "status": "ok",
-      "count": 625
+      "count": 695
     },
     {
       "name": "free-home-broadband-subscrip",
       "status": "ok",
-      "count": 629
+      "count": 680
     },
     {
       "name": "free-vpn-subscriptions/outpu",
@@ -140,42 +140,42 @@
     {
       "name": "cfhomip/output/clash.yaml",
       "status": "ok",
-      "count": 630
+      "count": 693
     },
     {
       "name": "sub/output/clash.yaml",
       "status": "ok",
-      "count": 413
+      "count": 414
     },
     {
       "name": "freeip/output/clash.yaml",
       "status": "ok",
-      "count": 673
+      "count": 722
     },
     {
       "name": "daiqiulin/output/clash.yaml",
       "status": "ok",
-      "count": 661
+      "count": 699
     },
     {
       "name": "WINPN/output/clash.yaml",
       "status": "ok",
-      "count": 394
+      "count": 405
     },
     {
       "name": "sun/output/clash.yaml",
       "status": "ok",
-      "count": 387
+      "count": 411
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 628
+      "count": 696
     },
     {
       "name": "shuaipotsub260909/output/cla",
       "status": "ok",
-      "count": 671
+      "count": 718
     },
     {
       "name": "Free-Proxy-List/http.txt",
@@ -185,48 +185,48 @@
     {
       "name": "proxy-list/http.txt",
       "status": "ok",
-      "count": 608
+      "count": 639
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 136
+      "count": 159
     },
     {
       "name": "chunjinIP/output/clash.yaml",
       "status": "ok",
-      "count": 673
+      "count": 707
     },
     {
       "name": "chunjinIP2/output/clash.yaml",
       "status": "ok",
-      "count": 407
+      "count": 408
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 665
+      "count": 706
     },
     {
       "name": "123/output/clash.yaml",
       "status": "ok",
-      "count": 673
+      "count": 700
     },
     {
       "name": "freeTami/output/clash.yaml",
       "status": "ok",
-      "count": 659
+      "count": 710
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 392
+      "count": 408
     },
     {
       "name": "zhuzhaiIP/output/clash.yaml",
       "status": "ok",
-      "count": 714
+      "count": 776
     }
   ],
-  "seconds": 16.3
+  "seconds": 14.7
 }
