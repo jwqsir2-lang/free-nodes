@@ -56,6 +56,13 @@
     "found_at": "2026-11-15"
   },
   {
+    "name": "freeip/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/Butterfiy810906/freeip/main/output/clash.yaml",
+    "fmt": "auto",
+    "from": "Butterfiy810906/freeip",
+    "found_at": "2026-11-15"
+  },
+  {
     "name": "sub/output/clash.yaml",
     "url": "https://raw.githubusercontent.com/CaiyunXiao/sub/main/output/clash.yaml",
     "fmt": "auto",
@@ -165,13 +172,6 @@
     "url": "https://raw.githubusercontent.com/WillpowerJin/freesub/main/output/clash.yaml",
     "fmt": "auto",
     "from": "WillpowerJin/freesub",
-    "found_at": "2026-11-15"
-  },
-  {
-    "name": "zhuzhaiIP/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/ZLykaios/zhuzhaiIP/main/output/clash.yaml",
-    "fmt": "auto",
-    "from": "ZLykaios/zhuzhaiIP",
     "found_at": "2026-11-15"
   }
 ]
