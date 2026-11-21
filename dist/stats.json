@@ -1,15 +1,15 @@
 {
-  "updated_utc8": "2026-11-21 13:37 (UTC+8)",
+  "updated_utc8": "2026-11-21 22:12 (UTC+8)",
   "candidates": 15000,
   "counts": {
     "vmess": 542,
-    "trojan": 362,
-    "vless": 1156,
-    "ss": 208,
+    "trojan": 361,
+    "vless": 1104,
+    "ss": 200,
     "hysteria": 1,
-    "hysteria2": 56,
-    "socks5": 8,
-    "http": 12667
+    "hysteria2": 45,
+    "socks5": 2,
+    "http": 12745
   },
   "sources": [
     {
@@ -20,17 +20,17 @@
     {
       "name": "ermaozi/get_subscribe",
       "status": "ok",
-      "count": 403
+      "count": 369
     },
     {
       "name": "peasoft/NoMoreWalls",
       "status": "ok",
-      "count": 335
+      "count": 293
     },
     {
       "name": "mahdibland/Eternity",
       "status": "ok",
-      "count": 198
+      "count": 200
     },
     {
       "name": "freefq/free",
@@ -55,27 +55,27 @@
     {
       "name": "proxifly/http",
       "status": "ok",
-      "count": 5288
+      "count": 5216
     },
     {
       "name": "TheSpeedX/http",
       "status": "ok",
-      "count": 2910
+      "count": 2860
     },
     {
       "name": "monosans/http",
       "status": "ok",
-      "count": 608
+      "count": 860
     },
     {
       "name": "zloi-user/https",
       "status": "ok",
-      "count": 891
+      "count": 901
     },
     {
       "name": "proxifly/https",
       "status": "ok",
-      "count": 877
+      "count": 903
     },
     {
       "name": "r00tee/Https",
@@ -105,22 +105,22 @@
     {
       "name": "v2ray_convert_clash/clash.ya",
       "status": "ok",
-      "count": 1925
+      "count": 1900
     },
     {
       "name": "freeIP/output/clash.yaml",
       "status": "ok",
-      "count": 614
+      "count": 555
     },
     {
       "name": "wangmian/output/clash.yaml",
       "status": "ok",
-      "count": 601
+      "count": 567
     },
     {
       "name": "free-proxy-list/http.txt",
       "status": "ok",
-      "count": 784
+      "count": 808
     },
     {
       "name": "free-sub/output/clash.yaml",
@@ -130,7 +130,7 @@
     {
       "name": "free-home-broadband-subscrip",
       "status": "ok",
-      "count": 612
+      "count": 570
     },
     {
       "name": "free-vpn-subscriptions/outpu",
@@ -145,22 +145,22 @@
     {
       "name": "freeip/output/clash.yaml",
       "status": "ok",
-      "count": 631
+      "count": 571
     },
     {
       "name": "sub/output/clash.yaml",
       "status": "ok",
-      "count": 424
+      "count": 404
     },
     {
       "name": "freeip/output/clash.yaml",
       "status": "ok",
-      "count": 616
+      "count": 563
     },
     {
       "name": "daiqiulin/output/clash.yaml",
       "status": "ok",
-      "count": 629
+      "count": 562
     },
     {
       "name": "WINPN/output/clash.yaml",
@@ -175,12 +175,12 @@
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 625
+      "count": 563
     },
     {
       "name": "shuaipotsub260909/output/cla",
       "status": "ok",
-      "count": 634
+      "count": 561
     },
     {
       "name": "Free-Proxy-List/http.txt",
@@ -190,37 +190,37 @@
     {
       "name": "proxy-list/http.txt",
       "status": "ok",
-      "count": 647
+      "count": 611
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 162
+      "count": 147
     },
     {
       "name": "chunjinIP/output/clash.yaml",
       "status": "ok",
-      "count": 630
+      "count": 539
     },
     {
       "name": "chunjinIP2/output/clash.yaml",
       "status": "ok",
-      "count": 415
+      "count": 410
     },
     {
       "name": "freesub/output/clash.yaml",
       "status": "ok",
-      "count": 626
+      "count": 558
     },
     {
       "name": "123/output/clash.yaml",
       "status": "ok",
-      "count": 636
+      "count": 555
     },
     {
       "name": "freeTami/output/clash.yaml",
       "status": "ok",
-      "count": 631
+      "count": 556
     },
     {
       "name": "freesub/output/clash.yaml",
@@ -228,5 +228,5 @@
       "count": 423
     }
   ],
-  "seconds": 15.9
+  "seconds": 12.6
 }
