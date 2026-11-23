@@ -168,10 +168,10 @@
     "found_at": "2026-11-23"
   },
   {
-    "name": "free-zhuzhai-ip/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/awingcz-proton/free-zhuzhai-ip/main/output/clash.yaml",
+    "name": "freesub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/aiou06987/freesub/main/output/clash.yaml",
     "fmt": "auto",
-    "from": "awingcz-proton/free-zhuzhai-ip",
+    "from": "aiou06987/freesub",
     "found_at": "2026-11-23"
   }
 ]
