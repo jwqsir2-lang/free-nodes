@@ -168,10 +168,10 @@
     "found_at": "2026-11-26"
   },
   {
-    "name": "freesub/output/clash.yaml",
-    "url": "https://raw.githubusercontent.com/aiou06987/freesub/main/output/clash.yaml",
+    "name": "free-sub/output/clash.yaml",
+    "url": "https://raw.githubusercontent.com/Zero-william/free-sub/main/output/clash.yaml",
     "fmt": "auto",
-    "from": "aiou06987/freesub",
+    "from": "Zero-william/free-sub",
     "found_at": "2026-11-26"
   }
 ]
